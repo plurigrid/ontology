@@ -3,7 +3,7 @@
 - [Zed](https://zed.dev/invites/v8lR-d3DpZg4sxnW)
 - Zulip
 - Skiff
-- Github
+- Github/Github dekstop
 - Excalidraw
 - Arc
 - Mem
@@ -12,3 +12,4 @@
 - OpenAI
 - Weights and Biases
 - Keplr
+- Obsidian
