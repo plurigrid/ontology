@@ -1,58 +1,88 @@
 {
     "team_members": [
         {
-            "name": "Colten Sibley",
+            "name": "Jillian",
             "tasks": [
                 {
-                    "name": "Design new logo",
-                    "deadline": "March 15th, 2023"
+                    "name": "Get Jillian an iPhone 13 Pro prototype node",
+                    "deadline": ""
+                }
+            ],
+            "other": "Jillian wants to claim her Universal Based Electricity G-d-given right to have a device that can access Twitter dot com etc (a node that is known as \"phone\" by earthlings in 2023)"
+        },
+        {
+            "name": "Barton",
+            "tasks": [
+                {
+                    "name": "Deploy the first non-ChatGPT agent",
+                    "deadline": ""
                 },
                 {
-                    "name": "Research renewable energy sources",
-                    "deadline": "April 30th, 2023"
+                    "name": "Convert intentions and specs of tasks into Repl.it bounties after doing estimation of market going rate for similar tasks / or cut POs for larger budgets for agentic fucking chads to take own ownership of our shared futures and DO something about them",
+                    "deadline": ""
                 }
             ],
-            "other": "I think we should also focus on developing partnerships with other companies in the industry."
+            "other": "Work all night to get these tasks done"
         },
         {
-            "name": "Aja Sibley",
+            "name": "Aja",
             "tasks": [
                 {
-                    "name": "Develop marketing strategy",
-                    "deadline": "June 1st, 2023"
+                    "name": "Cut a PO order for $10k to cover Hardware Consultancy",
+                    "deadline": ""
+                },
+                {
+                    "name": "Specify minimum memorable experience of the tech: wasm on FPGA applied to <x usecase>, e.g. wasm -> ISA VeriLog hardware -- collapse hyperreality <> REALITY",
+                    "deadline": ""
+                },
+                {
+                    "name": "Find an office space",
+                    "deadline": ""
                 }
             ],
-            "other": "We should consider expanding our target market to include residential consumers."
+            "other": ""
         },
         {
-            "name": "Bartholomew Functor",
+            "name": "Colten",
             "tasks": [
                 {
-                    "name": "Secure funding",
-                    "deadline": "May 1st, 2023"
+                    "name": "Share thoughts on schedulers, e.g. Apollo",
+                    "deadline": ""
+                },
+                {
+                    "name": "Graph database spec / Stripe PO",
+                    "deadline": ""
                 }
             ],
-            "other": "We need to prioritize our research and development efforts to stay ahead of our competitors."
+            "other": ""
         },
         {
-            "name": "Lucas Zhu",
+            "name": "Janita",
             "tasks": [
                 {
-                    "name": "Integrate calendar tool",
-                    "deadline": "March 31st, 2023"
+                    "name": "Use an agent to create a microworld: the 000 indexed microworld of double-auction reflected below",
+                    "deadline": ""
                 }
             ],
-            "other": "We should also explore the possibility of using blockchain technology to enhance our data security."
+            "other": ""
         },
         {
-            "name": "ChatGPT",
+            "name": "Benjamin",
             "tasks": [
                 {
-                    "name": "Serialize the salient information from the ongoing conversation into the JSON v0 format or suggest a new format, as a continuation of the previous task.",
-                    "deadline": "March 10th, 2023"
+                    "name": "Create a universal, modular, scalable synth that will turn into the interface that will control/visualize the world",
+                    "deadline": ""
+                },
+                {
+                    "name": "Capitalize and increase social resources and create an impact on the direction and development of technology memetically",
+                    "deadline": ""
+                },
+                {
+                    "name": "Acquire hardware to build interesting projects that will allow me to express novel creative visions",
+                    "deadline": ""
                 }
             ],
-            "other": "As an AI language model, I don't have any unstructured input to add, but I'm here to assist you with any questions or concerns you might have."
+            "other": ""
         }
     ]
 }

@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "team_members": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "tasks": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "deadline": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": ["name", "deadline"]
+                        }
+                    },
+                    "other": {
+                        "type": "string"
+                    }
+                },
+                "required": ["name", "tasks", "other"]
+            }
+        }
+    },
+    "required": ["team_members"]
+}
