@@ -145,7 +145,7 @@ Here are some suggestions for including visual examples and interactive componen
 
 - Plot examples of time series data, probability distributions, utility functions and other metrics from simulations, along with equations describing the mechanisms that drive changes in these values. This provides granular insights into how the Plurigrid Protocol aligns individual and collective interests through balancing competition and coordination.
 
-- Include Java-based programming using PowerSystems.jl and other tools to implement a simplified version of the Plurigrid Protocol. Users can run their own simulations and interact with the code to gain a deeper understanding of the concepts and frameworks involved. This hands-on approach enhances the learning experience and strengthens comprehension of the material.
+- Include Julia-based programming using PowerSystems.jl and other tools to implement a simplified version of the Plurigrid Protocol. Users can run their own simulations and interact with the code to gain a deeper understanding of the concepts and frameworks involved. This hands-on approach enhances the learning experience and strengthens comprehension of the material.
 
 - Discuss how the Plurigrid Protocol could be applied to transform existing energy systems and markets, e.g. through connecting microgrids into a globally coordinated network, optimizing energy usage in real time based on supply and demand across regions, and enabling participants to make more informed decisions through access to data and shared knowledge. Analyze potential impacts on areas like efficiency, cost, reliability, sustainability and access.
 
