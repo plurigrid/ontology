@@ -1,3 +1,60 @@
+# Plurigrid Protocol Paper v0
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+
+\title{Plurigrid Protocol: A Framework for Global Energy Coordination Commons}
+\author{Your Name}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The Plurigrid Protocol aims to create a global energy coordination commons by leveraging the potential of decentralized networks, with a focus on interoperability between public and private ledgers using CosmWasm and Inter-Blockchain Communication (IBC) protocols. By enabling a supergrid accommodating multiple grids, the Plurigrid Protocol paves the way for achieving equilibrium states in the energy sector and promotes implicit competition and implicit cooperation between various energy grids. This paper outlines the design, architecture, and benefits of the Plurigrid Protocol, addressing coordination strategies in the domain space, and highlights the need for further research in this area.
+\end{abstract}
+
+\section{Introduction}
+The global energy sector is experiencing a paradigm shift, with an increasing focus on decentralized energy production and distribution. Achieving efficient coordination between these decentralized resources requires new infrastructure capable of accommodating their massive scale and granularity.
+
+The Plurigrid Protocol offers a solution by enabling an interoperable supergrid in which multiple energy grids can coexist and interact while maintaining autonomy. The protocol allows energy grids to maintain sovereign control over their security and governance while connecting within a shared network. This provides the flexibility to optimize operations based on regional requirements and progress at independent yet aligned paces.
+
+This paper discusses the coordination strategies in the domain space of the Plurigrid Protocol, specifically focusing on implicit competition and implicit cooperation. It argues for the need to explore this categorization further, as the current research landscape is underdeveloped in this area.
+
+\section{Coordination Strategies: Implicit Competition and Implicit Cooperation}
+In this section, we map coordination strategies onto the implicit competition and implicit cooperation coordination categories.
+
+\subsection{Implicit Competition}
+Implicit competition refers to the status quo scenario in which most energy consumers do not share their data and behave competitively to maximize their individual utility. This paradigm, known as the price-reactive system or uncoordinated approach, is implemented through critical-peak pricing, time-of-use pricing, and real-time pricing.
+
+Such self-interested responses to price signals result in suboptimal system outcomes, especially when deployed on a large scale. Uncoordinated reactions to price signals can be difficult to predict without knowledge of devices' states and end users' preferences. The market mechanism should be designed to ensure self-interested schedules contribute to limiting suboptimality.
+
+\subsection{Implicit Cooperation}
+In the implicit cooperation category, units do not share information but make individual decisions cooperatively to optimize global objectives. Operating without direct, centralized control or bilateral sharing of information, prosumers cooperate to achieve system-wide benefits statistically.
+
+The current research landscape in this category is underdeveloped, with very few strategies exploring implicit coordination beyond frequency control. This paper argues for the need to investigate this domain further, as the space of possible control and coordination strategies that fall under this categorization is under-researched.
+
+\section{Plurigrid Protocol: Design and Architecture}
+The Plurigrid Protocol incorporates the following design and architectural elements:
+
+\subsection{Interoperability}
+The Plurigrid Protocol utilizes CosmWasm and the Inter-Blockchain Communication (IBC) protocol to enable seamless transfer of assets and data between energy grids. This allows separate infrastructures to integrate and transact value fluidly while maintaining sovereign control over system governance.
+
+subsection{Scalability}
+The Plurigrid Protocol provides theoretically unlimited scalability for integrating and coordinating grid systems worldwide. Energy grids can customize and expand their networks independently while still remaining part of the Plurigrid Protocol's global energy coordination commons.
+
+\subsection{Security}
+Incorporating federal and other security standards into the protocol, the Plurigrid Protocol ensures that relayer sets and nodes meet these requirements. By enabling a secure environment, the protocol fosters trust between participating energy grids.
+
+\subsection{Decentralized Governance}
+The Plurigrid Protocol empowers individual energy grids to maintain sovereignty over their governance and decision-making. This decentralized approach encourages local innovation and accommodates regional requirements while still contributing to the global energy coordination commons.
+
+\section{Conclusion and Future Research Directions}
+The Plurigrid Protocol offers a groundbreaking solution for global energy coordination by enabling the coexistence and interaction of multiple energy grids within an interoperable supergrid. By leveraging CosmWasm and IBC, the Plurigrid Protocol accommodates various coordination strategies, such as implicit competition and implicit cooperation, while providing a secure, scalable, and decentralized infrastructure.
+
 # Inputs for prompting GPT-4, Claude+, or a custom Plurigrid agent
 ## Plurigrid: An Open and Democratic Energy System
 Here is a draft LaTeX document summarizing the Plurigrid protocol in a way aimed at interesting Tim Roughgarden based on our previous discussions:
