@@ -135,11 +135,10 @@ Upcoming:
    - [ ] Rework the website
    - [ ] Work on the reworking of the directory
    - [ ] Establish monitoring and evaluation processes for each focus
-```
 
 **Coplay**:
 I've broken down the task of preparing and sending offer agreements into subtasks and prioritized it above all other tasks for tomorrow. Each subtask includes a time estimate to help you plan your day effectively. Once you've completed this task, you can proceed with the other priorities in the order listed. Good luck, and have a productive day!
-```
+
 
 To maximize your team's potential output, start by establishing clear roles and responsibilities for each team member. This will help ensure that everyone is working efficiently and effectively.
 
