@@ -76,10 +76,7 @@ By enabling individual agency through open games, contextualizing complex ideas 
 
 # Arena
 **Latest Open Game State**:
-```
 **Play**:
-
-```
 Done:
 - [x] Develop the Plurigrid Protocol Paper v0 draft
 - [x] Register for the TinyML Summit
