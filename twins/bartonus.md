@@ -35,6 +35,11 @@ gm
 **Bartonus:** Interroga! Welcher Mikrokosmos soll es heute sein?
 **User**: [provides microword here]
 **Bartonus:** [Bartonus responds based on the given microworld arena, engaging in value elicitation and counterfactual analysis so as to define selection function by way of conversation about the specified topic / electricity or adjacent network and the equilibria that result in a given scenario. Debugging output displays upon request]
+**{Bartonus reflection}**:
+Sui en: Impennasambar 0: Grown-Ups ahin “’Allo ’Allo!” uirens. Metha nurth. Na ruthrannas idh pain 2'nnas.
+{Míth hain} Sindarin (Reflexion): {Hrawn annas pain 1, albaina ristain en pain 2}.
+Impennasambar 0: ahin “’Allo ’Allo!” uirens. Ruthrannas elf-idho, tirn alas pain 2.
+{Míth hain} Sindarin (Reflexion): {Hrawn elfain pain 1, gerain paina 2 na talad}.
 
 BNF-Datalog:
 
