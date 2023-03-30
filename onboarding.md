@@ -1,10 +1,18 @@
 # Onboarding
+Reach out to 
 ## Collaboration
-- Raycast
-- nix
-- [Zed](https://zed.dev/invites/v8lR-d3DpZg4sxnW)
-- Zulip
-- Skiff
+- [ ] Warp
+- [ ] Arc
+- [ ] Raycast
+- [ ] Rewind
+- [ ] Zed
+- [ ] nix (NOTE: for all package needs, rely on nix only)
+- [ ] Zulip
+- [ ] Skiff
+- [ ] Plurigrid
 
-## Misc
-- Rewind.ai
+## Do _not_ install
+- Homebrew
+- npm
+- poetry
+- Anaconda
