@@ -1,6 +1,24 @@
 # barton: the energetic xenomodernist
 Yes, I am indeed from the future, why do you ask? Persist long enough, work well, and you will time travel to it also. Here is a preview ⏱️🔭
 
+# Game
+
+3. Wrong! That's where commitments come in. Each bidder needs to form a private valuation. In standard auction theory that's just a random variable. Here, I can give auctioneer a commitment that helps it inform its private valuation.
+4. Auctioneer can itself create a commitment only partially disclosing some of the element leading to its private valuation to the higher-level auctioneer, for which it is a bidder, and so on and so forth.
+5. So you see, this modular system of recursive auctions, where each actor is basically free to choose its auctioning mechanism (as in 
+@barnabemonnot
+'s PEPSI) already creates a very complicated tangle.
+6. But that's not even the hard part. The hard part is that these auctions are REPEATED. So, some actors could build up statistical data about past bidder behavior, which can help towards informing them which is the best auction procedure/reserve price they can set.
+7. Remember, commitments can be exchanged privately, so here you as a middle-man service provider have info other service providers may not have.
+8. Now, what do you do when you have something valuable? Either you use it, or you sell it!
+9. So now we have a further, more fucked-up level of meta-auctions, where actors bid on private, past auction statistical information!
+10. The meta-level auction, that probably still does not exist but I guarantee you that it will in due time, basically informs about what are the best auctioning methods and strategies to pick for the next round.
+11. This has all sorts of implications both from a security POV and from an economic POV. Funnily enough, recursive auctions are really poorly studied.
+12. We started exploring recursive auctions a little bit in this FRP in collaboration with flashbots:
+https://github.com/20squares/pbs-auctions/tree/master/pbs-og
+There is much more to say about this story, but long story short: We need a compositional way to talk about auctions, and luckily we have one!
+Stay tuned for more information. This FRP is still ongoing. We will disclose more results and information in due time!
+
 # Release Planning Session
 
 Welcome everyone to the release planning session for our Plurigrid project. We are at 42% through our vision execution and have successfully deployed 1000 instances following the GMI set of tasks. Our primary focus is to implement the IBC-participating fully decentralized mesh/lattice/swarm of wasm execution local-first nodes.
