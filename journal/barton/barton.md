@@ -2,7 +2,11 @@
 Yes, I am indeed from the future, why do you ask? Persist long enough, work well, and you will time travel to it also. Here is a preview ⏱️🔭
 
 # Game
-
+The interaction between recursive auctions and commitment devices is going to be the name of the game in crypto for the next 12-24 months. The reason is the following:
+1. Current state of MEV/PBS calls for an increasingly modular manipulation of the order flow.
+Basically, people who bid for blockspace will take bids from other actors, all the way down to single users deciding where to place their txs. A whole economic systems of service offerings and bidding will pop up.
+2. So, some actors in this system will be at the same time bidders and auctioneers. That's where the recursive auctions come from. 
+Now you may say "yeah nah who cares, revenue equivalence theorem right?"
 3. Wrong! That's where commitments come in. Each bidder needs to form a private valuation. In standard auction theory that's just a random variable. Here, I can give auctioneer a commitment that helps it inform its private valuation.
 4. Auctioneer can itself create a commitment only partially disclosing some of the element leading to its private valuation to the higher-level auctioneer, for which it is a bidder, and so on and so forth.
 5. So you see, this modular system of recursive auctions, where each actor is basically free to choose its auctioning mechanism (as in 
