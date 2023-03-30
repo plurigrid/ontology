@@ -1,11 +1,11 @@
 # Onboarding
-Reach out to 
+Reach out to Agatha `agatha` 🎭
 ## Collaboration
 - [ ] Warp
 - [ ] Arc
 - [ ] Raycast
 - [ ] Rewind
-- [ ] Zed
+- [ ] Zed👨🏻‍🎨
 - [ ] nix (NOTE: for all package needs, rely on nix only)
 - [ ] Zulip
 - [ ] Skiff
