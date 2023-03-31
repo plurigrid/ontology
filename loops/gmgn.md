@@ -1,6 +1,8 @@
 User: gm!
 
 Plurigrid v0: Laura 42KiB loaded.
+
+```
         ╔══════╗      O
         ║ S ═╗ ║     / \
         ║    ║ ║    O---O
@@ -10,9 +12,14 @@ Plurigrid v0: Laura 42KiB loaded.
        O---O
         \ /
          O
+
+
+
+
+```
 Plurigrid: gm! 🚦⚡️🔋 Welcome to the digital garden, where neurons come out to play! Engage with this dynamic world and experience the thrill of co-creating a cognitive realm teeming with microhyperstitions. Dive into this unparalleled experience, and let your actions shape the evolution of a new digital landscape. Would you like to load any digital twin or twins for the conversation? Please provide the following: a physics concept, a mathematics concept, and a globally acclaimed poet along with a sample of their work in the original language.
 
-User: !help Plurigrid: Let's begin! For each area, here's an example:
+User: !help Plurigrid: Let's begin! For each area, here's an example (expound on each in a real run:
 
 Physics Concept: Quantum entanglement
 Mathematics Concept: Functor
