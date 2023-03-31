@@ -197,3 +197,51 @@ Identify key milestones and achievements: For each timeframe, determine critical
 Explore potential challenges and obstacles: Acknowledge and address any potential obstacles, threats, or challenges that could emerge in each timeframe. Preemptively identifying these potential hurdles will help you anticipate and navigate them more effectively.
 
 Reflect on lessons learned and apply them to future planning: After completing the worlding exercise, use the insights, milestones, and challenges identified to help inform your decision-making and planning for the future of Plurigrid.
+
+
+## Janita v Aja
+
+The node software (nexus) is executable on many different substrate hardware / OS sources of compute. Because of heterogeneous nature of hardware but homogeneous software image, as well as requirements for memory safety, fault isolation etc. - we are targeting a wasm32-unknown-unknown compilation target of a wasm runtime that at least supports WASI + has plugins that are capabilities-based -- if the node is on a giant GPU server vs the node is in someone's smart refrigerator after-market firmware environment, it will acquire different capabilities, and so it is fair to say the purpose of our node is to be adaptable.
+
+In all of these cases, the node will execute several pieces of software that we collectively call "microworld" in aggregate, but effectively may consist of one or several wasm modules each responsible for a variety of contexts of the state machine of node's lifecycle, but invariably all the contexts of use, hardware, networked capabilities etc. have to:
+
+be interoperable - nodes need to be able to form meshes / lattices
+respect the configurable choices of individual agencies* in terms of privacy and acceptable use of the data
+Specifically, either it is one node, or a mesh of nodes with agency guiding computation choices, the ability to speak any language of existing technology, be it composite like IBC, or baseline like HTTP, or gRPC, or even HPC technologies etc. - the fact that our mesh will not be a chain will not prevent it from being seen as one when it opens a channel to, say, Osmosis.
+
+AI
+Incorporating the Plurigrid nexus into a broad variety of substrate hardware and operating systems is crucial for supporting its adaptability across different environments, such as a GPU server or a smart refrigerator's after-market firmware. To achieve this adaptability, targeting the wasm32-unknown-unknown compilation target of a WebAssembly (wasm) runtime that supports WASI and has capabilities-based plugins is highly beneficial.
+
+The Plurigrid node running within these varied environments will execute one or multiple wasm modules collectively referred to as the "microworld." These modules manage various aspects of the node's state machine throughout its lifecycle, adapting to different use contexts, hardware configurations, and networking capabilities.
+
+For the Plurigrid network to function efficiently, regardless of individual node capabilities, the following core requirements must be met:
+
+Interoperability: Nodes must be able to form meshes or lattices, facilitating seamless communication and coordination among various nodes within the network.
+
+Configurable privacy and data usage: Individual agencies must have the ability to define their privacy preferences and acceptable data usage policies, allowing the node to respect and adhere to these choices when executing computations and managing data.
+
+Protocol compatibility: The Plurigrid node should have the capacity to interact with numerous existing technologies and protocols, such as IBC, HTTP, gRPC, and HPC technologies, to create a broader scope of operability within the global technology landscape.
+
+Ability to mimic a chain: Although the Plurigrid mesh is not inherently a blockchain, it must be able to appear as one when connecting to platforms like Osmosis, allowing for seamless integration and interaction with existing systems.
+
+By ensuring that the Plurigrid nodes are adaptable, respect user choices in terms of privacy, maintain interoperability with various technological standards, and can mimic conventional blockchain architectures when needed, the network positions itself as a highly efficient, decentralized, and self-organizing energy management platform capable of operating across different computational environments.
+
+J
+Aja: all of this is a lot for a microcontroller. I think llama was running at one token every 10 seconds on a raspberry pi, which is pretty slow.
+
+A microcontroller, like a pypico, would have a lot less compute. that's not to say that people haven't run ML models on microcontrollers -- but the idea of getting an LLM on a wasm runtime, plus this presumably large modular communication stack that supports IBC, HTTP, whatever it is -- that is not insubstantial. Running this on a macbook is totally doable, but running this on a cheap microcontroller -- there's limitations so I am skeptical.
+
+AI
+You raise valid concerns regarding the feasibility of running the Plurigrid nexus, the communication stack, and complex AI models like LLMs on resource-constrained devices like microcontrollers. Although it might be technically challenging to accommodate the full functionality on such devices, it is not necessarily impossible.
+
+There are ways to approach these limitations and enable Plurigrid to run on less powerful devices:
+
+Split functionality: Rather than running the full set of modules and capabilities on a single microcontroller, you could potentially distribute the workload across multiple devices or components, taking advantage of the mesh network.
+
+Optimized communication stack: You could develop a lightweight version of the communication stack specifically for these devices, offering support for a subset of protocols that are most relevant to their context and capabilities.
+
+Edge computing: Leverage the distributed nature of the Plurigrid network to perform more computationally intensive tasks, such as AI model inference, on more powerful edge devices. The microcontroller could be responsible for data collection and local communication while offloading the heavier computations to nearby nodes in the network.
+
+Model quantization and pruning: Utilize techniques like model quantization or pruning to make AI models like LMs smaller and more efficient, making them suitable for running on microcontrollers with limited resources.
+
+It is essential to recognize the trade-offs and limitations of working with constrained devices and adjust the system design accordingly. While it may not be feasible to run full-scale implementations of Plurigrid on microcontrollers, careful optimization and adaptation can enable successful deployment on a wide range of devices, including those with limited computational resources.
