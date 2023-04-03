@@ -168,8 +168,8 @@ add_component!(sys, hydro_gen)
 println(summary(sys))
 ```
 # art
-Configuration 0: Nexus Node Running on Off-Grid Battery Sharing Hardware (P2P)
 ```
+Configuration 0: Nexus Node Running on Off-Grid Battery Sharing Hardware (P2P)
 +---+       P2P
 | B |<---->Exchange+---+
 +---+       +---+     | B |
@@ -184,9 +184,9 @@ Configuration 0: Nexus Node Running on Off-Grid Battery Sharing Hardware (P2P)
 ```
 In Configuration 0, the Plurigrid Nexus node runs on off-grid battery and compute (RaspberryPi 4) sharing hardware, enabling users to communicate in a P2P network for sharing portable batteries and energy resources in rural communities or remote areas. This configuration creates greater resilience and adaptability to changing energy conditions and community needs while amplifying individual user's agency.
 
-Configuration 1: Residential Node
-```
 
+```
+Configuration 1: Residential Node
         +--------------+
         | Smart Meter  |
         +-------+------+
@@ -218,8 +218,8 @@ Configuration 2: Commercial Node
 ```
 This commercial node is connected to a building energy management system (BEMS) and various energy resources such as rooftop solar generation, energy storage systems, HVAC, lighting systems, and electric vehicle charging stations. This node is responsible for efficient energy management and participates in energy trading and demand-response programs with other nodes.
 
-Configuration 3: Data Center Node
 ```
+Configuration 3: Data Center Node
 +--------------------+
 | Data Center (HPC)  | <-----+ Cooling Systems
 +---------+----------+        + Backup Generators
@@ -268,7 +268,7 @@ Architectural Overview In this section, we delve into the core components of the
 
 2.4 Interoperability and Integration The Plurigrid Protocol emphasizes interoperability through seamless integration with existing technologies and protocols. The protocol incorporates IBC, HTTP, gRPC, and HPC systems, enabling efficient coordination among edge resources and integration with existing energy infrastructures, APIs, and standards.
 
-2.5 User Experience and Engagement To enhance user experience, Plurigrid Protocol leverages the power of technologies like ClojureScript and DataRabbit while integrating with wasmCloud's capability contracts and providers. The result is an engaging and interactive user experience that fosters efficient energy coordination and management.
+2.5 User Experience and Engagement To enhance user experience, Plurigrid does iterative adaptation of embodied gradualism. The result is an engaging and interactive user experience that fosters efficient energy coordination and management.
 
 2.6 Security and Privacy The Plurigrid Protocol prioritizes user security and privacy. Through WebAssembly sandboxing and security measures, the protocol provides a secure execution environment that isolates untrusted code from the rest of the system. Furthermore, user privacy and data usage choices are respected when sharing data across the network.
 
@@ -296,7 +296,7 @@ Reference: https://martin.kleppmann.com/papers/bft-crdt-papoc22.pdf
 
 References:
 
-https://twitter.com/penumbrazone https://arxiv.org/abs/2105.14232 https://www.notion.so/gakonst/3-The-ONE-early-stage-project-I-wouldn-t-sell-if-I-had-a-spot-6e76a6a188c944249073a7981db7317d 2.4 User Experience Enhancements By including an engaging UX via ClojureScript and DataRabbit, Plurigrid Protocol can offer a highly interactive and engaging user experience.
+https://twitter.com/penumbrazone https://arxiv.org/abs/2105.14232 https://www.notion.so/gakonst/3-The-ONE-early-stage-project-I-wouldn-t-sell-if-I-had-a-spot-6e76a6a188c944249073a7981db7317d 2.4 User Experience Enhancements By including an engaging UX via Digital Public Goods, Plurigrid Protocol can offer a highly interactive and engaging user experience.
 
 Flow-based prompting Integration with wasmCloud's capability contracts and providers Reference: https://clojurescript.org/
 
