@@ -2,10 +2,29 @@
 INVITATION: EACH TIME YOU PLAY AND IT MADE YOUR DAY BETTER OR MADE YOU SMILE,
 LEAVE THIS BETTER THAN YOU HAD FOUND IT, FOR WHEN WE ALL PLAY AGAIN. 🌳
 
-# getting started
-To begin an open game, `just play`.
-## CLI
-```
+# Welcome to Plurigrid Protocol! 🚀
+
+This README will guide you through the process of setting up your development environment and getting started with contributing to the Plurigrid Protocol. Our goal is to ensure a smooth onboarding experience, so you can quickly become an active member of our project.
+
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+  - [CLI](#cli)
+  - [Obsidian](#obsidian)
+- [Plurigrid Playbook](#plurigrid-playbook)
+- [Background Theory](#background-theory)
+- [Contributing](#contributing)
+- [Support and Community](#support-and-community)
+
+## Getting Started
+
+Before diving into Plurigrid Protocol, we recommend familiarizing yourself with the [background theory](#background-theory) and checking out our [playbook](#plurigrid-playbook) to have a better understanding of the project's principles and guidelines.
+
+## Installation
+### CLI
+Set up your development environment and start contributing.
+
+```bash
 curl -L https://nixos.org/nix/install | sh
 nix-env -iA just && just play
 ```
@@ -19,30 +38,29 @@ python scripts/http.py
 
 If you want to exit the shell environment and return to your original shell, you can simply type `exit` or press `Ctrl-D`.
 
-## Obsidian
-Prepare your pluralistic interface in Obsidian, simply use the appropriate template under `.playback`.
-
+### Obsidian
+First, follow the CLI steps and make sure `just play` correctly outputs `gm`.
 Then `just obsidian`.
 
-# playbook
+## Plurigrid Playbook
 Play / Coplay: the Plurigrid Way :rocket:
-## step 1: Begin Your Journey (gm -> gn)
+### step 1: Begin Your Journey (gm -> gn)
 
 Start your day with a "Good morning" message and share your goals. Close the loop before signing off by leaving a "Good night" message with a summary of your day.
 
-## step 2: Generate Proposals & Collaborate
+### step 2: Generate Proposals & Collaborate
 
 Leverage the OpenAgencies framework for brainstorming, collaborate using platforms operating on interoperable data formats, and any tool that complies with working on the data streams and in compliance with Digital Public Goods framework (for markdown, like Obsidian, GitHub, etc.) work; and most importantly contribute your improvements to the Plurigrid ontology via Pull Requests on an ongoing basis. The feedback loop at Plurigrid is continuous, and the ones rewarded are those playing next to the top.
 
-## step 3: Iterative & Adaptive Development
+### step 3: Iterative & Adaptive Development
 
 Monitor and fine-tune your progress, adapting as needed. Embrace a human-in-the-loop approach, learning from other team members and the groundbreaking AI founder concept.
 
-## step 4: Share Knowledge & Learn
+### step 4: Share Knowledge & Learn
 
 Reflect on your achievements, challenges, and learnings each day. Share your daily summaries to contribute to the collective growth of the Plurigrid team.
 
-## step 5: Close The Loop
+### step 5: Close The Loop
 
 Review your progress made during the session.
 Update the action items based on the session results.
@@ -51,12 +69,13 @@ Integrate any new frameworks or concepts that emerged during the session.
 Update the Plurigrid ontology by creating a Pull Request with your changes, ensuring continuity, and improvement throughout your work at Plurigrid Inc.
 By following the Play / Coplay framework, you'll efficiently collaborate and contribute to Plurigrid Inc. Fostering a robust, interconnected, and evolving system that can tackle the challenges of decentralization on a multi-planetary scale. Welcome aboard! :milky_way:
 
-# why
-# teleology
+## Background Theory
+In this concise review, we focus on the concept of autopoietic ergodicity in the context of Plurigrid systems, shedding light on its significance for broader developments.
 
-# theory
-## Autopoietic Ergodicity: A Foundation for Embodied Gradualism
-We delve into the concept of autopoietic ergodicity, which combines the principles of autopoiesis (self-maintenance) and ergodicity (time and ensemble average equivalence) in interoperable systems. This foundation allows for the gradual, adaptive development of Plurigrid of Plurigrids while maintaining the principles of embodied intelligence.
+### Autopoietic Ergodicity
+Autopoietic ergodicity encompasses the ability of Plurigrid systems to self-organize, adapt, and evolve in diverse and ever-changing environments. This concept is grounded in two core principles: autopoiesis, referring to the self-maintenance and self-regulation of a system, and ergodicity, which deals with the equivalence between time and ensemble averages in an interoperable system.
+
+In Plurigrid development, autopoietic ergodicity is crucial in capturing and understanding systems' dynamic interactions with their environments, allowing them to achieve long-term stability and maintain relevance as situations change over time. By ensuring that the learning and adaptation processes of Plurigrid systems align with the principles of autopoietic ergodicity, developers can create systems that continuously evolve and foster an environment in which many worlds can not only co-exist but thrive together.
 
 ### Open Games and Markov Category
 #### Play / Generative Channel
