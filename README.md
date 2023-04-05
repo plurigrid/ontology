@@ -14,7 +14,9 @@ Drawing inspiration from the principles of autopoietic ergodicity, Markov catego
 Embarking on this journey together, we are not only building a strong foundation for the Plurigrid Protocol but also embodying its core principles in the way we collaborate, learn, and grow. Join us in embracing the play-coplay process, and let's revolutionize the world of decentralized energy systems—one interaction at a time.
 
 # getting started
-To begin an open game, `just play`.
+
+To begin an open game, run `just play`.
+
 ## CLI
 ```
 curl -L https://nixos.org/nix/install | sh
@@ -30,10 +32,38 @@ python scripts/http.py
 
 If you want to exit the shell environment and return to your original shell, you can simply type `exit` or press `Ctrl-D`.
 
+
 ## Obsidian
-Prepare your pluralistic interface in Obsidian, simply use the appropriate template under `.playback`.
+To prepare your pluralistic interface in Obsidian, simply use the appropriate template under `.playback`.
 
 Then `just obsidian`.
+
+
+## Setting Up Obsidian and Plugins
+
+1. **Set up Obsidian**
+- Download and install Obsidian: https://obsidian.md/download
+- Open Obsidian and open this ontology folder as a vault.
+
+2. **Set up the Smart Connections Plugin**
+- Go to Settings (gear icon) > "Community plugins" > "Turn off Restricted Mode" Then, "Browse community plugins".
+- Search for "Smart Connections" and install the plugin.
+- Activate the Smart Connections plugin in the "Installed plugins" tab.
+- Configure the plugin to your preferences and start creating AI-powered note connections by following the plugin's documentation: https://github.com/mgmeyers/obsidian-smartconnections
+
+3. **Set Up Obsidian Git Plugin**
+- Install the Obsidian Git plugin following the steps for the previous section, but search for the "Obsidian Git" plugin.
+- Plugin documentation can be found here: https://publish.obsidian.md/git-doc/01+Start+here
+- Follow the installation and authentication steps from the documentation.
+- **Configure Obsidian Git settings**: Go to `Settings` > `Plugins Options` > `Obsidian Git`. Set the "Commit message" and "Remote repository URL", and adjust the "Automatically pull changes" and "Automatically push changes every X minutes" as needed. It is recommended to have at least an automatic pull cadence configured. 
+
+### Workflow with Obsidian Git
+
+- Before you begin, run the "Obsidian Git: Pull" command to make sure your workspace is up to date.
+- When you start your journey, create a new branch that is topical and focused. Use the "Obsidian Git: "
+
+
+
 
 ## playbook
 
@@ -53,7 +83,7 @@ Reflect on your achievements, challenges, and learnings each day. Share your dai
 
 #### Step 3: Keep Looping & Collaborate
 
-Leverage the [OpenAgency framework](https://www.alignmentforum.org/posts/5hApNw5f7uG8RXxGS/the-open-agency-model) for brainstorming in our work, collaborate using platforms operating on interoperable data formats, and using any tool that complies with working on the data streams and is in compliance with Digital Public Goods framework. As you progress, contribute your improvements to the Plurigrid ontology on an ongoing basis. The feedback loop at Plurigrid is continuous, and the ones rewarded are those playing next to the top.
+Leverage the [OpenAgency framework](https://www.alignmentforum.org/posts/5hApNw5f7uG8RXxGS/the-open-agency-model) for brainstorming in your work, collaborate using platforms operating on interoperable data formats, and using any tool that complies with working on the data streams and is in compliance with Digital Public Goods framework. As you progress, contribute your improvements to the Plurigrid ontology on an ongoing basis. The feedback loop at Plurigrid is continuous, and the ones rewarded are those playing next to the top.
 
 #### Step 4: Close The Loop
 
@@ -63,24 +93,6 @@ Plan upcoming tasks to maintain momentum.
 Integrate any new frameworks or concepts that emerged during the session.
 Update the Plurigrid ontology with any artifacts or outputs of your work by using the Obsidian git plugin.
 By following the Play / Coplay framework, you'll efficiently collaborate and contribute to Plurigrid Inc. Fostering a robust, interconnected, and evolving system that can tackle the challenges of decentralization on a multi-planetary scale. Welcome aboard! :milky_way:
-
-## Setting Up Obsidian and Plugins
-
-1. **Set up Obsidian**
-- Download and install Obsidian: https://obsidian.md/download
-- Open Obsidian and open this ontology folder as a vault.
-
-2. **Set up the Smart Connections Plugin**
-- Go to Settings (gear icon) > "Community plugins" > "Turn off Restricted Mode" Then, "Browse community plugins".
-- Search for "Smart Connections" and install the plugin.
-- Activate the Smart Connections plugin in the "Installed plugins" tab.
-- Configure the plugin to your preferences and start creating AI-powered note connections by following the plugin's documentation: https://github.com/mgmeyers/obsidian-smartconnections
-
-3. **Set Up Obsidian Git Plugin**
-- Install the Obsidian Git plugin following the steps for the previous section, but search for the "Obsidian Git" plugin.
-- Plugin documentation can be found here: https://publish.obsidian.md/git-doc/01+Start+here
-- Follow the installation and authentication steps from the documentation.
-
 
 # why are we doing this? (teleology)
 

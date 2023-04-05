@@ -1,0 +1,11 @@
+{
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true,
+  "useTab": false,
+  "tabSize": 2,
+  "spellcheck": false,
+  "livePreview": false,
+  "readableLineLength": false,
+  "defaultViewMode": "preview"
+}

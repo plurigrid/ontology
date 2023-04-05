@@ -1,0 +1,8 @@
+{
+  "accentColor": "#525252",
+  "theme": "moonstone",
+  "interfaceFontFamily": "Berkeley Mono,Georgia",
+  "monospaceFontFamily": "Berkeley Mono",
+  "baseFontSize": 20,
+  "showViewHeader": true
+}
