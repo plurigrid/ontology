@@ -38,7 +38,6 @@ To prepare your pluralistic interface in Obsidian, simply use the appropriate te
 
 Then `just obsidian`.
 
-
 ## Setting Up Obsidian and Plugins
 
 1. **Set up Obsidian**
@@ -55,12 +54,13 @@ Then `just obsidian`.
 - Install the Obsidian Git plugin following the steps for the previous section, but search for the "Obsidian Git" plugin.
 - Plugin documentation can be found here: https://publish.obsidian.md/git-doc/01+Start+here
 - Follow the installation and authentication steps from the documentation.
-- **Configure Obsidian Git settings**: Go to `Settings` > `Plugins Options` > `Obsidian Git`. Set the "Commit message" and "Remote repository URL", and adjust the "Automatically pull changes" and "Automatically push changes every X minutes" as needed. It is recommended to have at least an automatic pull cadence configured. 
+- **Configure Obsidian Git settings**: Go to `Settings` > `Plugins Options` > `Obsidian Git`. Set the "Automatically pull changes" setting to every 30 minutes.  
 
 ### Workflow with Obsidian Git
 
 - Before you begin, run the "Obsidian Git: Pull" command to make sure your workspace is up to date.
-- When you start your journey, create a new branch that is topical and focused. Use the "Obsidian Git: "
+- When you start your journey, create a new branch that is topical to the journey. Use the "Obsidian Git: Create new branch" command. 
+- When you are 
 
 
 
@@ -69,15 +69,15 @@ Then `just obsidian`.
 
 #### Step 1: Begin Your Journey (gm -> gn)
 
-Start your loop at the beginning of the day with a "M" and a prompt of your choice, and share your goals for your work.
+Start your loop at the beginning of the day with the agent -- send a "GM" and a prompt of your choice, and share your goals for your work.
 
-### Step 2: Iterative & Adaptive Development (Journey, Iterate, Compose)
+### Step 2: Iterative & Adaptive Development Loops (Journey, Iterate, Compose)
 
 Journey Loops (Your Work): Monitor and fine-tune your progress, adapting as needed. Embrace a human-in-the-loop approach, learning from other team members and the groundbreaking AI founder concept.
 
 Iterate Loops (Our Work): Collaborate with teammates to contribute and continuously improve Plurigrid's shared components and resources, as well as learn from others' experiences and findings. Use the Iterate Loops for tasks that are unfinished or ongoing, and seek feedback and support from your peers.
 
-Compose (WAGMI): As you complete tasks and make progress, integrate and combine your work with that of your teammates in the Compose stage. This fosters collective growth and supports the composition of our ontologies. Compose is for tasks that are essentially done, facilitating the integration and optimization of everyone's input.
+Compose (WAGMI): As you complete tasks and make progress, integrate and combine your work with that of your teammates in the Compose stage. This fosters collective growth and supports the composition of our ontologies. Compose is for tasks that are essentially done, facilitating the integration of everyone's output.
 
 Reflect on your achievements, challenges, and learnings each day. Share your daily summaries to contribute to the collective growth of the Plurigrid team. By embracing iterative development and adapting as needed, together, we grow stronger and more capable.
 
