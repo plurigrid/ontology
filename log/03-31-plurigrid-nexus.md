@@ -245,3 +245,30 @@ Edge computing: Leverage the distributed nature of the Plurigrid network to perf
 Model quantization and pruning: Utilize techniques like model quantization or pruning to make AI models like LMs smaller and more efficient, making them suitable for running on microcontrollers with limited resources.
 
 It is essential to recognize the trade-offs and limitations of working with constrained devices and adjust the system design accordingly. While it may not be feasible to run full-scale implementations of Plurigrid on microcontrollers, careful optimization and adaptation can enable successful deployment on a wide range of devices, including those with limited computational resources.
+
+
+**04-04**
+
+BR: A ladder of abstraction is a useful concept, it goes from lowest to highest. OSI levels is an abstraction. abstraction whose dimensionality is made all too evident with what WASI represents. Discuss how WASI and virtrualized OS requires a whole new geometry of execute layers.
+
+
+AI: The concept of a ladder of abstraction provides a helpful perspective when considering the various levels of complexity and abstraction within a system. Just as the OSI model presents seven layers of abstraction in network communication, the introduction of technologies like WASI (WebAssembly System Interface) and virtualized operating systems reshapes the geometry of execute layers in computing systems.
+
+WASI, as an abstract interface for WebAssembly, offers a security-focused, portable, and optimized API that enables WebAssembly programs to access system resources efficiently. Virtualized operating systems, on the other hand, allow for multiple instances of a guest operating system to run on top of a single host system, providing a more efficient and flexible execution environment.
+
+These technologies introduce new dimensions to the geometry of execute layers:
+
+1.  Separation of Concerns: WASI decouples the application-level code from the underlying platforms, while virtualization isolates separate guest operating systems from each other and the host. This separation of concerns allows different execute layers to evolve independently, reducing complexity and improving maintainability.
+    
+2.  Modularity: WASI's capability-based approach supports composable abstractions, allowing developers to use and reuse parts of the system in various contexts. Virtualized operating systems enable the quick provisioning and configuration of resources, which can lead to lighter weight, modular software design.
+    
+3.  Performance Optimization: WASI and WebAssembly provide near-native performance, with the WASI interface making it easier to optimize for the specific hardware and software environment. Virtualization allows for better resource allocation and utilization, reducing overhead and improving performance.
+    
+4.  Portability and Interoperability: Due to WASI's platform-agnostic API, WebAssembly programs can be executed across different devices and environments, promoting portability. Virtualization allows for a diverse mix of operating systems and applications to run on the same hardware, supporting interoperability.
+    
+5.  Multi-tenancy and Security: WASI's sandboxed environment protects system resources, reducing security risks. Virtualized operating systems enable multi-tenancy, where multiple users or applications can use shared resources securely and efficiently without interfering with each other.
+    
+6.  Dynamic Resource Management: Both WASI and virtualized OSes enable more dynamic and efficient resource management, allowing for more precise allocation and usage of system resources.
+    
+
+The geometry of execute layers evolves with technologies like WASI and virtualized operating systems, introducing new dimensions that promote separation of concerns, modularity, performance optimization, portability, interoperability, security, and dynamic resource management. As a result, developers gain the flexibility and tools to design and deploy applications that better meet the ever-changing demands of users and computing environments.
