@@ -1,7 +1,7 @@
 **/.obsidian/
 **/.vscode/
 **/.git/*
-**/.DS_Store/**
+.DS_Store
 
 # Ignore Smart Connections folder because embeddings file is large and updated frequently
 .smart-connections
