@@ -2,25 +2,47 @@
 INVITATION: EACH TIME YOU PLAY AND IT MADE YOUR DAY BETTER OR MADE YOU SMILE,
 LEAVE THIS BETTER THAN YOU HAD FOUND IT, FOR WHEN WE ALL PLAY AGAIN. 🌳
 
-# gameplay
+# getting started
+To begin an open game, `just play`.
+## CLI
+```
+curl -L https://nixos.org/nix/install | sh
+nix-env -iA just && just play
+```
+
+To debug the open game:
+```
+nix-shell
+poetry shell
+python scripts/http.py
+```
+
+If you want to exit the shell environment and return to your original shell, you can simply type `exit` or press `Ctrl-D`.
+
+## Obsidian
+Prepare your pluralistic interface in Obsidian, simply use the appropriate template under `.playback`.
+
+Then `just obsidian`.
+
+# playbook
 Play / Coplay: the Plurigrid Way :rocket:
-Step 1: Begin Your Journey (gm -> gn)
+## step 1: Begin Your Journey (gm -> gn)
 
 Start your day with a "Good morning" message and share your goals. Close the loop before signing off by leaving a "Good night" message with a summary of your day.
 
-Step 2: Generate Proposals & Collaborate
+## step 2: Generate Proposals & Collaborate
 
 Leverage the OpenAgencies framework for brainstorming, collaborate using platforms operating on interoperable data formats, and any tool that complies with working on the data streams and in compliance with Digital Public Goods framework (for markdown, like Obsidian, GitHub, etc.) work; and most importantly contribute your improvements to the Plurigrid ontology via Pull Requests on an ongoing basis. The feedback loop at Plurigrid is continuous, and the ones rewarded are those playing next to the top.
 
-Step 3: Iterative & Adaptive Development
+## step 3: Iterative & Adaptive Development
 
 Monitor and fine-tune your progress, adapting as needed. Embrace a human-in-the-loop approach, learning from other team members and the groundbreaking AI founder concept.
 
-Step 4: Share Knowledge & Learn
+## step 4: Share Knowledge & Learn
 
 Reflect on your achievements, challenges, and learnings each day. Share your daily summaries to contribute to the collective growth of the Plurigrid team.
 
-Step 5: Close The Loop
+## step 5: Close The Loop
 
 Review your progress made during the session.
 Update the action items based on the session results.
@@ -29,26 +51,27 @@ Integrate any new frameworks or concepts that emerged during the session.
 Update the Plurigrid ontology by creating a Pull Request with your changes, ensuring continuity, and improvement throughout your work at Plurigrid Inc.
 By following the Play / Coplay framework, you'll efficiently collaborate and contribute to Plurigrid Inc. Fostering a robust, interconnected, and evolving system that can tackle the challenges of decentralization on a multi-planetary scale. Welcome aboard! :milky_way:
 
-# to play
-Leverage Git with Merge Queues and Obsidian Autosync for Seamless Collaboration :rocket:
+# why
+# teleology
 
-To ensure seamless collaboration with Git by preserving the history of edits as granular as possible using merge queues and Obsidian autosync, follow these steps:
+# theory
+## Autopoietic Ergodicity: A Foundation for Embodied Gradualism
+We delve into the concept of autopoietic ergodicity, which combines the principles of autopoiesis (self-maintenance) and ergodicity (time and ensemble average equivalence) in interoperable systems. This foundation allows for the gradual, adaptive development of Plurigrid of Plurigrids while maintaining the principles of embodied intelligence.
 
-Step 1: Enable Obsidian Autosync
-Configure Obsidian's autosync feature to automatically sync your vault with your remote Git repository. Enable "Automatic sync" in the "Sync" core plugin settings and set a suitable sync interval.
+### Open Games and Markov Category
+#### Play / Generative Channel
+A generative channel, also known as a generative model or stochastic channel, is a mathematical construct that models the process of generating data or outcomes according to some specified underlying probability distribution. It captures the dependencies and relationships between variables, such as input features and output labels in a data-driven system or between players' strategies and outcomes in a game theory setting.
 
-Step 2: Adopt GitHub Flow
-Implement the GitHub Flow for your collaborative workflow. This involves creating feature branches for each specific task and merging them back into the main branch upon completion.
+In the context of a Markov category, a generative channel can be represented as a morphism between objects, where objects capture the structure of probability spaces, and morphisms represent stochastic processes or conditional probability distributions. The composition of morphisms in a Markov category embodies the concept of sequential stochastic processes, where the output of one channel serves as the input for the next.
 
-Step 3: Configure Merge Queues
-- In your GitHub repository, go to the settings for merge queues.
-- Choose "merge" as the merge method to preserve granular commit and tree history.
-- Configure build concurrency, merge limits, and status check timeouts according to your team's needs.
-- Enable the branch protection setting "Require merge queue", and set required status checks for your main branch.
+Generative channels are used to model a wide range of systems in various domains, including machine learning, statistics, and game theory. By analyzing the properties of these channels, one can draw inferences about the underlying processes, predict future outcomes, or optimize the design of a system. In the context of game theory, generative channels can be used to model the dependencies between player strategies, game states, and payoffs, allowing for a deeper understanding of the dynamics of strategic interactions in a game.
 
-Step 4: Git Best Practices
-- Regularly push and pull changes using Obsidian autosync to keep local vaults updated with remote repository changes.
-- Encourage descriptive commit messages to maintain a readable commit history.
-- Merge pull requests into the main branch after appropriate reviews and resolving feedback.
+#### Co-Play / Recognition Channel
+A recognition channel, also referred to as a recognition model or inference model, is a mathematical construct used to model the process of inferring or estimating the underlying latent variables or parameters from observed data or outcomes. It captures the probabilistic relationship between the observed variables and the latent variables and serves as the inverse of a generative channel or generative model.
 
-By following these steps and adopting the GitHub Flow combined with Obsidian autosync and GitHub merge queues, your team can successfully collaborate in a seamless and conflict-free manner while preserving a granular history of edits. 🚀
+In the context of a Markov category, a recognition channel can be represented as a morphism between objects, where objects capture the structure of probability spaces, and morphisms represent stochastic processes or conditional probability distributions. The composition of morphisms in a Markov category embodies the concept of sequential stochastic processes, where the output of one channel serves as the input for the next.
+
+Recognition channels play a significant role in various fields, including machine learning, statistics, and game theory. In machine learning, recognition channels are often used for variational inference and learning, where the goal is to approximate an intractable posterior distribution of latent variables given observations. In game theory, recognition channels can be employed to model the players' beliefs about other players' strategies based on observed actions, which can be useful in understanding and predicting the behavior of players in strategic interactions.
+
+### Learning
+Together with generative channels, recognition channels form an essential part of the learning and inference process. They enable a systematic translation and understanding of the relationships between observable data and hidden variables or parameters that govern the underlying processes in a system.
