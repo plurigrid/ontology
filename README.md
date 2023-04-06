@@ -1,9 +1,9 @@
-# ontology
+# Ontology
 
 INVITATION: EACH TIME YOU PLAY AND IT MADE YOUR DAY BETTER OR MADE YOU SMILE,
 LEAVE THIS BETTER THAN YOU HAD FOUND IT, FOR WHEN WE ALL PLAY AGAIN. 🌳
 
-# introduction
+# Introduction
 
 Welcome to the Plurigrid Protocol, where our mission is to create a decentralized energy platform by harnessing the power of collective intelligence. In order to achieve this goal, it is vital that all players in the network follow the play-coplay process. This process not only functions as a blueprint for our collaborative efforts but also mirrors the autopoietic nature of the plurigrid protocol itself.
 
@@ -13,12 +13,29 @@ Drawing inspiration from the principles of autopoietic ergodicity, Markov catego
 
 Embarking on this journey together, we are not only building a strong foundation for the Plurigrid Protocol but also embodying its core principles in the way we collaborate, learn, and grow. Join us in embracing the play-coplay process, and let's revolutionize the world of decentralized energy systems—one interaction at a time.
 
-# getting started
+# Welcome to Plurigrid Protocol! 🚀
 
-To begin an open game, run `just play`.
+This README will guide you through the process of setting up your development environment and getting started with contributing to the Plurigrid Protocol. Our goal is to ensure a smooth onboarding experience, so you can quickly become an active member of our project.
 
-## CLI
-```
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+  - [CLI](#cli)
+  - [Obsidian](#obsidian)
+- [Plurigrid Playbook](#plurigrid-playbook)
+- [Background Theory](#background-theory)
+- [Contributing](#contributing)
+- [Support and Community](#support-and-community)
+
+## Getting Started
+
+Before diving into Plurigrid Protocol, we recommend familiarizing yourself with the [background theory](#background-theory) and checking out our [playbook](#plurigrid-playbook) to have a better understanding of the project's principles and guidelines.
+
+## Installation
+### CLI
+Set up your development environment and start contributing.
+
+```bash
 curl -L https://nixos.org/nix/install | sh
 nix-env -iA just && just play
 ```
@@ -36,7 +53,9 @@ If you want to exit the shell environment and return to your original shell, you
 ## Obsidian
 To prepare your pluralistic interface in Obsidian, simply use the appropriate template under `.playback`.
 
-Then `just obsidian`.
+Then run `just obsidian`.
+
+See the obsidian installation instructions below for more details.
 
 ## Setting Up Obsidian and Plugins
 
@@ -49,6 +68,7 @@ Then `just obsidian`.
 - Search for "Smart Connections" and install the plugin.
 - Activate the Smart Connections plugin in the "Installed plugins" tab.
 - Configure the plugin to your preferences and start creating AI-powered note connections by following the plugin's documentation: https://github.com/mgmeyers/obsidian-smartconnections
+- Make sure you set your Open AI API key for GPT-4 in the plugin settings.
 
 3. **Set Up Obsidian Git Plugin**
 - Install the Obsidian Git plugin following the steps for the previous section, but search for the "Obsidian Git" plugin.
@@ -56,17 +76,18 @@ Then `just obsidian`.
 - Follow the installation and authentication steps from the documentation.
 - **Configure Obsidian Git settings**: Go to `Settings` > `Plugins Options` > `Obsidian Git` to configure your settings. For example settings, see `.config/data.json` in this repository and copy it over to `.obsidian/plugins/obsidian-git/data.json`.
 
-### Workflow with Obsidian Git
+### Workflow with Obsidian Git and Smart Connections
 
 - Before you begin, run the "Obsidian Git: Pull" command to make sure your workspace is up to date.
 - When you start your journey, create a new branch that is topical to the journey. Use the "Obsidian Git: Create new branch" command.
 - With the default settings, your work should automatically be pushed and merged every 60 minutes. Your repository will also be automatically pulled on the same cadence.
+- As you contribute to ontology, you can use the "Smart Connections: Smart Chat conversation" command to ask an agent questions over your data. Use the ontology agent as a guide to help your personal loops.
 
-## playbook
+## Playbook
 
 #### Step 1: Begin Your Journey (gm -> gn)
 
-Start your loop at the beginning of the day with the agent -- send a "GM" and a prompt of your choice, and share your goals for your work.
+Start your loop at the beginning of the day with the agent -- send a "GM" and a prompt of your choice, and share your goals for your work. This should be done in chatorg to facilitate bidirectional communication.
 
 ### Step 2: Iterative & Adaptive Development Loops (Journey, Iterate, Compose)
 
@@ -74,7 +95,7 @@ Journey Loops (Your Work): Monitor and fine-tune your progress, adapting as need
 
 Iterate Loops (Our Work): Collaborate with teammates to contribute and continuously improve Plurigrid's shared components and resources, as well as learn from others' experiences and findings. Use the Iterate Loops for tasks that are unfinished or ongoing, and seek feedback and support from your peers.
 
-Compose (WAGMI): As you complete tasks and make progress, integrate and combine your work with that of your teammates in the Compose stage. This fosters collective growth and supports the composition of our ontologies. Compose is for tasks that are essentially done, facilitating the integration of everyone's output.
+Compose Loops (WAGMI): As you complete tasks and make progress, integrate and combine your work with that of your teammates in the Compose stage. This fosters collective growth and supports the composition of our ontologies. Compose is for tasks that are essentially done, facilitating the integration of everyone's output.
 
 Reflect on your achievements, challenges, and learnings each day. Share your daily summaries to contribute to the collective growth of the Plurigrid team. By embracing iterative development and adapting as needed, together, we grow stronger and more capable.
 
@@ -84,7 +105,7 @@ Leverage the [OpenAgency framework](https://www.alignmentforum.org/posts/5hApNw5
 
 #### Step 4: Close The Loop
 
-Review your progress made during the session.
+At the end of the day, review your progress made during the session.
 Update the action items based on the session results.
 Plan upcoming tasks to maintain momentum.
 Integrate any new frameworks or concepts that emerged during the session.
