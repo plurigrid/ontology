@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "9151188acf67050d",
+    "type": "split",
+    "children": [
+      {
+        "id": "72f5d3460d74b0f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b62da1528d5c708f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "plurigrid/ontology/log/2023-04-03-plurigrid.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5b1ac3836a19098f",
+    "type": "split",
+    "children": [
+      {
+        "id": "217e21fa0119d56e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1b3fb79ee16731f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "74c2ef623b915df2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c15f48f5767a47b1",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "78e5f9535183d6af",
+    "type": "split",
+    "children": [
+      {
+        "id": "829ea321baed34e3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e3ad9fa0246887b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "plurigrid/ontology/log/2023-04-03-plurigrid.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7347b4e25299e409",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "plurigrid/ontology/log/2023-04-03-plurigrid.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3b597a6c86b17cf5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5ca044d85e319de1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "plurigrid/ontology/log/2023-04-03-plurigrid.md"
+              }
+            }
+          },
+          {
+            "id": "7f237cc6f8dc074b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2023-04-05.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "0678065bd3903236",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "83620dcde8f0f9e8",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-chat-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 690.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "random-note:Open random note": false,
+      "publish:Publish changes": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b62da1528d5c708f",
+  "lastOpenFiles": [
+    "plurigrid/ontology/log/2023-04-03-scale.md",
+    "plurigrid/ontology/paper.md",
+    "2023-04-05.md",
+    "2023-04-04.md",
+    "plurigrid/ontology/n-1/journal/janita/building/agent 2.0 - first iteration.md",
+    "plurigrid/ontology/n-1/journal/janita/building/Neighborhoods and coalitions - a simulation.md",
+    "plurigrid/ontology/n-1/journal/janita/building/LLMs and Agents 2.0.md",
+    "plurigrid/ontology/n-1/journal/lucas/lucas.md",
+    "plurigrid/ontology/n-1/journal/janita/transactive energy.md",
+    "plurigrid/ontology/n-1/journal/janita/the unit commitment problem.md",
+    "plurigrid/ontology/n-1/journal/janita/plurigrid similar companies.md",
+    "plurigrid/ontology/n-1/journal/janita/plurigrid reading notes.md",
+    "plurigrid/ontology/n-1/journal/janita/plurigrid papers patterns.md",
+    "plurigrid/ontology/n-1/journal/janita/plurigrid digest 02-09.md",
+    "plurigrid/ontology/n-1/journal/janita/plurigrid 04-02 - a success case.md",
+    "plurigrid/ontology/n-1/journal/janita/overview of proposed economic mechanisms for energy grid coordination.md",
+    "plurigrid/ontology/n-1/journal/janita/open games with agency.md",
+    "plurigrid/ontology/n-1/journal/janita/functional architectures systems engineering.md",
+    "plurigrid/ontology/n-1/journal/janita/energy futures and derivatives.md",
+    "plurigrid/ontology/n-1/journal/janita/economics for the future - beyond the superorganism.md",
+    "plurigrid/ontology/n-1/journal/janita/distributed energy trading and scheduling with multiagent reinforcement learning.md",
+    "plurigrid/ontology/n-1/journal/janita/coordination of resources at the edge of the electricity grid.md",
+    "plurigrid/ontology/n-1/journal/janita/comparative analysis of auction mechansims for p2p energy markets.md",
+    "plurigrid/ontology/n-1/journal/janita/building",
+    "plurigrid/ontology/n-1/journal/janita/blockchain-based decentralized virtual power plants of small prosumers.md",
+    "plurigrid/ontology/n-1/journal/janita/bi-directional mutual energy trade.md",
+    "plurigrid/ontology/n-1/journal/janita/another barton's thesis description.md",
+    "plurigrid/ontology/n-1/journal/janita/agency-zine.pdf",
+    "plurigrid/ontology/n-1/journal/janita/OODA-loop.png",
+    "plurigrid/ontology/n-1/assets/css/style.scss",
+    "plurigrid/ontology/n-1/journal/lucas",
+    "plurigrid/ontology/n-1/journal/janita",
+    "plurigrid/ontology/n-1/journal/colten",
+    "plurigrid/ontology/n-1/journal/aja",
+    "plurigrid/ontology/n-1/journal/benjamin",
+    "plurigrid/ontology/n-1/journal/barton",
+    "plurigrid/ontology/n-1/journal/andy",
+    "plurigrid/ontology/n-1/attachments/foam-icon.png",
+    "Untitled.canvas",
+    "Untitled 1.canvas"
+  ]
+}

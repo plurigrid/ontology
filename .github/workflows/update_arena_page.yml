@@ -1,0 +1,35 @@
+name: Deploys updated arena rendering to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install Python dependencies
+      run: |
+        pip install requests beautifulsoup4 html2text
+
+    - name: Fetch and render page
+      env:
+        PAGE_URL: "http://example.com/plurigrid_play_coplay.html"  # Replace this with the URL of the page you want to fetch and render
+      run: |
+        python ./.github/workflows/fetch_page.py > ./plurigrid_play_coplay.md
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
