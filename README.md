@@ -54,16 +54,13 @@ Then `just obsidian`.
 - Install the Obsidian Git plugin following the steps for the previous section, but search for the "Obsidian Git" plugin.
 - Plugin documentation can be found here: https://publish.obsidian.md/git-doc/01+Start+here
 - Follow the installation and authentication steps from the documentation.
-- **Configure Obsidian Git settings**: Go to `Settings` > `Plugins Options` > `Obsidian Git`. Set the "Automatically pull changes" setting to every 30 minutes.  
+- **Configure Obsidian Git settings**: Go to `Settings` > `Plugins Options` > `Obsidian Git` to configure your settings. For example settings, see `.config/data.json` in this repository and copy it over to `.obsidian/plugins/obsidian-git/data.json`.
 
 ### Workflow with Obsidian Git
 
 - Before you begin, run the "Obsidian Git: Pull" command to make sure your workspace is up to date.
-- When you start your journey, create a new branch that is topical to the journey. Use the "Obsidian Git: Create new branch" command. 
-- When you are 
-
-
-
+- When you start your journey, create a new branch that is topical to the journey. Use the "Obsidian Git: Create new branch" command.
+- With the default settings, your work should automatically be pushed and merged every 60 minutes. Your repository will also be automatically pulled on the same cadence.
 
 ## playbook
 

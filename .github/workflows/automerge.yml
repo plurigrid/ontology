@@ -1,0 +1,45 @@
+name: Auto Merge PR
+
+on: push
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Create PR
+        id: create_pr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'Automated PR on push'
+          title: 'Automated PR on push'
+          body: 'This PR was automatically created upon push. It will be auto-merged shortly.'
+          branch: 'automated-pr-branch'
+          base: 'main'
+          labels: 'auto-merge'
+
+  auto_merge:
+    needs: create_pr
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Auto merge PR
+        uses: pascalgn/automerge-action@v0.14.2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          merge-labels: 'auto-merge'
+          merge-method: 'squash'
