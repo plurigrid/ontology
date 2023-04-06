@@ -112,9 +112,8 @@ Integrate any new frameworks or concepts that emerged during the session.
 Update the Plurigrid ontology with any artifacts or outputs of your work by using the Obsidian git plugin.
 By following the Play / Coplay framework, you'll efficiently collaborate and contribute to Plurigrid Inc. Fostering a robust, interconnected, and evolving system that can tackle the challenges of decentralization on a multi-planetary scale. Welcome aboard! :milky_way:
 
-# why are we doing this? (teleology)
+# Background Theory
 
-# theory
 ## Autopoietic Ergodicity: A Foundation for Embodied Gradualism
 Autopoietic ergodicity encompasses the ability of Plurigrid systems to self-organize, adapt, and evolve in diverse and ever-changing environments. This concept is grounded in two core principles: autopoiesis, referring to the self-maintenance and self-regulation of a system, and ergodicity, which deals with the equivalence between time and ensemble averages in an interoperable system.
 
