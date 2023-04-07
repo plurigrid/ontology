@@ -11,8 +11,8 @@ optimize and rebalance computation in this mesh computation layer 
 **how will the nodes interact with the chain?** 
 
 -   the chain is *emergent* 
--   all the nodes, at any time, can start their own chain for the purpose of a transaction, and then spin down and *dump* to the availability layer
--   for now though, we can work with an existing chain like neutron
+-   all the nodes, at any time, can start their own chain for the purpose of a transaction, and then spin down 
+-   for now though, we can work with an existing cosmwasm chain like neutron 
 
 **more questions**
 
@@ -23,6 +23,7 @@ optimize and rebalance computation in this mesh computation layer 
 - Which language models will actually be able to run on the node w.r.t. resource constraints?
 - If a microworld is a set of strategy profiles, what if you need to swap out the microworld that is running on the node? (it might help to walk through several different explicit microworld scenarios)
 - how will formal assurances come into play? 
+- tell me more about byzantine fault tolerant CRDTs and how they fit in to the vision 
 - How many communication standards will a node run?
 - How will microworlds be formally verified?
 - What software constitutes a microworld? is there more than just an LLM?
