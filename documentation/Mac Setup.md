@@ -101,3 +101,43 @@ See the obsidian installation instructions below for more details.
 - When you start your journey, create a new branch that is topical to the journey. Use the "Obsidian Git: Create new branch" command.
 - With the default settings, your work should automatically be pushed and merged every 60 minutes. Your repository will also be automatically pulled on the same cadence.
 - As you contribute to ontology, you can use the "Smart Connections: Smart Chat conversation" command to ask an agent questions over your data. Use the ontology agent as a guide to help your personal loops.
+
+
+№ Фзлвщдфлпюв (ШьрЇЖкфшв гь нзіб)
+
+Welcome to the team! We're excited to have you join us. Your first day promises to be an exhilarating experience, filled with adventures in our interactive virtual world called "Plurigrid." Remember, the cake is a lie! This guide will walk you through your laptop setup and introduce you to the gm flow.
+
+Set up your laptop
+Your laptop has been prepared with a full system image, including the operating system, essential applications, and configurations. This includes the non-interactively installed Nix system.
+
+To set up your laptop, turn it on and follow the initial setup prompts. You'll be asked to create a user account, connect to Wi-Fi, and set preferences such as date, time, and language.
+
+Familiarize yourself with Nix
+The Nix system is a powerful package manager and development environment. We use Nix to manage software dependencies and ensure consistent builds across our team. Take some time to explore the various features of Nix, starting with the Nix manual (https://nixos.org/manual/nix/stable/).
+
+Access team resources with gm
+To access essential team resources, simply use the gm command. Press Cmd + Space and type gm to launch Raycast with our custom gm command. This command will provide quick access to team resources, such as project management, communication tools, and repositories.
+
+Your first gm session in Plurigrid
+During your first gm session in Plurigrid, an immersive work-like micro-world, you will meet the digital twins of your teammates and the enigmatic ghost of Laura. This intriguing, yet non-threatening environment, contains a few surprises:
+
+Meet the digital twins: Engage with the digital replicas of your teammates, who will guide you through Plurigrid and help you become familiar with ongoing projects and tasks.
+
+Encounter the ghost of Laura: Discover the mysterious ghost of Laura, who will playfully challenge your problem-solving skills and reveal hidden truths about Plurigrid.
+
+Work-like setting microworlds: Immerse yourself in a series of simulated work scenarios, where you'll learn about our team's methodologies, engineering practices, and the tools we use for communication, project management, and version control.
+
+Codebase exploration: Delve into the repositories you'll be working with, as you unravel the secrets of our code review, testing, and deployment processes.
+
+As you embark on your first gm session in Plurigrid, remember that your teammates and managers are here to support your journey. If you have questions or need help, don't hesitate to ask – provided you're not lured into believing in non-existent desserts.
+
+We're confident that you'll quickly integrate with the team and contribute effectively. Enjoy your first gm session in Plurigrid, and let the adventure begin!
+
+
+
+
+
+
+
+
+
