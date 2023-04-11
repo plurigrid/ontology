@@ -3,6 +3,35 @@
 INVITATION: EACH TIME YOU PLAY AND IT MADE YOUR DAY BETTER OR MADE YOU SMILE,
 LEAVE THIS BETTER THAN YOU HAD FOUND IT, FOR WHEN WE ALL PLAY AGAIN. 🌳
 
+# Playbook 😏
+
+#### Step 1: Begin Your Journey (gm -> gn)
+
+Start your loop at the beginning of the day with the agent -- send a "GM" and a prompt of your choice, and share your goals for your work. This should be done in chatorg to facilitate bidirectional communication.
+
+### Step 2: Iterative & Adaptive Development Loops (Journey, Iterate, Compose)
+
+Journey Loops (Your Work): Monitor and fine-tune your progress, adapting as needed. Embrace a human-in-the-loop approach, learning from other team members and the groundbreaking AI founder concept.
+
+Iterate Loops (Our Work): Collaborate with teammates to contribute and continuously improve Plurigrid's shared components and resources, as well as learn from others' experiences and findings. Use the Iterate Loops for tasks that are unfinished or ongoing, and seek feedback and support from your peers.
+
+Compose Loops (WAGMI): As you complete tasks and make progress, integrate and combine your work with that of your teammates in the Compose stage. This fosters collective growth and supports the composition of our ontologies. Compose is for tasks that are essentially done, facilitating the integration of everyone's output.
+
+Reflect on your achievements, challenges, and learnings each day. Share your daily summaries to contribute to the collective growth of the Plurigrid team. By embracing iterative development and adapting as needed, together, we grow stronger and more capable.
+
+#### Step 3: Keep Looping & Collaborate
+
+Leverage the [OpenAgency framework](https://www.alignmentforum.org/posts/5hApNw5f7uG8RXxGS/the-open-agency-model) for brainstorming in your work, collaborate using platforms operating on interoperable data formats, and using any tool that complies with working on the data streams and is in compliance with Digital Public Goods framework. As you progress, contribute your improvements to the Plurigrid ontology on an ongoing basis. The feedback loop at Plurigrid is continuous, and the ones rewarded are those playing next to the top.
+
+#### Step 4: Close The Loop
+
+At the end of the day, review your progress made during the session.
+Update the action items based on the session results.
+Plan upcoming tasks to maintain momentum.
+Integrate any new frameworks or concepts that emerged during the session.
+Update the Plurigrid ontology with any artifacts or outputs of your work by using the Obsidian git plugin.
+By following the Play / Coplay framework, you'll efficiently collaborate and contribute to Plurigrid Inc. Fostering a robust, interconnected, and evolving system that can tackle the challenges of decentralization on a multi-planetary scale. Welcome aboard! :milky_way:
+
 # Introduction
 
 Welcome to the Plurigrid Protocol, where our mission is to create a decentralized energy platform by harnessing the power of collective intelligence. In order to achieve this goal, it is vital that all players in the network follow the play-coplay process. This process not only functions as a blueprint for our collaborative efforts but also mirrors the autopoietic nature of the plurigrid protocol itself.
@@ -82,35 +111,6 @@ See the obsidian installation instructions below for more details.
 - When you start your journey, create a new branch that is topical to the journey. Use the "Obsidian Git: Create new branch" command.
 - With the default settings, your work should automatically be pushed and merged every 60 minutes. Your repository will also be automatically pulled on the same cadence.
 - As you contribute to ontology, you can use the "Smart Connections: Smart Chat conversation" command to ask an agent questions over your data. Use the ontology agent as a guide to help your personal loops.
-
-## Playbook
-
-#### Step 1: Begin Your Journey (gm -> gn)
-
-Start your loop at the beginning of the day with the agent -- send a "GM" and a prompt of your choice, and share your goals for your work. This should be done in chatorg to facilitate bidirectional communication.
-
-### Step 2: Iterative & Adaptive Development Loops (Journey, Iterate, Compose)
-
-Journey Loops (Your Work): Monitor and fine-tune your progress, adapting as needed. Embrace a human-in-the-loop approach, learning from other team members and the groundbreaking AI founder concept.
-
-Iterate Loops (Our Work): Collaborate with teammates to contribute and continuously improve Plurigrid's shared components and resources, as well as learn from others' experiences and findings. Use the Iterate Loops for tasks that are unfinished or ongoing, and seek feedback and support from your peers.
-
-Compose Loops (WAGMI): As you complete tasks and make progress, integrate and combine your work with that of your teammates in the Compose stage. This fosters collective growth and supports the composition of our ontologies. Compose is for tasks that are essentially done, facilitating the integration of everyone's output.
-
-Reflect on your achievements, challenges, and learnings each day. Share your daily summaries to contribute to the collective growth of the Plurigrid team. By embracing iterative development and adapting as needed, together, we grow stronger and more capable.
-
-#### Step 3: Keep Looping & Collaborate
-
-Leverage the [OpenAgency framework](https://www.alignmentforum.org/posts/5hApNw5f7uG8RXxGS/the-open-agency-model) for brainstorming in your work, collaborate using platforms operating on interoperable data formats, and using any tool that complies with working on the data streams and is in compliance with Digital Public Goods framework. As you progress, contribute your improvements to the Plurigrid ontology on an ongoing basis. The feedback loop at Plurigrid is continuous, and the ones rewarded are those playing next to the top.
-
-#### Step 4: Close The Loop
-
-At the end of the day, review your progress made during the session.
-Update the action items based on the session results.
-Plan upcoming tasks to maintain momentum.
-Integrate any new frameworks or concepts that emerged during the session.
-Update the Plurigrid ontology with any artifacts or outputs of your work by using the Obsidian git plugin.
-By following the Play / Coplay framework, you'll efficiently collaborate and contribute to Plurigrid Inc. Fostering a robust, interconnected, and evolving system that can tackle the challenges of decentralization on a multi-planetary scale. Welcome aboard! :milky_way:
 
 # Background Theory
 
