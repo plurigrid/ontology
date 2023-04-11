@@ -5,7 +5,7 @@ LEAVE THIS BETTER THAN YOU HAD FOUND IT, FOR WHEN WE ALL PLAY AGAIN. 🌳
 
 # Playbook 😏
 
-#### Step 1: Begin Your Journey (gm -> gn)
+### Step 1: Begin Your Journey (gm -> gn)
 
 Start your loop at the beginning of the day with the agent -- send a "GM" and a prompt of your choice, and share your goals for your work. This should be done in chatorg to facilitate bidirectional communication.
 
