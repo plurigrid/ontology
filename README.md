@@ -7,7 +7,7 @@ LEAVE THIS BETTER THAN YOU HAD FOUND IT, FOR WHEN WE ALL PLAY AGAIN. 🌳
 
 ### Step 1: Begin Your Journey (gm -> gn)
 
-Start your loop at the beginning of the day with the agent -- send a "GM" and one of our preset prompts to iterate on an idea whose results you then compose, and share your goals for your work. This should be done in chatorg to facilitate bidirectional communication.
+Start your loop at the beginning of the day with the agent -- send a "GM" and one of our preset prompts to iterate on an idea whose results you then compose, and share your goals for your work. This should be done in https://plurigrid.game **open game*** to facilitate bidirectional communication.
 
 ### Step 2: Iterative & Adaptive Development Loops (Journey, Iterate, Compose)
 
