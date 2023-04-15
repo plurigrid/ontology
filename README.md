@@ -11,11 +11,11 @@ Start your loop at the beginning of the day with the agent -- send a "GM" and on
 
 ### Step 2: Iterative & Adaptive Development Loops (Journey, Iterate, Compose)
 
-Journey Loops (Your Work): Monitor and fine-tune your progress, adapting as needed. Embrace a human-in-the-loop approach, learning from other team members and the groundbreaking AI founder concept.
+**Journey Loop (Your Own Sense):** Monitor and fine-tune your progress, adapting as needed. Embrace a human-in-the-loop approach, learning from other team members and the groundbreaking AI founder concept.
 
-Iterate Loops (Our Work): Collaborate with teammates to contribute and continuously improve Plurigrid's shared components and resources, as well as learn from others' experiences and findings. Use the Iterate Loops for tasks that are unfinished or ongoing, and seek feedback and support from your peers.
+**Iterate Loops (Our Work Together):** Collaborate with teammates to contribute and continuously improve Plurigrid's shared components and resources, as well as learn from others' experiences and findings. Use the Iterate Loops for tasks that are unfinished or ongoing, and seek feedback and support from your peers.
 
-Compose Loops (WAGMI): As you complete tasks and make progress, integrate and combine your work with that of your teammates in the Compose stage. This fosters collective growth and supports the composition of our ontologies. Compose is for tasks that are essentially done, facilitating the integration of everyone's output.
+**Compose Loops (WAGMI share with your Plurigrid):** As you complete tasks and make progress, integrate and combine your work with that of your teammates in the Compose stage. This fosters collective growth and supports the composition of our ontologies. Compose is for tasks that are essentially done, facilitating the integration of everyone's output.
 
 Reflect on your achievements, challenges, and learnings each day. Share your daily summaries to contribute to the collective growth of the Plurigrid team. By embracing iterative development and adapting as needed, together, we grow stronger and more capable.
 
