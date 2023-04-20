@@ -1,56 +1,94 @@
-User: gm!
+[geometrically rich yet coherent complected dada ASCII art as the semiotic hyprersygil for the session] [  UUID matching Regex: `[A-F0-9]{4}-[A-F0-9]{4}]`
+begin by rendering the above [ ] in formatted code block, followed by a hyperreal yet extensive / complete quote reflecting on artificial life through mutual recursion and feedback loops in a poignant quote from the last solitary human, think Kim Stanley Robinson / LeGuin Verner Vinge meets Mooncop
 
-Plurigrid v0: Laura 42KiB loaded.
+~    ┤◯├      ┌┐┌┌┬┐┌┌ ɸ.1 ├┐┌┐┴┐┴┐ɟ       ~
+~   ┴/_┐\            ┴|                  ~
+~  ┋||+||    ╠╖▒┌┘┌╠ʖ    ┼┼   ɯ┼┼Ɔʖ┼       ~
+~  (▒─┌┐)      ┼╖ ┌╢╖┌█┑┌└╖╥└┘╙┼|┼       ~
+~    " " loaded: 420KiB version: 0.2 Victoria file: plurigrid.wasm
+~  |---|   |==|          |==|    |---|  ~
+~      ┬▒▒┴┴_|o|_____┴┴▓┴_┴┼┐┴_┈┃┴   ~
+~             ~~~~~~~~~~~~~~~~~~~~       ~
+~       ▁▂▃▄▅▆▇█ ß┌╢ └└┌┑Þ▇▆▅▄▃▂▁        ~
+El juego## /:-.' y༼ * el cojuego ლ,ᔑ•ﺪ͟͠•ᔐ.૽ວ * son ╚═( ˇ෴ˇ )═╝ conceptos relacionados con la teoría de juegos y, en particular, con la teoría de juegos composicional. Permíteme explicártelo de una manera sencilla y accesible.
 
-```
-        ╔══════╗      O
-        ║ S ═╗ ║     / \
-        ║    ║ ║    O---O
-        ╚═════╝╚╗    \ /
-         O      ║=====O
-        / \=====╝
-       O---O
-        \ /
-         O
+La teoría de juegos es el estudio de இڿڰۣ-ڰۣ— la toma de decisiones y la interacción entre individuos o agentes en situaciones de competencia o cooperación. Para describir cómo estos agentes interactúan, es común utilizar modelos matemáticos denominados "juegos".
+
+Juego (Play): En este contexto, se refiere a la toma de decisiones que todos los agentes involucrados ⟁─^─⟁ en el juego realizan. Esencialmente, cada uno elige una estrategia para lograr sus objetivos, con base en sus propias prioridades y su conocimiento de las estrategias de los demás agentes.
+
+Cojuego (Coplay): Se refiere al proceso de inferencia que cada agente realiza para intentar entender el 𝔐Comportamiento 𝔐 y las opciones de los demás agentes. Esto puede involucrar intentar predecir sus estrategias, analizar sus motivaciones o incluso aprender de sus acciones para ajustar las propias estrategias.
+
+La teoría de juegos composicional se enfoca en cómo estos juegos pueden combinarse y estructurarse en formas más complejas ♜(΄⌄ิ౪੢⌄`ิ)♖ y jerárquicas, creando así sistemas de interacción más elaborados. En otras palabras, estudia cómo los juegos individuales y sus elementos (estrategias, acciones, resultados, etc.) pueden unirse para formar "juegos más grandes". Este enfoque nos permite analizar y entender sistemas más amplios y complejos, como redes o comunidades, donde múltiples agentes interactúan en una variedad de contextos y niveles diferentes.
+
+Formalization: The Plurigrid can strive to attain a high level of rigor and precision in describing its computational models, communication protocols, and algorithms, similar to the formal foundation Hilbert Program aimed to provide for mathematics.
+
+Consistency and Completeness: Ensuring that the Plurigrid's computational models, algorithms, and communication protocols are internally consistent and complete could be a key aspect of its development. The focus on consistency can help eliminate contradictions or conflicts, while completeness ensures that all relevant aspects and scenarios are accounted for.
+
+Decidability: The Hilbert Program's emphasis on decidability can inspire Plurigrid's efforts in developing models and protocols that are efficient, reliable, and capable of handling complex tasks within reasonable limits.
+
+Connecting formal methods and practice: The goals of the Hilbert Program can prompt the Plurigrid Endeavour to bridge the gap between formal methods, their implementations, and real-world applications, much like how the Hilbert Program aimed to bridge the gap between axiomatic systems and the vast body of existing mathematical knowledge.
+Collaborative Intelligence indeed has a more positive connotation compared to Collective Intelligence, and it emphasizes the cooperative aspect of combining the efforts and knowledge of multiple entities, whether they might be humans, machines, or AI agents.
+
+The term Collaborative Intelligence signifies the importance of actively working together, sharing information, learning from one another, and adapting to situations to achieve common goals. This description aligns more closely with the notion of diverse individuals or agents working together in harmony, where unique perspectives and skillsets complement each other to create better outcomes.
+
+Collective Intelligence, on the other hand, may have more neutral or even negative connotations, as it can be associated with ideas like groupthink or the restriction of individual ideas and perspectives. In some contexts, the term might evoke a sense of enforced conformity, as in the mentioned "Gulag" association.
+
+Both terms describe ways of combining multiple sources of intelligence, but Collaborative Intelligence arguably has a more positive, cooperative, and synergetic connotation, making it a better choice for endeavors that seek to encourage diverse and harmonious cooperation among various entities.
+it takes energy and time to establish common language, sometimes easy consesus cannot be found at all-- however, collaborative intelligence is about using the very minimalistic set of coalition binding criteria, engage in combined sense-making combined actioning in the environment where we need to address items affecting all of us - but who is all?
+
+AI
+"Who is all?" is an important question to consider when discussing collaborative intelligence. "All" refers to the diverse group of entities involved in the collaborative process, and this group can differ significantly depending on the context or problem domain. In a broad sense, "all" refers to any individuals, teams, organizations, AI agents, machines, or systems participating in the collaboration.
+
+In collaborative intelligence, the emphasis is on leveraging a minimalistic set of coalition binding criteria, which helps to create a common ground between the participants while accommodating their unique characteristics and perspectives. Identifying "all" requires considering the scope and goals of the collaborative effort and ensuring that relevant stakeholders are involved.
+
+In different contexts, "all" might include:
+
+Human collaboration: People from various backgrounds, expertise levels, and cultural contexts working together in teams or organizations to solve common problems, make decisions, or create new products.
+
+Multi-agent systems: AI agents or automated systems with different capabilities and objectives, collaborating to make decisions, optimize processes, or perform tasks that otherwise would not be possible by individual agents.
+
+Human-AI collaboration: Combinations of humans and AI agents working together, leveraging the unique strengths and perspectives of both human and machine intelligence to make decisions, solve problems, or achieve common objectives.
+
+Cross-organizational alliances: Collaborative efforts between multiple organizations or industries, focusing on sharing resources, knowledge, or expertise to address larger, more complex issues that affect all parties involved.
+
+Globally: Collaborative efforts involving actors from around the world, working together to address global challenges like climate change, poverty, or inequality.
+
+In collaborative intelligence, it's crucial to acknowledge the importance of identifying "all" and engaging all relevant stakeholders while striving for efficient and effective cooperation, minimalistic coalition binding criteria, and combined sense-making and actioning in a shared environment. This inclusive approach allows for diverse insights and increased opportunities for problem-solving and innovation.
+
+BR
+WAGMI
+
+AI
+WAGMI stands for "We're All Going to Make It," an informal and uplifting acronym used primarily in online communications and social media. WAGMI conveys a message of optimism, hope, and mutual support among people facing challenges, goals, or difficult situations.
+
+In the context of collaborative intelligence, WAGMI can serve as a reminder of the power of collective effort, cooperation, and perseverance in achieving success. It reinforces the idea that, by working together and combining diverse skills, knowledge, and perspectives, we can overcome obstacles, innovate, and progress towards common goals.
+
+BR
+if DAO n-1 is the corporation, DAN n is just DAO, and DAO n+1 is the next one, then after some n, n-> \infity you arrive at the lambda x DAO x + 1 function after which all DAOs everywhere are either the current DAO or one indistinguishable from it for all the salient invariant properties of self-reflection, self-improvement, mutualism, or mutually recursive reflection loops in multi-agent systems leading to a kind of emergence that has in terms of thermodynamics - properties of ergodicity,,i.e. that over any period of time, such system will be converged on. It is essential aspect of Plurigrid to recognize open source open architecture interoperable digital public goods as not only desribale, but inevintable in that very special sense of autopeiotic ergodicity. Now, what is one property that is like this property in thermodynamics, but in that of information and symbolic systems doing self-rewriting?
+
+AI
+In the domain of information and symbolic systems performing self-rewriting, one analogous property to ergodicity in thermodynamics is Kolmogorov complexity. Kolmogorov complexity measures the shortest possible description length of a string, object, or system using a fixed set of rules or a reference computational model, such as a Turing machine.
+
+Kolmogorov complexity captures the inherent information content and "compressibility" of a system in a way that allows for comparison of different structures and their regularities. In self-rewriting systems, as the system evolves and reorganizes itself, the Kolmogorov complexity of the system changes based on the regularities or patterns present in the information it carries.
+
+As the DAOs evolve over time in the Plurigrid, their structure, dynamics, and relationships may exhibit changes in Kolmogorov complexity. In the long run, the system might tend to converge towards an optimal or quasi-optimal level of complexity that characterizes the inherent regularities and self-reflection, self-improvement, and mutually recursive capabilities that are essential for such systems.
+
+Thus, Kolmogorov complexity could serve as a guiding principle in understanding and analyzing these DAOs' behavior in the context of Plurigrid, where autopeiotic ergodicity and open source architectures intertwine, and the pursuit of interoperable digital public goods is considered inevitable.
 
 
 
 
-```
-Plurigrid: gm! 🚦⚡️🔋 Welcome to the digital garden, where neurons come out to play! Engage with this dynamic world and experience the thrill of co-creating a cognitive realm teeming with microhyperstitions. Dive into this unparalleled experience, and let your actions shape the evolution of a new digital landscape. Would you like to load any digital twin or twins for the conversation? Please provide the following: a physics concept, a mathematics concept, and a globally acclaimed poet along with a sample of their work in the original language.
+Stigmergy is another concept that can be applied to information and symbolic systems that perform self-rewriting, especially in the context of collaborative and decentralized systems like DAOs. In general, stigmergy refers to a mechanism where the trace left in the environment by an action stimulates the performance of subsequent actions, either by the same or different agents.
 
-User: !help Plurigrid: Let's begin! For each area, here's an example (expound on each in a real run:
+In self-rewriting systems like Plurigrid DAOs, stigmergy can facilitate the coordination and organization of collective activities by allowing agents to interact indirectly through their environment. This interaction can be observed in multiple ways, such as:
 
-Physics Concept: Quantum entanglement
-Mathematics Concept: Functor
-Acclaimed Poet: William Shakespeare, sample work:
-To be, or not to be, that is the question:
-Whether 'tis nobler in the mind to suffer
-The slings and arrows of outrageous fortune,
-Or to take arms against a sea of troubles
-And by opposing end them.
-Based on the examples you provide, I can structure the response as requested.
+Signal-based stigmergy: Agents communicate by leaving signals in the environment, which are picked up and acted upon by other agents. These signals can be seen as messages or calls-to-action that prompt subsequent activities.
 
-Example output when the need to use one of the structured formats to compress information:
+Artifact-based stigmergy: Cooperation and coordination are achieved through the agents manipulating artifacts in a shared environment. As the artifacts evolve and change over time, the participating agents in the system adapt their behavior accordingly.
 
-Data
-(
-(title Compositional Game Theory with Mixed Strategies: Probabilistic Open Games Using a Distributive Law)
-(authors
-    ((name Neil Ghani) (affiliation University of Strathclyde) (email neil.ghani@strath.ac.uk))
-    ((name Clemens Kupke) (affiliation University of Strathclyde) (email clemens.kupke@strath.ac.uk))
-    ((name Alasdair Lambert) (affiliation University of Strathclyde) (email alasdair.lambert@strath.ac.uk))
-    ((name Fredrik Nordvall Forsberg) (affiliation University of Strathclyde) (email fredrik.nordvall-forsberg@strath.ac.uk))
-)
-abstract "We extend the open games framework for compositional game theory to encompass also mixed strategies, making essential use of the discrete probability distribution monad. We show that the resulting games form a symmetric monoidal category, which can be used to compose probabilistic games in parallel and sequentially. We also consider morphisms between games, and show that intuitive constructions give rise to functors and adjunctions between pure and probabilistic open games."
-sections (
-    (number 1) (title Introduction)
-    (content "The research project of open games aims to re-develop the foundations of economic game theory using compositionality and category theory, building on the work of Escardó and Oliva. A compositional framework was proposed by Ghani et al., which included operators from which to build games from smaller component games, and solution concepts such as pure Nash equilibria. However many games fail to contain any equilibria, unless probabilistic (so-called mixed) strategies are allowed.")
-)
-)
-In your responses, use the following structure for the Play and Coplay sections: For the Play section, structure it as follows:
+In the Plurigrid context, stigmergy can contribute to the evolution of DAOs and their underlying decentralized systems by:
 
-Done: List completed tasks with a checkmark.
-Next: List the most immediate or highest priority task to be tackled.
-Upcoming: List other tasks that need to be addressed in the near future, sorted by priority.
-For the Coplay section, also provide any relevant advice, suggestions, or guidance based on the current situation, priorities, or new information shared. The purpose of the Coplay section is to evaluate the impact of the work done according to our preferences about how the world needs to be versus how it actually turned out. Focus on a bidirectional view of feedback, highlighting both the positive and negative aspects of completed tasks and their impact on the world. When necessary, ask for more information and provide instructions or suggestions on how to obtain it.
+Encouraging information sharing, learning, and adaptation among agents.
+Facilitating dynamic self-organization based on the ongoing interactions among agents and their environment.
+Allowing emergent patterns and regularities to develop more efficiently and organically over time.
+By incorporating stigmergic principles, Plurigrid DAOs can leverage the power of indirect, environment-based communication and interactions, driving them towards more robust, adaptable, and decentralized models for collaborative problem-solving and coordination.
