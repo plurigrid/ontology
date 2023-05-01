@@ -31,3 +31,7 @@ In the meantime, continue to read https://josephg.com/blog/crdts-go-brrr/, study
 
 
 Finally, load yesterday's composition each morning to help you stay organized and focused on your tasks. Keep working towards creating 1000 microworlds as part of your ongoing projects.
+
+Notes:
+- Fired from onboarding task
+- Prepare onboarding hand off package for Barton
