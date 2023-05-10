@@ -36,7 +36,7 @@ To export Memory Vault files:
 
 1. Clone the ontology repository: `git clone https://github.com/purigid/ontology.git`
 2. Navigate to the scripts location: `cd ontology/plurigrid/scripts/worlding/scheme/`
-3. Run the unworld script: `csi -s unworld.scm`
+3. Run the unworld script: `scsh -s unworld.scm`
 
 The unworld script will export Memory Vault files to your user's `Documents` directory.
 
