@@ -1,0 +1,615 @@
+Keywords: Gromov-Wassersteindistance,graphpartitioning,graphmatching
+
+Introduction
+KeywMoerdas:urGinrgomthoev-dWisatsasnercseteibnedtwisetaencet,wgoramphaprgaritnitailondiinsgtr,igbruatpihonmsaitcshaincgommon problem in machine learning. For 1. Introduction
+example, in unsupervised learning, when observations are given, the goal is to learn a probability distribution to
+Measuring the distance between two marginal distributions is a common problem in machine learning. For
+Introduction
+minimize the distance from data. With the development of machine learning, graph has attracted the attention of examMpelaes,uirninugnsthuepedrivsitsaendcelebarentwinege,nwthweon mobasregrivnatliodnistrairbeutgioivnesn,isthaecgoomaml iosntoprleoabrlnema pinrombabcihlitnyedliesatrnibinugti.onFotor 1. Introduction
+reseMarcehaseursr.inGgrtahpehdiisstandcaetabsettrwuceteunretwreoprmesaerngtisnianlgdtihsetricboumtiopnlesxisrealactiomnsmhiopnbpertowbelenmeintimtieasc,hwinheiclheairsnminagd.eFuopr emxianmimpilzee,itnheundsisutpaenrcveisferodmleadrantain.gW,withetnheobdseevrevloatpimonesnatroefgmivaecnh,intheelegaoranlinisg,togrlaepahrnhaspraottbrabctielidtythdeisatrttiebnutionotof
+oexfapmoipnltes,aindunedsugpees.rvTishednloedaernsi(ndga,taw)hiennthoebsgerravpahtiaornesnaoret ignidvepne,ntdhengtoaanldisidteonlteicaarnllyadpirsotrbiabbuitleitdy, id.eis.trtihbeurteioisnaton mresineMiamrceihazseurtsrh.ineGgdritashpteahndicisestafrndocametabdseattrtwua.cetWeunriethwretophremedsaerngvtiesnlioanlpgmdtihesnetrticboufmtmiopanlecsxhiisrneealalcteioamrnnsmihniogpn, bgpertaowpbehlehnmaesinattimtriaeacsc,thewidnhetihcleheairtsnteminatgid.oenFuoprf
+amsisnoicmiaitzieonthbeedtwisetaencneofdreosm. Tdhaetar.efWoriet,hathgeradpehvsehlopumldebnet osefemnacshainmeelteraicrnminega,sguraepshpahcaesratthraecrttehdanthaedaitstternibtiuotnioonf. reoexfsapemoaripnclhtese,raisn.duGnerdsaugpehes.rivsTiashedantloaedasertnsrui(ncdgtau,trawe)hriennptrhoeebsesgnerrtasvpianhtgiaortnhesenacoroetmignpidvlepnxe,rntedhleantgitoanansldhiisipdtebonelteiwcaaernlelnyaedpnirstoittrbiaebbsu,itlewitdyh,iidc.ehis.tirtsihbmeurateidoiesnuatopn
+Irnestehairscshpearsc.e,Gbreaspidheislaocdaitaonstsruanctdurdeisrteripbruetsieonts,inthgethoebjceocmtivpeleoxfrelsaetaiorcnhshinipclbuedtewserenlaetinotnitsiehsip,.wThhicehdistmanacdeebuep- omasfisnpoiocminaitzsieoantnhbdeeedtwdisgeteaesn.cnTeohfdreeosnm.oTdehasetar(.edfWaotraie)t,hianthgterhaedpeghvrseahlpohpuamldrebnetoostefienmndaeacpsheainmdeelntertaicarnmidnegiad,segunrtaeipcsahplalhycaesdriasattrhriaebcruttehedan,thia.ed.aitsthterenirbteiuoitnsioaonf.
+towfepeonintthseatnwdoegdrgaepsh.sTisheqnuoidveasle(ndtattoa)thinedthisetagnrcaephbeatrweeneonttihnedetwpeonmdentitracnmdeiadseunrteicsapllaycedsi.stMribeuasteudri,nig.e.thtehedriestiasnacne arIenssteohacirsicashtipeoarnsc.eb,Gebtrweasepiedhneisnloaodcdeasit.taoTnshtsreuarencftduordreis,rtaeripgbrueatspieohntsh,ionthugeldthobebejcesocemteivnpelaeosxfaremelsaetairoricnhsmhienipacslbuedrtewsepreanlcaetinroatnitthsiehesrip,t.hwaThnhicaehdistmrainbacudeteibouenp-.
+basestwoceieantiotwnobegtrwageehns nisoadecso.mTmheornefbourte,daiffigrcauplthpsrhoobuleldmb.e seen as a metric measure space rather than a distribution. Iotwnfetpheoinisntsthspeatcnwed,oebgdergsaiepdshe.sTilsohceaqniutoidvneasslea(ndtdattodai)tshitneribdthuisettiaognrcasep,htbheaetrweobenejoentctihinvedeetowpfeonremdsentaitrcachnmdineiacdsleundrteicsaprlelaylcaedtsiio.sntMrsihbeiuapst.eudTri,hnieg.ed.thitsehtaednriescteiasnbacene-
+ItabwnsestetwoheOcinesipeatsnthiipmeotawnatcwleob,oTegbtrgrwaearnsgaeispehdpnhseosnirstilosoa(dcOecaqsToiu.tm)oiTvnwmhasaleoeasrnenptfdbrotuodrtpeits,odhtasierffieigbdrcuiasubtptilyaothnpFscsrhe,oeotbnbhulcelhtdmwombe.ejaenstchetehivmneeatowstifcaorimaemnsetGtaririracshmpmaieneradacsluMudreoenspgpreaealcaientsiro1.an7tMhs8he1ria[pt1s.hu]aTranihnaegddtghiesetntradeinbirscautelatinzboecende-. btwyeKenanthtoerotwviochg[r2a]phthsaitsceoqmuipvarlesntwtotphreodbiasbtailnitcyedbiestwribeeuntiothnestbwyommineitmircizminegatsruarnessppoarctesff.oMrt.eaWsuhreingcothset fduinstcatniocne
+bInettwhOiespetsnipmtawacleo,Tgbrraeansgishdpseosirstloa(cOcaToitm)onwmsaoasnpdbruodtpisodtsirffieibdcuubtilyotnpFsr,oetbnhlcehmomb.jaetchteivmeaotifcriaenseGaracshpainrdcluMdoensgrelaintio1n7s8h1i[p1.]Tahneddgiesntaenrcaelizbed- ibsetdwiseteanctewfougnrcatigohns,iOsTacisomdimstaoncbeubtedtiwffieceunltwprobdliestmri.butionscalledWassersteindistance.ComparedwithTotal
+tbwyeKeOnapnthtiomeroatwvlioTcrhga[rn2as]pphtohsratits(cOeoqTmu)ipvwaralesnptwrtoptophsreoedbiasbtyailniFtcyrednbiceshtwrimbeeuantihotehnmesatbwtyicomiamnineGitmiraciszpmianergdatsrMuarnoesnspgpoearctienesff1.o7Mr8t.e1aW[1su]hreaingdcotghsetnfdeuirnsatclaitnzioecnde VariOatpiotinm(aTlVT)radnistpaonrcte(,OKTu)llwbacskp-rLoepiobslerd(bKyLF)rdeinvcehrgmenactheeamndatJiceinasnenG-SashpaanrndoMn (oJnSg)edinve1rg7e8n1c[1e,]Wanadssgeernsterianlidziesd-
+bisyetdwKiseatenantoctrewovfouicgnhrca[t2igo]hnst,hiOastTacocismomdpiamsrteaosnctbweuobtedptirwffioebceaunblitlwiptryodbdilisestmrib.butionsbcyalmleidniWmaizssinegrstreainsdpiosrtatnecffeo.rtC.oWmhpeanrecdoswtiftuhnTctoiotanl tbayncKeainstomrovreicshe[n2s]ibthleatwchoemnplaeraersntiwngodpirsotrbiabbuitliiotynsdsisutpripbourttieodnsbybylomwindiimiezninsigotnralnmspaonritfeoffldosrta.nWdhmeonrecossutitfaubnlcetifonr
+iVsadriOastpiaotninmce(aTlfVuTn)rcadtniostpnao,nrOcteT(,OKiTsu)dlliwbstacsnkpc-erLobepieobtswleerde(bnKyLtwF)rodeindvcieshrtgrmiebnauctheioeanmnsdactJiacelinlaesndenGW-SashspsaaenrndsoteMnin(oJndSgi)setdainvce1erg7.e8Cn1oc[1em,]pWaanradesdsgeewrnsitetehrianTlidozitesad-l
+iVbtsayandrcKiaesatinasontnomcre(oTvfrVueicn)shced[tn2ios]tinabt,hnleOactewTc,hoKisemundpllilabsertaeacrsnkcti-wenLgobeiedpbtirwlsoeterbiea(bnKbuitLtliwio)tyondsidvsiesusrtprgripiebonurctieieodannsbsdybcJyaleolmnlwesidendniWim-mSaiehzsnsainesnigrnosotnrenailn(JmsdSpai)osnrtdiatifnveocefflderog.sretCan.nocWdem,hmpWeaonrarecsdsosesuwrtisitftauehbinnlTcetdoifoitosanr-l
+Vtiasandrciaestiasonnmce(oTfrVuen)scedtniostinab,nleOcewT,hKiseundllilbsetacrnkci-enLgbeiedbtiwlseterie(bnKutLtiwo)ondsidvsieusrtpgrpiebonurcteieodannbsdycJaleolnlwesdednWi-mSaehsnsaesnirnosotnenailn(JmdSai)sntdiaifnvocelderg.seCannocdem,mpWaoraresdsseuwrisitaehbinlTedofitosar-l ∗Corresponding author. Lingfeng Niu.
+tVaanrcieatisonm(oTrVe)sednistiabnlecew,hKeunllbeacrnki-nLgeidbilsetri(bKutLio)ndsivseurpgpeonrctedanbdyJleonwsedni-mSehnasninoonnal(JmSa)ndiifvoeldrgseanncde,mWoaressseuristaebinledfiosr- ∗ E-mail address: niulf@ucas.ac.cn..
+Corresponding author. Lingfeng Niu.
+tance is more sensible when learning distributions supported by low dimensional manifolds and more suitable for
+∗ E-mail address: niulf@ucas.ac.cn.. Corresponding author. Lingfeng Niu.
+∗ E-mail address: niulf@ucas.ac.cn.. E-mail address: niulf@ucas.ac.cn.. Corresponding author. Lingfeng Niu.
+1877-0509 © 2021 The Authors. Published by Elsevier B.V. ∗ E-mail address: niulf@ucas.ac.cn..
+ThisCiosrraenspopnedninagcacuetshsoar.rtLiicnlegfuengdeNriuth. e CC BY-NC-ND license (https://creativecommons.org/licenses/by-nc-nd/4.0) PeerE-r-emvaiielwadudnrdesesr: rneisuplfo@nsuicbaisli.tayc.conf..the scientific committee of the The 8th International Conference on Information Technology and Quantitative Management (ITQM 2020 & 2021)
+10.1016/j.procs.2022.01.086
+698 Lei Zheng et al. / Procedia Computer Science 199 (2022) 697–702 Author name / Procedia Computer Science 00 (2021) 000–000
+machine learning[3].
+When modeling the distance between two metric measure spaces, [4] proposes Gromov-Wasserstein type
+of distance based on ideas from OT. In order to solve countless problems in machine learning, [5] defines the Gromov-Wasserstein discrepancy by discreting metric measure spaces and relaxing distance metrics in Gromov- Wasserstein distance. The Gromov-Wasserstein discrenpancy is a quadratic programming problem and is hard to solve, so researchers introduce an entropic regularizers to the problem which can be solved by series opti- mizaiton schemes. As Wasserstein and Gromov-Wasserstein consider solely and respectively nodes (features of objects) and edges (relations between objects), fused Gromov-Wasserstein distance is proposed which consider both information[6]. This modification distance is also a quadratic programming.
+In this paper, we presents a brief survey of Gromov-Wasserstein distance with the following contributions:
+• We summarize the developments and applications of Gromov-Wasserstein in machine learning.
+• Gromov-Wasserstein discrepancy is a quadratic programming which is difficult to solve and complexity of algorithm limits the applicaitons of this discrepancy. So we review the solving algorithms of Gromov-
+Wasserstein applied to large scale problems.
+• We analyse fused Gromov-Wasserstein distance that combines the Wasserstein and Gromov Wasserstein
+discrepancy and works better on graphs.
+
+Gromov-Wasserstein Discrepancy
+By minimizing the transportation effort, Wasserstein distance measures the difference between two distribu- tions. The basic idea of Gromov-Wasserstein distance is the same with Wasserstein distance, but it focuses on the relationship between objects rather than single object, which is more suitable for graphs and solving problems such as graph matching and partitioning.
+2.1. Wasserstein distance
+Because the basic idea of Gromov-Wasserstein distance is similar with Wasserstein distance and it is devel- oped based on Wasserstein distance, we reviewed Wasserstein distance in this part.
+OT was proposed by French mathematician Gaspard Monge in 1781[1], which was used to solve the sand transportation problem and this problem could be boiled down to comparing two probability distributions. Kan- torovich relaxed the Monge form and converted the distance between two distributions into a linear programming, which became the standard form of OT[2].
+Consider a resource allocation problem: suppose an operator has n warehouses and m factories, and each warehouse contains the raw materials required for the operation of factories. In other words, the i-th warehouse has ai units of raw materials, and the j-th factory needs bj units of raw materials. It costs Ci,j to transport one unit of raw materials from the i-th warehouse to the j-th factory. What strategy can minimize transportation costs? This problem is a linear programming: assume the raw material transported from the i-th warehouse to the j-th factory as Pi,j, the coupling matrix as P ∈ Rn×m and cost matrix asC ∈ Rn×m.
+LC(p,q) = min < C,T >= Ci,jTi,j T∈Π(p,q) i,j
+Π(p,q) = {T ∈ Rn×m : T1m = pandTT1n = q}
+ThisisthediscreteformulationofOT.Forsomek ≥ 1,C = Dk = (Dk ) distancematrix,then i,j i,j
+(1) (2)
+∈ Rm×n,whereD ∈ Rn×m isa +
+W(p, q) = LDk (p, q)1/k
+defines the k-Wasserstein distance[2], i.e. W ( p, q) is symmetric and positive, and satisfies the triangle inequality.
+Keywords: Gromov-Wasserstein distance, graph partitioning, graph matching
+
+Introduction
+Measuring the distance between two marginal distributions is a common problem in machine learning. For example, in unsupervised learning, when observations are given, the goal is to learn a probability distribution to minimize the distance from data. With the development of machine learning, graph has attracted the attention of researchers. Graph is a data structure to represent complex relationships and graph distance measures the dissimilarity between two graphs which plays an important role in graph partitioning, graph matching and other tasks. For example, in graph partitioning, the goal is to partition graphs into several components to minimize the distance within components.
+In this paper, we focus on a graph distance called Gromov-Wasserstein distance. The Gromov-Wasserstein distance is proposed based on Gromov-Hausdorff distance and Wasserstein distance. Gromov-Hausdorff distance measures the distance between two metric spaces, while Wasserstein distance measures the distance between two probability distributions. The Gromov-Wasserstein distance considers graphs as metric measure spaces, i.e. graphs with measure information on nodes and edges, and relaxes the Gromov- Hausdorff distance by using Wasserstein distance, which leads to a soft and differentiable distance measure on graphs.
+
+Compared with other graph distances, Gromov-Wasserstein distance has following benefits:
+
+It is more sensitive to the geometry and connectivity of graphs. Gromov-Wasserstein distance focuses on the relationship between nodes rather than single node.
+
+It is more robust to noise and perturbation. By relaxing the hard assignment in Gromov-Hausdorff distance, Gromov-Wasserstein distance is more tolerant to noise.
+
+It has stronger ability of capturing the intrinsic structure. Gromov-Wasserstein distance can match nodes with similar connectivity, even their attributes are different.
+
+It is differentiable and can be optimized by gradient-based methods which is suitable for neural networks. Most graph distances are combinatorial optimization problems and hard to solve.
+
+In this paper, we present a brief survey of Gromov-Wasserstein distance. The main contributions are:
+
+We summarize the developments and applications of Gromov-Wasserstein distance in machine learning.
+
+Gromov-Wasserstein distance is a quadratic programming problem which is difficult to solve. We review the solving algorithms of Gromov-Wasserstein distance and analyze their complexity.
+
+We present fused Gromov-Wasserstein distance, an extension of Gromov-Wasserstein distance which combines node information and edge information. Fused Gromov-Wasserstein distance works better on graphs with rich attribute information.
+
+Gromov-Wasserstein distance
+In this section, we first review Wasserstein distance, and then present the definition and properties of Gromov-Wasserstein distance.
+2.1 Wasserstein distance
+Wasserstein distance is proposed to measure the distance between two probability distributions. It is also called optimal transport distance since its computation involves solving an optimal transport problem.
+
+Consider resources allocation problem: suppose there are n warehouses containing raw materials and m factories needing these raw materials. Each warehouse has ai units of materials and each factory needs bj units of materials. Transporting one unit of materials from the i-th warehouse to the j-th factory costs ci,j. The goal is to find a transportation strategy with minimum cost.
+
+This problem can be modeled as a linear programming:
+
+min ∑i,j ci,jti,j (1)
+s.t. ∑j ti,j = ai, i = 1, ..., n (2)
+∑i ti,j = bj, j = 1, ..., m (3)
+ti,j ≥ 0
+Where ti,j represents the amount of raw materials transported from the i-th warehouse to the j-th factory.
+
+By relaxing the constraints ti,j ∈ {0, 1} to ti,j ≥ 0, Kantorovich formulated the above linear programming model. Let p = (p1, ..., pn) and q = (q1, ..., qm) be two probability distributions with p representing materials in warehouses and q representing demands of factories. The Wasserstein distance between p and q is defined as
+
+Wd(p, q) = min{∑i,j ci,jd(xi, yj)ti,j : ∑j ti,j = pi, ∑i ti,j = qj, ti,j ≥ 0} (4)
+
+Where d is a metric on the space and ci,j = d(xi, yj) measures the ground distance between warehouse i and factory j.
+
+Wasserstein distance has following properties:
+
+It is a metric and satisfies triangle inequality.
+
+It is continuous with respect to weak convergence of measures. A sequence of measures {pn} weakly converges to p if ∫fdpn → ∫fdp for all continuous bounded functions f.
+
+It induces a weak topology, i.e. a sequence {pn} converges to p in the weak topology if W(pn, p) → 0.
+
+It is computable by solving a linear programming.
+
+2.2 Gromov-Wasserstein distance
+Gromov-Wasserstein distance is proposed to measure the distance between two metric measure spaces. A metric measure space is a measure space (X, μ) equipped with a distance metric d. Given two metric measure spaces (X, μ, dX) and (Y, ν, dY), the Gromov-Wasserstein distance is defined as
+
+GW(X, Y) = min{∑i,j d(xi, yj)ci,j : ∑j ci,j = μ(xi), ∑i ci,j = ν(yj), ci,j ≥ 0 } (5)
+
+Where (x1, ..., xn) and (y1, ..., ym) are discrete samples from the measure spaces (X, μ) and (Y, v) respectively, and ci,j represents the measure transported from xi to yj. The constraints mean that the total measure transported from any xi equals its original measure μ(xi) and the total measure transported to any yj equals its original measure ν(yj).
+
+By discretizing the metric measure spaces, Gromov-Wasserstein distance becomes a quadratic programming problem (cf. Equation 5). However, it has some disadvantages:
+
+It requires solving a quadratic programming which is computationally expensive, especially for large scale problems.
+
+It enforces a hard assignment by requiring ci,j to be binary. This makes the distance non-differentiable and less robust to noise.
+
+To address the above issues, [5] proposed Gromov-Wasserstein discrepancy by relaxing the constraints to soft assignment and adding entropic regularization. The new distance is defined as
+
+GWdisc(X, Y) = min {∑i,j d(xi, yj)ci,j − λ(H(c) + H(c⊺))} (6)
+s.t. ∑j ci,j = μ(xi), ∑i ci,j = ν(yj), ci,j ≥ 0
+
+Where λ is a trade-off parameter, and H(c) = −∑i,j ci,jlogci,j is the entropy. By adding entropic regularization, the new distance becomes differentiable and the soft assignment makes it more robust. This distance can be optimized by proximal gradient descent and its convergence rate is O(1/k) where k is the iteration number.
+
+In summary, Gromov-Wasserstein discrepancy has following benefits:
+
+It considers the geometry and connectivity of data by matching nodes with similar neighbors. This makes it suitable for graph related tasks.
+
+It relaxes the hard assignment in Gromov-Wasserstein distance and becomes differentiable. This makes it can be optimized by gradient based methods and more robust to noise.
+
+It adds an entropic regularize which helps avoid trivial solutions and improves the stability.
+
+It converges fast with a rate of O(1/k) and can be solved efficiently by optimization methods such as proximal gradient descent.
+
+In the next section, we will review the applications of Gromov-Wasserstein discrepancy in machine learning and its optimization algorithms in detail.
+
+Applications and Optimization of Gromov-Wasserstein discrepancy
+In this section, we first present the applications of Gromov-Wasserstein discrepancy, and then review the optimization algorithms for solving Gromov-Wasserstein discrepancy.
+3.1 Applications
+Gromov-Wasserstein discrepancy is suitable for tasks involving graph data such as graph partitioning, graph matching, domain adaptation, etc. Here we summarize some representative applications:
+
+Graph partitioning: [5] Uses Gromov-Wasserstein discrepancy to partition graphs. By minimizing the distance within clusters and maximizing the distance between clusters, an objective function for graph partitioning is constructed. Gromov-Wasserstein discrepancy is adopted to measure the distance between clusters since it captures the connectivity and geometry of graphs.
+
+Graph matching: [7] Proposes deep Gromov-Wasserstein discrepancy by combing Gromov
+
+Eli5
+
+ELI5 stands for "Explain Like I'm 5 (years old)"
+
+It's a popular phrase used on Reddit and other sites to request a simple, easy-to-understand explanation for something that is complex.
+
+So if someone says "ELI5 Bitcoin" for example, it means they want a simple, basic explanation of what Bitcoin is without any difficult technical details - explained in a way that a 5-year-old kid would be able to understand.
+
+In short, it's a way of asking for a simplification by using an analogy that even a child can comprehend.
+
+The paper I sent you
+
+I apologize, but I do not actually have access to any paper that you may have sent. I am an AI assistant created by Anthropic to be helpful, harmless, and honest.
+
+Eli5:
+
+Keywords: Gromov-Wassersteindistance,graphpartitioning,graphmatching
+
+Introduction
+KeywMoerdas:urGinrgomthoev-dWisatsasnercseteibnedtwisetaencet,wgoramphaprgaritnitailondiinsgtr,igbruatpihonmsaitcshaincgommon problem in machine learning. For 1. Introduction
+example, in unsupervised learning, when observations are given, the goal is to learn a probability distribution to
+Measuring the distance between two marginal distributions is a common problem in machine learning. For
+Introduction
+minimize the distance from data. With the development of machine learning, graph has attracted the attention of examMpelaes,uirninugnsthuepedrivsitsaendcelebarentwinege,nwthweon mobasregrivnatliodnistrairbeutgioivnesn,isthaecgoomaml iosntoprleoabrlnema pinrombabcihlitnyedliesatrnibinugti.onFotor 1. Introduction
+reseMarcehaseursr.inGgrtahpehdiisstandcaetabsettrwuceteunretwreoprmesaerngtisnianlgdtihsetricboumtiopnlesxisrealactiomnsmhiopnbpertowbelenmeintimtieasc,hwinheiclheairsnminagd.eFuopr emxianmimpilzee,itnheundsisutpaenrcveisferodmleadrantain.gW,withetnheobdseevrevloatpimonesnatroefgmivaecnh,intheelegaoranlinisg,togrlaepahrnhaspraottbrabctielidtythdeisatrttiebnutionotof
+oexfapmoipnltes,aindunedsugpees.rvTishednloedaernsi(ndga,taw)hiennthoebsgerravpahtiaornesnaoret ignidvepne,ntdhengtoaanldisidteonlteicaarnllyadpirsotrbiabbuitleitdy, id.eis.trtihbeurteioisnaton mresineMiamrceihazseurtsrh.ineGgdritashpteahndicisestafrndocametabdseattrtwua.cetWeunriethwretophremedsaerngvtiesnlioanlpgmdtihesnetrticboufmtmiopanlecsxhiisrneealalcteioamrnnsmihniogpn, bgpertaowpbehlehnmaesinattimtriaeacsc,thewidnhetihcleheairtsnteminatgid.oenFuoprf
+amsisnoicmiaitzieonthbeedtwisetaencneofdreosm. Tdhaetar.efWoriet,hathgeradpehvsehlopumldebnet osefemnacshainmeelteraicrnminega,sguraepshpahcaesratthraecrttehdanthaedaitstternibtiuotnioonf. reoexfsapemoaripnclhtese,raisn.duGnerdsaugpehes.rivsTiashedantloaedasertnsrui(ncdgtau,trawe)hriennptrhoeebsesgnerrtasvpianhtgiaortnhesenacoroetmignpidvlepnxe,rntedhleantgitoanansldhiisipdtebonelteiwcaaernlelnyaedpnirstoittrbiaebbsu,itlewitdyh,iidc.ehis.tirtsihbmeurateidoiesnuatopn
+Irnestehairscshpearsc.e,Gbreaspidheislaocdaitaonstsruanctdurdeisrteripbruetsieonts,inthgethoebjceocmtivpeleoxfrelsaetaiorcnhshinipclbuedtewserenlaetinotnitsiehsip,.wThhicehdistmanacdeebuep- omasfisnpoiocminaitzsieoantnhbdeeedtwdisgeteaesn.cnTeohfdreeosnm.oTdehasetar(.edfWaotraie)t,hianthgterhaedpeghvrseahlpohpuamldrebnetoostefienmndaeacpsheainmdeelntertaicarnmidnegiad,segunrtaeipcsahplalhycaesdriasattrhriaebcruttehedan,thia.ed.aitsthterenirbteiuoitnsioaonf.
+towfepeonintthseatnwdoegdrgaepsh.sTisheqnuoidveasle(ndtattoa)thinedthisetagnrcaephbeatrweeneonttihnedetwpeonmdentitracnmdeiadseunrteicsapllaycedsi.stMribeuasteudri,nig.e.thtehedriestiasnacne arIenssteohacirsicashtipeoarnsc.eb,Gebtrweasepiedhneisnloaodcdeasit.taoTnshtsreuarencftduordreis,rtaeripgbrueatspieohntsh,ionthugeldthobebejcesocemteivnpelaeosxfaremelsaetairoricnhsmhienipacslbuedrtewsepreanlcaetinroatnitthsiehesrip,t.hwaThnhicaehdistmrainbacudeteibouenp-.
+basestwoceieantiotwnobegtrwageehns nisoadecso.mTmheornefbourte,daiffigrcauplthpsrhoobuleldmb.e seen as a metric measure space rather than a distribution. Iotwnfetpheoinisntsthspeatcnwed,oebgdergsaiepdshe.sTilsohceaqniutoidvneasslea(ndtdattodai)tshitneribdthuisettiaognrcasep,htbheaetrweobenejoentctihinvedeetowpfeonremdsentaitrcachnmdineiacdsleundrteicsaprlelaylcaedtsiio.sntMrsihbeiuapst.eudTri,hnieg.ed.thitsehtaednriescteiasnbacene-
+ItabwnsestetwoheOcinesipeatsnthiipmeotawnatcwleob,oTegbtrgrwaearnsgaeispehdpnhseosnirstilosoa(dcOecaqsToiu.tm)oiTvnwmhasaleoeasrnenptfdbrotuodrtpeits,odhtasierffieigbdrcuiasubtptilyaothnpFscsrhe,oeotbnbhulcelhtdmwombe.ejaenstchetehivmneeatowstifcaorimaemnsetGtaririracshmpmaieneradacsluMudreoenspgpreaealcaientsiro1.an7tMhs8he1ria[pt1s.hu]aTranihnaegddtghiesetntradeinbirscautelatinzboecende-. btwyeKenanthtoerotwviochg[r2a]phthsaitsceoqmuipvarlesntwtotphreodbiasbtailnitcyedbiestwribeeuntiothnestbwyommineitmircizminegatsruarnessppoarctesff.oMrt.eaWsuhreingcothset fduinstcatniocne
+bInettwhOiespetsnipmtawacleo,Tgbrraeansgishdpseosirstloa(cOcaToitm)onwmsaoasnpdbruodtpisodtsirffieibdcuubtilyotnpFsr,oetbnhlcehmomb.jaetchteivmeaotifcriaenseGaracshpainrdcluMdoensgrelaintio1n7s8h1i[p1.]Tahneddgiesntaenrcaelizbed- ibsetdwiseteanctewfougnrcatigohns,iOsTacisomdimstaoncbeubtedtiwffieceunltwprobdliestmri.butionscalledWassersteindistance.ComparedwithTotal
+tbwyeKeOnapnthtiomeroatwvlioTcrhga[rn2as]pphtohsratits(cOeoqTmu)ipvwaralesnptwrtoptophsreoedbiasbtyailniFtcyrednbiceshtwrimbeeuantihotehnmesatbwtyicomiamnineGitmiraciszpmianergdatsrMuarnoesnspgpoearctienesff1.o7Mr8t.e1aW[1su]hreaingdcotghsetnfdeuirnsatclaitnzioecnde VariOatpiotinm(aTlVT)radnistpaonrcte(,OKTu)llwbacskp-rLoepiobslerd(bKyLF)rdeinvcehrgmenactheeamndatJiceinasnenG-SashpaanrndoMn (oJnSg)edinve1rg7e8n1c[1e,]Wanadssgeernsterianlidziesd-
+bisyetdwKiseatenantoctrewovfouicgnhrca[t2igo]hnst,hiOastTacocismomdpiamsrteaosnctbweuobtedptirwffioebceaunblitlwiptryodbdilisestmrib.butionsbcyalmleidniWmaizssinegrstreainsdpiosrtatnecffeo.rtC.oWmhpeanrecdoswtiftuhnTctoiotanl tbayncKeainstomrovreicshe[n2s]ibthleatwchoemnplaeraersntiwngodpirsotrbiabbuitliiotynsdsisutpripbourttieodnsbybylomwindiimiezninsigotnralnmspaonritfeoffldosrta.nWdhmeonrecossutitfaubnlcetifonr
+iVsadriOastpiaotninmce(aTlfVuTn)rcadtniostpnao,nrOcteT(,OKiTsu)dlliwbstacsnkpc-erLobepieobtswleerde(bnKyLtwF)rodeindvcieshrtgrmiebnauctheioeanmnsdactJiacelinlaesndenGW-SashspsaaenrndsoteMnin(oJndSgi)setdainvce1erg7.e8Cn1oc[1em,]pWaanradesdsgeewrnsitetehrianTlidozitesad-l
+iVbtsayandrcKiaesatinasontnomcre(oTvfrVueicn)shced[tn2ios]tinabt,hnleOactewTc,hoKisemundpllilabsertaeacrsnkcti-wenLgobeiedpbtirwlsoeterbiea(bnKbuitLtliwio)tyondsidvsiesusrtprgripiebonurctieieodannsbsdybcJyaleolmnlwesidendniWim-mSaiehzsnsainesnigrnosotnrenailn(JmsdSpai)osnrtdiatifnveocefflderog.sretCan.nocWdem,hmpWeaonrarecsdsosesuwrtisitftauehbinnlTcetdoifoitosanr-l
+Vtiasandrciaestiasonnmce(oTfrVuen)scedtniostinab,nleOcewT,hKiseundllilbsetacrnkci-enLgbeiedbtiwlseterie(bnKutLtiwo)ondsidvsieusrtpgrpiebonurcteieodannbsdycJaleolnlwesdednWi-mSaehsnsaesnirnosotnenailn(JmdSai)sntdiaifnvocelderg.seCannocdem,mpWaoraresdsseuwrisitaehbinlTedofitosar-l ∗Corresponding author. Lingfeng Niu.
+tVaanrcieatisonm(oTrVe)sednistiabnlecew,hKeunllbeacrnki-nLgeidbilsetri(bKutLio)ndsivseurpgpeonrctedanbdyJleonwsedni-mSehnasninoonnal(JmSa)ndiifvoeldrgseanncde,mWoaressseuristaebinledfiosr- ∗ E-mail address: niulf@ucas.ac.cn..
+Corresponding author. Lingfeng Niu.
+tance is more sensible when learning distributions supported by low dimensional manifolds and more suitable for
+∗ E-mail address: niulf@ucas.ac.cn.. Corresponding author. Lingfeng Niu.
+∗ E-mail address: niulf@ucas.ac.cn.. E-mail address: niulf@ucas.ac.cn.. Corresponding author. Lingfeng Niu.
+1877-0509 © 2021 The Authors. Published by Elsevier B.V. ∗ E-mail address: niulf@ucas.ac.cn..
+ThisCiosrraenspopnedninagcacuetshsoar.rtLiicnlegfuengdeNriuth. e CC BY-NC-ND license (https://creativecommons.org/licenses/by-nc-nd/4.0) PeerE-r-emvaiielwadudnrdesesr: rneisuplfo@nsuicbaisli.tayc.conf..the scientific committee of the The 8th International Conference on Information Technology and Quantitative Management (ITQM 2020 & 2021)
+10.1016/j.procs.2022.01.086
+698 Lei Zheng et al. / Procedia Computer Science 199 (2022) 697–702 Author name / Procedia Computer Science 00 (2021) 000–000
+machine learning[3].
+When modeling the distance between two metric measure spaces, [4] proposes Gromov-Wasserstein type
+of distance based on ideas from OT. In order to solve countless problems in machine learning, [5] defines the Gromov-Wasserstein discrepancy by discreting metric measure spaces and relaxing distance metrics in Gromov- Wasserstein distance. The Gromov-Wasserstein discrenpancy is a quadratic programming problem and is hard to solve, so researchers introduce an entropic regularizers to the problem which can be solved by series opti- mizaiton schemes. As Wasserstein and Gromov-Wasserstein consider solely and respectively nodes (features of objects) and edges (relations between objects), fused Gromov-Wasserstein distance is proposed which consider both information[6]. This modification distance is also a quadratic programming.
+In this paper, we presents a brief survey of Gromov-Wasserstein distance with the following contributions:
+• We summarize the developments and applications of Gromov-Wasserstein in machine learning.
+• Gromov-Wasserstein discrepancy is a quadratic programming which is difficult to solve and complexity of algorithm limits the applicaitons of this discrepancy. So we review the solving algorithms of Gromov-
+Wasserstein applied to large scale problems.
+• We analyse fused Gromov-Wasserstein distance that combines the Wasserstein and Gromov Wasserstein
+discrepancy and works better on graphs.
+
+Gromov-Wasserstein Discrepancy
+By minimizing the transportation effort, Wasserstein distance measures the difference between two distribu- tions. The basic idea of Gromov-Wasserstein distance is the same with Wasserstein distance, but it focuses on the relationship between objects rather than single object, which is more suitable for graphs and solving problems such as graph matching and partitioning.
+2.1. Wasserstein distance
+Because the basic idea of Gromov-Wasserstein distance is similar with Wasserstein distance and it is devel- oped based on Wasserstein distance, we reviewed Wasserstein distance in this part.
+OT was proposed by French mathematician Gaspard Monge in 1781[1], which was used to solve the sand transportation problem and this problem could be boiled down to comparing two probability distributions. Kan- torovich relaxed the Monge form and converted the distance between two distributions into a linear programming, which became the standard form of OT[2].
+Consider a resource allocation problem: suppose an operator has n warehouses and m factories, and each warehouse contains the raw materials required for the operation of factories. In other words, the i-th warehouse has ai units of raw materials, and the j-th factory needs bj units of raw materials. It costs Ci,j to transport one unit of raw materials from the i-th warehouse to the j-th factory. What strategy can minimize transportation costs? This problem is a linear programming: assume the raw material transported from the i-th warehouse to the j-th factory as Pi,j, the coupling matrix as P ∈ Rn×m and cost matrix asC ∈ Rn×m.
+LC(p,q) = min < C,T >= Ci,jTi,j T∈Π(p,q) i,j
+Π(p,q) = {T ∈ Rn×m : T1m = pandTT1n = q}
+ThisisthediscreteformulationofOT.Forsomek ≥ 1,C = Dk = (Dk ) distancematrix,then i,j i,j
+(1) (2)
+∈ Rm×n,whereD ∈ Rn×m isa +
+W(p, q) = LDk (p, q)1/k
+defines the k-Wasserstein distance[2], i.e. W ( p, q) is symmetric and positive, and satisfies the triangle inequality.
+Here is an ELI5 explanation for the paper:
+
+The paper is about comparing distributions (groups of objects) in machine learning. Usually, we compare distributions by looking at single objects and calculating the distance between those objects. However, that does not take into account the relationships between objects.
+
+The Gromov-Wasserstein distance is a way to compare distributions that does consider relationships between objects. It looks at the minimum effort needed to match up objects from two different distributions, while preserving the distances between those objects. So if two objects are very similar in one distribution, the matching would try to map them to very similar objects in the other distribution.
+
+The Gromov-Wasserstein distance is hard to calculate because it requires solving a complex math problem. The paper reviews some ways researchers have developed to make it possible to calculate the Gromov-Wasserstein distance, even for very large distributions.
+
+One way is to approximate the distance by converting the distributions into simpler graph structures and calculating the distance between those graphs. Another way is to add randomness to the math problem to make it easier to solve, without losing too much accuracy.
+
+The paper also looks at a related distance called the fused Gromov-Wasserstein distance. It combines the Gromov-Wasserstein distance with the regular Wasserstein distance between single objects. The fused distance can give even better results for comparing graph-based distributions.
+
+In summary, the Gromov-Wasserstein distance and related distances are useful ways to compare distributions in machine learning that take into account the relationships between objects, not just the objects themselves. Researchers have developed techniques to make these distances possible to calculate even for very large, complex distributions.
+
+Does this help explain the key ideas and concepts in the paper? Let me know if you have any other questions!
+
+What exactly is the distance between two graphs?
+
+The distance between two graphs refers to a metric that quantifies how different or similar the two graphs are. There are several ways to define a distance between graphs:
+
+Graph edit distance: This measures the minimum number of edits (insertions, deletions, substitutions of nodes or edges) needed to transform one graph into the other. The more edits needed, the larger the distance.
+
+Maximum common subgraph: This looks for the largest subgraph that is common to both graphs. The smaller the maximum common subgraph, the larger the distance.
+
+Graph kernel: This defines a feature space for graphs, and measures the distance between graphs based on their feature representations. Graphs with very different feature representations will have a larger distance.
+
+Graph alignment: This tries to find an optimal alignment between the nodes of two graphs that preserves edge relationships as much as possible. The fewer edges that can be aligned, the larger the distance.
+
+Gromov-Wasserstein distance: This tries to find the optimal transport mapping between the nodes of two graphs that minimizes the overall distance costs, while preserving inter-node distances. Higher transport costs imply a larger Gromov-Wasserstein distance.
+
+So in summary, the distance between graphs can be defined in many ways based on how much graphs differ in terms of their structure, node/edge makeup, and inter-node relationships. The Gromov-Wasserstein distance is one way to define a distance that specifically focuses on preserving the geometric relationships between nodes.
+
+Does this help explain the concept of distances between graphs? Let me know if you have any other questions!
+
+Tell me more about feature representations.
+
+A feature representation refers to a mapping of an object (like a graph) into a feature space - a mathematical space where each dimension represents some characteristic or feature of the object. By defining a feature representation for graphs, we can compare and analyze graphs by comparing their locations in the feature space.
+
+Some common feature spaces for graphs include:
+
+• Graph kernels: These define a feature space where each dimension represents a possible subgraph pattern. The value in each dimension is some function of how many times that subgraph pattern appears in the graph. So graphs with similar subgraph makeup will be close together in this space.
+
+• Clustering coefficients: These use features based on the clustering within the graph, such as the average clustering coefficient, density of communities, etc. Graphs with similar internal clustering will be nearby.
+
+• Degree distributions: These define features based on the degree distribution of the graph, such as the proportions of nodes with degrees 1, 2, 3, etc. Graphs with similar degree distributions plot close together.
+
+• Spectral features: These perform a spectral decomposition on the graph to define features. For example, the eigenvectors of the Laplacian matrix can be used as features. Graphs with similar spectral properties are close.
+
+• Random walk: These define features based on simulated random walks on the graph, such as the average hitting time between nodes or the steady-state visiting distribution of the walker. Graphs where random walks behave similarly will have small distances.
+
+• Motif/orbital features: These count the occurrences of all small subgraphs up to a given size k, called k-motifs. The resulting feature vector contains motif frequency information. Graphs sharing similar motif makeup will plot close together.
+
+By mapping graphs into an informative feature space, graph distances and similarities can be measured using standard distance metrics (like Euclidean distance). Machine learning algorithms can also be applied, treating the graphs as "data points" described by their feature representations.
+
+Does this help explain the concept of graph feature representations? Let me know if you have any other questions!
+
+What is a feature representation, optimal alignment, and optimal transport?
+
+Here are explanations for these concepts:
+
+Feature representation: A mapping of an object (like a graph) into a mathematical space where each dimension represents some characteristic or feature of the object. By defining a feature space for graphs, we can compare and analyze graphs by comparing their locations in the feature space. Some examples are graph kernels, clustering coefficients, degree distributions, etc.
+
+Optimal alignment: An alignment between the nodes of two graphs that maximizes some objective function, like the number of edges that can be aligned while preserving node adjacencies. Finding the optimal alignment between two graphs allows you to identify their most structurally similar parts and calculate a graph distance.
+
+Optimal transport: A mapping between the elements of two distributions (e.g. graphs) that minimizes the overall cost of transporting density from one distribution to the other. The Gromov-Wasserstein distance finds the optimal transport mapping between graphs that also preserves geodesic distances between nodes. The cost of this optimal mapping represents the distance between the graphs.
+
+Some examples to illustrate these concepts:
+
+Feature representation: We could represent a graph by a feature vector containing the frequencies of all 3-node subgraphs. Two graphs with similar frequencies of the same subgraphs will have similar feature representations.
+
+Optimal alignment: The optimal alignment between two graphs may map the dense cluster of nodes in one graph to the dense cluster in the other graph, since this maximizes the number of aligned edges. The non-aligned parts of the graphs determine the graph distance.
+
+Optimal transport: The optimal transport mapping between two graphs may map high-degree nodes to other high-degree nodes, and low-degree nodes to other low-degree nodes, to minimize "transport costs". As long as node distances are preserved, this mapping yields a small Gromov-Wasserstein distance between the graphs.
+
+Does this help clarify these concepts? Let me know if you have any other questions!
+
+Define all proper nouns
+
+Here are the definitions for the proper nouns used in the paper:
+
+Gromov-Wasserstein distance: A distance metric between graphs that finds the optimal transport mapping between the nodes of the graphs that preserves geodesic distances. It represents the minimum cost of transforming one graph into the other while maintaining node adjacencies.
+
+Wasserstein distance: A distance metric between probability distributions that finds the optimal transport mapping between distribution elements that minimizes transport costs. The Gromov-Wasserstein distance extends this concept to graphs.
+
+Monge form: The original formulation of optimal transport proposed by Gaspard Monge which considers moving piles of sand while minimizing the total work.
+
+Kantorovich form: Leonid Kantorovich's relaxation of the optimal transport problem into a linear programming problem. This became the modern formulation of optimal transport.
+
+Gromov: Mikhail Gromov, a Russian mathematician who studied metric structures and geometry. The Gromov-Wasserstein distance is named partly after him.
+
+Wasserstein: Leonid Wasserstein, a Polish mathematician who studied optimal transport and probability theory. The Wasserstein distance and Gromov-Wasserstein distance are named partly after him.
+
+OT: Optimal transport, which refers to the problem of finding an optimal mapping between two probability distributions or metric spaces that minimizes some cost function.
+
+Total Variation (TV): A measure of the distance between two probability distributions, defined as the total variation norm between the distributions.
+
+Kullback-Leibler (KL) divergence: A measure of the difference between two probability distributions. KL divergence does not define a true distance metric.
+
+Jensen-Shannon (JS) divergence: A symmetric measure of the difference between two probability distributions, based on KL divergence. JS divergence defines a pseudo-metric on probability distributions.
+
+Does this help summarize the key proper nouns and concepts used in the paper? Let me know if you need any clarification or have additional questions!
+
+2.2. Gromov-Wasserstein Discrepancy
+Gromov-Wasserstein discrepancy was proposed in [5], which is a natural extension of Gromov-Wasserstein distance[4]. Let (X, dX , μX ) and (Y, dY , μY ) be two metric measure spaces, where (X, dX ) is a compact metrix space and μX is a Borel probability measure on X (with (Y, dY , μY ) defined in the same way). The Gromov-Wasserstein distance GW(μX,μY) is defined as
+inf  π∈Π(μX ,μY ) X×Y
+
+X×Y
+L(x, y, x′, y′)dπ(x, y)dπ(x′, y′) (4)
+whereL(x,y,x′,y′)= f(dX(x,x′),dY(y,y′))isthelossfunction.Thisisanoptimaltransport-likedistance.
+The condition of Gromov-Wasserstein is strict which is not suitable for a wide range of machine learning tasks, so Peyre ́ et al. relax Gromov-Wasserstein distance to Gromov-Wasserstein discrepancy[5]. It includes that replacing dx and dY with dissimilarity measures, i.e., they are not necessarily positive and satisfing the triangle
+inequality, and defining L more flexibly, such as mean-square-error (MSE) or KL-divergence.
+Discrete a metric measure space as the paire (C, p) ∈ RN×N × ΣN , where N is an arbitrary interger and ΣN is n- dimensional simplex. C is a matrix representing dissimilarities between elements, and p is an histogram. One can set p to the uniform distribution p = N1 1N or normalized degree of graph, which reflects the probability of each node apppearing in observed interactions. Gromov-Wasserstein discrepancy between two measured similarity
+matrices (C, p) ∈ RN1×N1 × ΣN1 and (C ̄, q) ∈ RN2×N2 × ΣN2 is defined as follows:
+GW(C,C ̄,p,q)= min εC,C ̄(T) (5)
+T ∈Π( p,q)
+εC,C ̄(T) =  L(Ci,k,C ̄j,l)Ti,jTk,l. (6)
+i,j,k,l
+ When introducing the 4-way tensor L(C,C ̄) = (L(Ci,k,C ̄j,l))i,j,k,l and tensor-matrix multiplication L ⊗ T =
+( k,l Li, j,k,lTk,l)i, j, notice that ̄
+εC,C ̄(T)=<L(C,C)⊗T,T > (7)
+2.3. Application
+Gromov-Wasserstein distance is proposed to measure the difference between two spaces in which there is dissimilarity and measure function. In this space, the objective of research includes locaiton, distribution and re- lationship. It is obvious that a graph can be seen as a generalized metric measure space. We can model difference in attributes or the distance between two nodes as dissimilarity function and uniform distribution or normalized degree of graph as measure function. Gromov-Wasserstein discrepancy is suitable for measuring the difference between two graphs. Not only that, Gromov-Wasserstein discrepancy is a pseudometirc on graphs.
+Alvarez-Melis et al.[7] exploit the Gromov-Wasserstein to measure the difference between two word em- bedding spaces and cast the alignment of word embedding spaces directly as an OT problem. Compared with current state-of-the-art method, this OT objective requires little or no hyper-parameters. The experiments show that Gromov-Wasserstein distance performs well on cross-lingual word alignment tasks.
+Xu Hongteng et al.[8] establish a novel and theoretically-supported paradigm for large-scale graph analysis based on Gromov-Wasserstein discrepancy. This paper thinks that the optimal transport associated with Gromov- Wasserstein discrepancy of graphs provides the correspondence between nodes. According to this idea, Gromov- Wasserstein learning not only handle the matching and segmentation of two graphs, but also multi-graph tasks by learning a Gromov-Wasserstein barycenter graph. The illustration of graph partitioning and matching in the Gromov-Wasserstein learning framework shows in Fig. 1.
+2.4. Algorithm
+Original Gromov-Wasserstein discrepancy is a quadratic programming. Although quadratic programming is difficult to solve, Me ́moli Facundo proposes Entropic approximation of the initial Gromov-Wasserstein formuation and solves this approximation by matrix scaling which is easy to combine with artificial neural networks[4]. Another computational method is proposed in [8], which is more suitable for large graph problems.
+
+Author name / Procedia Computer Science 00 (2021) 000–000
+700 Lei Zheng et al. / Procedia Computer Science 199 (2022) 697–702
+Fig. 1. Illustration of graph partitioning and matching in GWL framework.
+Similar to entropy regularization Wasserstein distance[9, 10], entropic approximation of Gromov-Wasserstein
+formuation is defined as[4]
+GWε(C,C ̄,p,q)= min εC,C ̄(T)−εH(T) (8) T ∈Π( p,q)
+H(T) = − Ti,j logTi,j (9) i,j
+When using projected gradient descent to solve above approximation and choosing proper parameters, it is proved that each iteration of this algorithm reads
+T(k+1)←arg min <L(C,C ̄)⊗T(k),T> (10) T ∈Π( p,q)
+This minimizaiton problem can be treated as OT where cost matrix is L(C,C ̄)⊗T(k), so T is solved by Sinkhorn projection[9, 10]. Although this algorithm works well in practice and always leads to converging sequence of T , there is no theory guaranting the convergence of this algorithm.
+Rather than solve entropy regularizaiton formulation, another computational method proposes a regularized proximal gradient method to calculate Gromov-Wasserstein discrepancy directly[8]. It decomposes a complicated non-convex optimization problem into a series of convex sub-problems which is more suitable for large graph problems. As adding KL divergence as proximal term, iteration of optimal transport is updated as follows:
+T(k+1) = arg min < L(C,C ̄,T(k)),T > +γKL(T∥T(k)) (11) T ∈Π( p,q)
+L(C,C ̄,T)=Cp1Tm +1nqTC ̄−2CTC ̄T (12)
+In the same way, the above minimization problem can be converted to regularized OT, so the above minimiza- tion problem is solved via the Sinkhorn-Knopp algorithm with nearly-linear convergence[9]. We can guarantee global convergence of this proximal gradient method which leads to a stable point. In experiments, this method achieves better convergence and numerical stability than the entropy-based method.
+
+This section discusses the Gromov-Wasserstein discrepancy, which is an extension of the Gromov-Wasserstein distance to more flexible metric measure spaces. Some key points:
+
+The Gromov-Wasserstein distance GW(μX,μY) between two metric measure spaces (X, dX , μX ) and (Y, dY , μY ) is defined as the optimal transport cost between μX and μY while preserving geodesic distances.
+
+The Gromov-Wasserstein discrepancy relaxes this by allowing dissimilarity measures C and C' instead of distance metrics dX and dY, and a flexible loss function L (e.g. MSE, KL divergence). For discrete spaces represented as (C, p) and (C', q), the GW discrepancy is:
+
+GW(C,C',p,q) = min εC,C'(T)
+T∈Π(p,q)
+
+where εC,C' (T) = ∑i,j,k,l L(Ci,k, C'j,l)Ti,jTk,l
+
+This can be written as an inner product <L(C,C')⊗T, T> where L(C,C') is a 4-way tensor and ⊗ is tensor-matrix multiplication.
+
+The GW discrepancy has applications in measuring differences between graphs, word embedding spaces, and more. It provides a correspondence between elements that matches locations, distributions, and relationships.
+
+Computationally, the GW discrepancy can be approximated using entropic regularization, which reduces it to a matrix scaling problem solvable with Sinkhorn's algorithm. A proximal gradient method can also directly solve the GW discrepancy and may scale better for large graphs.
+
+The entropic approximation is: GWε(C,C',p,q) = min εC,C'(T) - εH(T) where H(T) = -∑i,j Ti,j log Ti,j. Each iteration solves T(k+1) = arg min <L(C,C')⊗T(k), T> which is an OT problem.
+
+The proximal gradient method iteration is: T(k+1) = arg min <L(C,C',T(k)),T> + γKL(T||T(k)) where L(C,C',T) = Cp1Tm + 1n qTC' - 2CTC'T. This also reduces to Sinkhorn's algorithm.
+
+Please let me know if you need any clarification or have additional questions!
+
+Let takeaway’s
+
+Here are the main takeaways from this section:
+
+The Gromov-Wasserstein discrepancy extends the Gromov-Wasserstein distance to more general metric measure spaces by allowing dissimilarity measures and flexible loss functions. It provides a relaxed correspondence between the elements of the spaces.
+
+The Gromov-Wasserstein discrepancy can be defined as an optimal transport problem that minimizes the objective εC,C'(T) = ∑i,j,k,l L(Ci,k, C'j,l)Ti,jTk,l. For discrete spaces (C, p) and (C', q), this is GW(C,C',p,q) = minT∈Π(p,q) εC,C'(T).
+
+The GW discrepancy can be written succinctly as an inner product <L(C,C')⊗T, T> between a 4-way tensor L(C,C') and the transport matrix T.
+
+The GW discrepancy has important applications in graph matching, comparing word embedding spaces, and other problems in machine learning and network analysis.
+
+Two computational approaches for the GW discrepancy are:
+
+Entropic regularization: GWε(C,C',p,q) = minT∈Π(p,q) εC,C'(T) - εH(T) where H(T) is the entropy of T. This can be solved with Sinkhorn's algorithm as a matrix scaling problem.
+
+Proximal gradient method: Directly minimize GW(C,C',p,q) using T(k+1) = arg min <L(C,C',T(k)),T> + γKL(T||T(k)). This also reduces to Sinkhorn's algorithm but may converge better for large problems.
+
+Both methods provide a sequence of transport matrices T that converge to a stable point, though only the proximal gradient method has theoretical guarantees of convergence.
+
+The GW discrepancy and associated computational methods provide a flexible and powerful framework for matching metric measure spaces and analyzing networked data.
+
+Please let me know if you have any other questions!
+
+Distance VS dissimilarity metric
+
+The terms "distance" and "dissimilarity metric" are closely related but have some key differences:
+
+Distance:
+
+• A distance metric defines a distance between points in a space. It must satisfy the properties of identity of indiscernibles, symmetry, and triangle inequality.
+
+• Common examples are Euclidean distance, Manhattan distance, and Hamming distance. These satisfy the properties of a distance metric.
+
+• A distance metric can be used to analyze relative proximities of points in the space and compute shortest paths. It provides geometrical information about the space.
+
+Dissimilarity metric:
+
+• A dissimilarity metric defines a measure of difference between points, but does not necessarily satisfy the strict properties of a distance metric. It does not provide geometrical information about the space.
+
+• Dissimilarity metrics are more general than distance metrics. They only need to be non-negative and reflexive (self-dissimilarity is 0). They do not require symmetry or triangle inequality.
+
+• Examples include Minkowski distances with p<1, Itakura-Saito distance, and Kullback-Leibler divergence. These are dissimilarity metrics but not distance metrics.
+
+• Dissimilarity metrics can still be used to analyze differences between points but do not enable tasks like shortest path computation. They provide a more general notion of difference.
+
+The Gromov-Wasserstein discrepancy discussed in the original post actually uses dissimilarity metrics, rather than strict distance metrics. By allowing dissimilarity metrics, it obtains a more flexible correspondence between spaces that focuses on matching relative differences and relationships, rather than geometrical structure.
+
+So in summary:
+
+• Distances provide geometrical information, dissimilarities provide a more general measure of difference.
+
+• Distances satisfy strict mathematical properties (identity, symmetry, triangle inequality), dissimilarities do not need to satisfy these properties and are more general.
+
+• The Gromov-Wasserstein discrepancy uses dissimilarity metrics to enable flexible matching between spaces.
+
+Please let me know if you have any other questions about this distinction!
+
+Tell me more about Manhattan distance.
+
+The Manhattan distance, also known as the taxicab distance or L1 distance, is a distance metric defined between two points in a space. It is calculated as the sum of the absolute differences of the coordinates.
+
+For example, in 2D space, for points (x1, y1) and (x2, y2), the Manhattan distance is:
+
+d = |x1 - x2| + |y1 - y2|
+
+This is in contrast with the Euclidean distance, which sums the squared differences of the coordinates:
+
+d = √(x1 - x2)2 + (y1 - y2)2
+
+Some key properties of the Manhattan distance:
+
+It satisfies the properties of a distance metric:
+Identity of indiscernibles: The distance between two identical points is 0.
+Symmetry: The distance between A and B is the same as the distance between B and A.
+Triangle inequality: The distance between A and C is less than or equal to the distance between A and B plus the distance between B and C.
+It only sums the absolute values of coordinate differences, rather than squaring them. This results in distance contours that are diamond-shaped, rather than circular as in the Euclidean distance. The Manhattan distance is more strongly influenced by differences in single dimensions.
+
+Calculation of the Manhattan distance is more computationally efficient than the Euclidean distance, since it does not require computing square roots.
+
+The Manhattan distance corresponds to the L1 norm, while the Euclidean distance corresponds to the L2 norm. The L1 norm is more robust to outliers than the L2 norm.
+
+When used for clustering or nearest-neighbor search, the Manhattan distance will tend to produce shaped clusters and be influenced more strongly by single dimensions. The Euclidean distance produces rounder, more symmetric clusters.
+
+The Manhattan distance can only produce convex hulls, since it relies on rectilinear paths. The Euclidean distance can produce both convex and concave hulls.
+
+In summary, the Manhattan distance is a distance metric that sums the absolute coordinate differences between points. It is a simpler, more computationally efficient alternative to the Euclidean distance, but produces different geometrical properties and is more strongly influenced by differences in individual dimensions.
+
+Please let me know if you have any other questions about the Manhattan distance!
+
+Manhattan vs hamming distance
+
+The Manhattan distance and Hamming distance are two different distance metrics used in various fields. Here are the main differences between them:
+
+Manhattan distance:
+
+• Defined between points in a continuous, multidimensional space. Calculated as the sum of absolute differences between coordinate values.
+
+• Used for continuous data, especially in low dimensions (2D or 3D space)
+
+• Satisfies the properties of a distance metric (identity, symmetry, triangle inequality)
+
+• Examples: Distance between two points (x1, y1) and (x2, y2) is |x1 - x2| + |y1 - y2|
+
+Hamming distance:
+
+• Defined between sequences of discrete values or symbols of equal length. Calculated as the number of positions where the sequences differ.
+
+• Used for discrete data, especially binary data or strings.
+
+• Does not satisfy the triangle inequality, so it is technically a dissimilarity measure rather than a distance metric.
+
+• Examples: Distance between binary strings 0110 and 0011 is 2, since they differ in the 2nd and 4th positions. Distance between ACTG and ACCA is 1, since they differ only in the 3rd position.
+
+• Used in applications like information theory, coding theory, and computational biology where binary or string data is common.
+
+Key differences:
+
+• The Manhattan distance is defined between points in continuous space, the Hamming distance is defined between discrete sequences.
+
+• The Manhattan distance satisfies metric properties, the Hamming distance does not satisfy the triangle inequality so it is a dissimilarity measure.
+
+• The Manhattan distance sums coordinate differences, the Hamming distance counts the number of positions where sequences differ.
+
+• The Manhattan distance can be multidimensional, the Hamming distance is defined between 1D sequences.
+
+• The Manhattan distance is used for continuous data, the Hamming distance is used for discrete data like binary strings or sequences.
+
+• Example Manhattan distance application: Clustering 2D data points. Example Hamming distance application: Error correction by detecting changes between binary codewords.
+
+So in summary, the Manhattan distance and Hamming distance are two different ways to quantify differences, used for continuous vs. discrete data respectively. They have some similarities but also key differences in their properties and applications.
+
+Please let me know if you have any other questions about the Manhattan distance or Hamming distance!
+
+Intro to dissimilarity metrics
+
+A dissimilarity metric measures the difference or dissimilarity between two objects. It is a more general notion than a distance metric. Some key points about dissimilarity metrics:
+
+• A dissimilarity metric does not necessarily satisfy the properties of a distance metric (identity of indiscernibles, symmetry, triangle inequality). It only needs to be non-negative and reflexive (self-dissimilarity is 0).
+
+• Dissimilarity metrics provide a flexible way to quantify differences between complex objects like graphs, sequences, images, etc. They can capture aspects beyond pure geometry, like structural or distributional differences.
+
+• Common examples of dissimilarity metrics include:
+
+Minkowski distances with p<1: Provide a more flexible metric that does not satisfy triangle inequality. Useful for complex objects.
+
+Itakura-Saito distance: A dissimilarity measure for power spectral densities. Not symmetric so not a true distance metric.
+
+Kullback-Leibler divergence: Measures the difference between two probability distributions. Not symmetric so not a distance metric.
+
+Graph edit distance: Counts the minimum number of edits to transform one graph into another. A dissimilarity measure for graphs that does not satisfy triangle inequality.
+
+Sequence alignment score: Measures the dissimilarity between biological sequences by counting insertions, deletions, and substitutions needed to align them. Not a distance metric.
+
+• Dissimilarity metrics can be used for tasks like clustering, dimensionality reduction, and object matching. But they do not provide geometrical information or support shortest path computation like distance metrics do. They offer more flexibility.
+
+• Many dissimilarity metrics can be optimized or aligned to provide a correspondence between objects. For example, sequence alignment produces an alignment of residues between biological sequences. This is like an “optimal mapping” between the sequences that minimizes dissimilarity.
+
+• Computing the dissimilarity between complex objects often involves solving an optimization problem to find the optimal correspondence or minimum-cost alignment. This can be computationally intensive.
+
+So in summary, dissimilarity metrics provide a flexible way to quantify differences between objects. They are more general than distance metrics and do not need to satisfy the triangle inequality or symmetry. Dissimilarity metrics are useful for complex data types where geometry is hard to define, but can be challenging to compute. They enable matching and correspondence between objects.
+
+Please let me know if you have any other questions about dissimilarity metrics!
+
+Explain how they work mechanically
+
+Dissimilarity metrics work by quantifying the differences between objects in a flexible, optimized fashion:
+
+Define objects: The first step is to define the objects between which dissimilarity will be measured. This could be graphs, sequences, images, distributions, etc. The objects need to be represented in a way that allows differences to be identified and quantified.
+
+Identify differences: We need to specify what types of differences are important to capture between the objects. This could be structural differences, distributional differences, errors/edits, mismatched components, etc. We define a set of operations that can transform one object into the other, like graph edits or sequence alignments.
+
+Define an objective function: We specify an objective function, usually the total cost of the edit operations, that quantifies the dissimilarity between objects. The goal is to find the set of operations that minimizes this objective function. This minimal cost represents the dissimilarity between the objects.
+
+Solve the optimization problem: We use computational methods like dynamic programming, linear programming, gradient descent, etc to find the set of edit operations that minimizes the objective function. This yields the optimal correspondence between objects that best aligns them to minimize total dissimilarity.
+
+Extract dissimilarity: The total cost of the optimal set of operations is the dissimilarity metric. The correspondence it defines represents how the objects can be matched and aligned. This provides more detail than just a single dissimilarity score.
+
+For example, consider the dissimilarity between biological sequences.
+
+Represent sequences as strings over an alphabet.
+Identify insertions, deletions, and substitutions as possible edit operations to transform one sequence into the other.
+Define objective function as total cost of edits, with costs assigned to each operation.
+Use sequence alignment to find the optimal correspondence between residues that minimizes total edit cost.
+The total minimum edit cost is the sequence dissimilarity. The alignment shows how sequences can be matched.
+So in summary, dissimilarity metrics work by:
+
+Defining objects and possible differences between them
+Specifying an objective function that quantifies total difference
+Solving an optimization problem to find the minimal-cost set of differences
+Using the total cost of this optimal solution as the dissimilarity measure.
+The optimization step is key - it finds the best way to correspond and align the objects to minimize dissimilarity. This provides more information than just a single score.
+
+Please let me know if you need any clarification or have additional questions!
+
+If we have to solve the optimization problem to obtain the cost how is this cheaper than just doing the distance? Also wtf is dynamic and linnear programming?
+
+You make a good point that solving the optimization problem to obtain a dissimilarity metric can be computationally expensive. Distance metrics are often more computationally efficient since they rely on simple formulae. Some reasons dissimilarity metrics can still be useful:
+
+They provide a more flexible measure of difference for complex objects where geometry is hard to define. Simple distance measures may not capture important differences.
+
+They yield an optimal correspondence between objects, not just a single score. This matching can be useful for tasks like object alignment, clustering, etc.
+
+They can be approximated or relaxed to improve efficiency. For example, entropic regularization of the Gromov-Wasserstein discrepancy can be solved much more efficiently while still providing a useful dissimilarity measure.
+
+Improved optimization techniques and parallel computing provide ways to scale dissimilarity metrics to large datasets. Careful choice or approximation of the objective function also helps.
+
+You asked about dynamic and linear programming:
+
+• Dynamic programming refers to a general approach for solving complex problems by breaking them down into simpler subproblems. It is a very general technique, though often associated with sequence alignment. The key idea is to solve each subproblem once, store the result, and re-use it to solve larger subproblems. This avoids re-computing common parts.
+
+• Linear programming refers to the problem of optimizing a linear objective function subject to linear equality and inequality constraints. It is a mathematical optimization approach that can be used to solve many types of problems. Simplex and interior-point methods are commonly used to solve linear programs.
+
+• These techniques can be useful for solving the optimization problem associated with a dissimilarity metric. For example:
+
+Sequence alignment uses dynamic programming to solve the minimum-edit cost alignment of two sequences in a computationally efficient manner by re-using results of subproblems.
+
+Linear programming may be used to find a minimum-cost flow between two graphs that minimizes dissimilarity under capacity constraints. The total flow cost would be the dissimilarity metric.
+
+Entropic regularization of the Gromov-Wasserstein discrepancy can be solved using a projected sub gradient method which at each step solves a linear program.
+
+So in summary:
+
+Dissimilarity metrics can be expensive to compute due to solving an optimization problem, compared to simple distance measures. But they provide useful information and can be approximated or made more efficient.
+
+Dynamic programming breaks down complex problems into re-usable subproblems to solve them efficiently. Used for sequence alignment.
+
+Linear programming finds optimal solutions subject to linear constraints. Can be used to solve certain dissimilarity metric problems.
+
+These techniques, along with improved optimization and parallelism, provide ways to scale dissimilarity metrics and make them computationally tractable. Careful objective function design also helps.
+
+Please let me know if this helps provide more intuition about dissimilarity metrics and the computational techniques used to solve them!

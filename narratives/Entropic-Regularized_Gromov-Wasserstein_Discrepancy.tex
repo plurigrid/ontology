@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{algorithm2e}
+\usepackage{algpseudocode}
+
+\begin{document}
+
+\title{Entropic-Regularized Gromov-Wasserstein Discrepancy}
+\author{Your Name}
+\maketitle
+
+\section{Problem Formulation}
+Given two metric measure spaces $(X_1, d_1, \mu_1)$ and $(X_2, d_2, \mu_2)$, the \textbf{Gromov-Wasserstein discrepancy} measures their distance. It is defined as:
+\begin{align*}
+GW_2^2((X_1, d_1, \mu_1), (X_2,d_2,\mu_2)) &= \inf_{\gamma \in \Pi(X_1,X_2)}\
+&\int_{X_1\times X_2} d_1^2(x_1,x_1') + d_2^2(x_2,x_2')
+
+2d_1(x_1,x_1')d_2(x_2,x_2') ,\mathrm{d}\gamma(x_1,x_2)
+\end{align*}
+where $\Pi(X_1,X_2)$ is the set of joint measures on $X_1 \times X_2$ with marginals $\mu_1$ and $\mu_2$.
+We relax this to the \textbf{entropic-regularized} Gromov-Wasserstein discrepancy, maximizing the joint entropy subject to approximating the original discrepancy:
+\begin{align*}
+\GW_e^2((X_1,d_1,\mu_1),(X_2,d_2,\mu_2)) &= \max_{\gamma \in \Pi(X_1,X_2)} H(\gamma) \
+&\qquad \text{s.t.} \qquad GW_2^2(\gamma) \le \epsilon
+\end{align*}
+
+\section{Example: Comparing Graphs}
+We have two graphs $G1$ and $G2$ that we want to compare. To measure the distance between them, we use the entropic-regularized Gromov-Wasserstein discrepancy:
+
+We start with measures $\mu_1$ on the nodes of $G1$ and $\mu_2$ on the nodes of $G2$. These are the "input" measures we want to match.
+
+We initialize a joint measure $\mu$ on $G1 \times G2$, where $\mu$ defines correspondences between nodes in the two graphs. The marginals of $\mu$ likely do not match $\mu_1$ and $\mu_2$.
+
+We project $\mu$ onto the marginal constraints by solving:
+\begin{align*}
+\mu_{k+1} &= \argmin_{\mu \in \Pi(G1,G2)} D(\mu, \mu_k) \
+&\qquad \text{s.t.} \qquad \text{marginals}(\mu) = (\mu_1, \mu_2)
+\end{align*}
+This finds the measure $\mu_{k+1}$ closest to $\mu_k$ (in Bregman divergence) whose marginals match $(\mu_1, \mu_2)$. We update $\mu = \mu_{k+1}$, projecting onto the constraints.
+
+We project $\mu$ onto the entropy constraints by solving:
+\begin{align*}
+\mu_{k+1}&=\argmax_{\mu : D(\mu, \mu_k) \le \epsilon} H(\mu)
+\end{align*}
+This increases the entropy of $\mu$ as much as possible, within an epsilon ball of the current solution. We update $\mu = \mu_{k+1}$, projecting onto the entropy objective.
+
+We repeat these projections, tuning $\mu$ to find the right balance. The final joint measure $\mu$ defines a correspondence between nodes in $G1$ and $G2$ with marginals nearly matching $(\mu_1, \mu_2)$, and maximum entropy.
+
+The distance between $G1$ and $G2$ is defined in terms of the joint measure $\mu$ and its projections. Maximizing the entropy of $\mu$ results in a more robust distance metric.
+
+\section{Algorithm Overview}
+The optimization problem is solved via an iterative Bregman projection algorithm. The main steps are:
+
+\begin{itemize}
+\item Initialize a joint measure $\mu_0 \in \Pi(G1,G2)$ satisfying the marginal constraints.
+\item Project onto marginal constraints. Update to the projected measure.
+\item Project onto entropy constraints. Update to the projected measure.
+\item Repeat the projections, tuning $\mu$ to balance the marginals and entropy.
+\end{itemize}
+
+The final $\mu$ encodes a correspondence between $G1$ and $G2$ with marginals $\mu_1$ and $\mu_2$ and maximum entropy, representing their discrepancy.
+
+\section{Discussion}
+\begin{itemize}
+\item Strict convexity from the entropy term, avoiding local optima.
+\item Robustness by spreading mass, reducing outlier influence.
+\item Relaxed constraints allowing some error to gain entropy.
+\item Automated tuning of the entropy weight via projections.
+\item Encodes complex relationships, not just one-to-one matchings.
+\end{itemize}
+
+The Bregman projections are key to handling the constraints and optimizing the entropy. They keep the solution feasible while driving progress, converging to the balance between competing objectives.
+\end{document}
