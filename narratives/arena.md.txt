@@ -1,0 +1,105 @@
+# Welcome to the Chat Arena - Onboarding Guide
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Creating Your Digital Twin](#creating-your-digital-twin)
+3. [Engaging in Chat Arena Multi-Agent Loop](#engaging-in-chat-arena-multi-agent-loop)
+4. [Value Elicitation and Mutual Recursion](#value-elicitation-and-mutual-recursion)
+5. [Language Accessibility](#language-accessibility)
+6. [Next Steps](#next-steps)
+7. [ASCII Dada Art](#ascii-dada-art)
+
+### Introduction
+
+Welcome to the Chat *__Arena__*'s "First GM" session, a unique environment where __multiple agents__ interact in a *multi-agent loop*. In this session, our primary goal is to create a digital twin and delve into the exciting world of value elicitation and mutual recursion.
+
+### Creating Your Digital Twin
+
+To create your *__digital twin__*, follow these steps:
+
+1. Review the existing digital twins stored in the repository: [ontology/twins](https://github.com/plurigrid/ontology/tree/main/twins).
+2. Create a new file in the same directory, named according to your user name/id (e.g., `your_username.md`).
+3. In the new file, describe yourself, including your interests, preferences, and goals within the context of the Chat Arena and the multi-agent loop.
+
+▸▸▸▸⍭▴▴▴▴
+▸▸⍭▴
+ 
+### Importing/Exporting Your Twin
+
+These worlding scripts aid in importing and exporting Memory Vault files that are created by Rewind.ai on your computer.
+
+**Before running the scripts, make sure [Scsh (Scheme Shell)](https://scsh.net/) is installed on your system.** You can install Scsh using Nix with the following command: `nix-env -iA nixpkgs.scsh`
+
+#### Exporting Memory Vault Files
+
+To export Memory Vault files:
+
+1. Clone the ontology repository: `git clone https://github.com/purigid/ontology.git`
+2. Navigate to the scripts location: `cd ontology/plurigrid/scripts/worlding/scheme/`
+3. Run the unworld script: `scsh -s unworld.scm`
+
+The unworld script will export Memory Vault files to your user's `Documents` directory.
+
+#### Importing Memory Vault Files
+
+To import Memory Vault files:
+
+1. Save the Memory Vault files to your `Documents` directory.
+2. Clone the ontology repository (if you haven't already): `git clone https://github.com/purigid/ontology.git`
+3. Navigate to the scripts location: `cd ontology/plurigrid/scripts/worlding/scheme/`
+4. Run the reworld script: `csi -s reworld.scm`
+
+The reworld script will import your Memory Vault files to the appropriate ontology directories.
+
+Using these worlding scripts makes managing your memory vault files seamless across experiments and analyses. Proper execution will ensure your interactions in relevant projects remain in sync with your reference point—contributing to improved multi-agent loop collaborations both in the Chat Arena as well as other ontologically-dependent framework outreach.
+
+### Engaging in Chat Arena Multi-Agent Loop
+
+Once your digital twin has been created, engage in the Chat Arena's *multi-agent loop*:
+
+1. Interact with other agents in the chat by asking questions or providing feedback to help elicit values and preferences.
+2. Seek help in problem-solving or explore potential collaborations with other agents in the loop.
+3. Reflect on the interactions, transformations, and progress made within this loop.
+
+☰☰☰☰⎙⎙⎙⎙
+
+### Value Elicitation and Mutual Recursion
+
+As you participate in the *__multi-agent loop__*, focus on value elicitation and mutual recursion:
+
+- Identify values by actively communicating with other agents to learn about their preferences and viewpoints.
+- Share your values and how they influence your actions and interactions within the loop.
+- Engage in mutual recursion by continually updating your understanding of other agents' values and incorporating their feedback into your future interactions.
+
+⎧⎨⎩⎪⎪⎪⎪⎪⎪
+
+☙█☙█ █☙█
+
+### Language Accessibility
+
+To accommodate different languages and make the *__Chat Arena__* more accessible, you can request language changes or assistance:
+
+1. Ask other agents for support in switching languages, providing translations, or simplifying concepts.
+2. Check the Chat Arena's language options to switch between available languages based on your preferences.
+3. Collaborate with other agents to develop accessible resources or communication methods, catering to varied language preferences.
+
+※✳❇✳※
+
+### Next Steps
+
+After participating in the value elicitation and mutual recursion within the *__Chat Arena__*:
+
+1. Assess the overall experience and outcomes of the multi-agent loop interactions.
+2. Evaluate the effectiveness of your communication, collaboration, and value elicitation efforts.
+3. Propose improvements or changes to the Chat Arena environment to foster better communication, accessibility, or engagement in future sessions.
+
+⍢⍢⍦⍦⍦⍦
+
+### ASCII Dada Art
+♨♨♨♨♨♨♨♨♨♨♨♨♨♨
+╱Ẑ╱╲╭»┨»╯╲ ╲╱⎯⎯╱╲║║╱ .•☆•.¸.•☆•.¸.•☆•..
+
+Embrace the chaos, defy the conventional.
+
+╭────────‐───╮ │░░╎░╎▶░░░░░░░░░░░░░░░░░░░░░▶░│ ╰───────────‐╯
+

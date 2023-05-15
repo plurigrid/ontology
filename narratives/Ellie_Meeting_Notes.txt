@@ -1,0 +1,51 @@
+## Meeting Report: Exploring Collaboration between Ellie Day, Plurigrid, and AOL
+
+**Date:** May 11, 2023
+
+### Introduction
+
+This report summarizes a recent meeting with Ellie Day, an open-source contributor and former contractor experienced in hardware design, prototyping, and software development. The goal was to explore the possibility of collaboration between Ellie, working independently on her AOL project, and our team focused on Plurigrid. Topics discussed are highlighted below:
+
+- Ellie's background and experience
+- Plurigrid and AOL: common ground and differences
+- Hardware and software integrations
+- Collaboration opportunities and future plans
+- Obstacles and personal insights
+
+### Ellie's Background and Experience
+
+Ellie Day's unconventional background includes hardware design, prototyping, and software development. She has been contributing to the Plurigrid project as an open-source collaborator and a former contractor. Additionally, Ellie has invested time independently working on her project, AOL, which shares similarities with Plurigrid.
+
+### Plurigrid and AOL: Common Ground and Differences
+
+There are overlapping intentions behind the autopoietic Plurigrid energy coordination protocol and Ellie's AOL project. Plurigrid aims to make energy production accessible, aiding society's control over their energy resources. AOL follows a parallel route, being a globally distributed computer runnable across devices to offer enhanced interactive AI features.
+
+Considering the broader goals and shared adaptations, both detailed projects look to benefit lasting impacts on humanity. Nevertheless, AOL is predominantly software-based compared to Plurigrid's challenges involving hardware scaling and utilization in handling and managing transactions across multiple chains.
+
+### Hardware and Software Integrations
+
+AOL, with software as its primary building block, uses browser-integrated iframes and web workers to run on any device fitted with specific browser compatibility. Optionally hidden or conspicuous user interaction comes with the benefits of potential economic rewards – similar to in-browser cryptocurrency miners like Netflix.
+
+Plurigrid, sharing functional boundaries with AOL, faces an additional onslaught of hardware-induced challenges while struggling heavily through laws and regulations introduced specifically to interact simplistically with other modular devices across multifaceted chains.
+
+### Collaboration Opportunities and Future Plans
+
+Outlined below are some discussed initiatives on opportunities for mutual cooperation:
+
+- Develop CRDT synchronization tailored to suit Plurigrid
+- Joint hardware-focused progression
+- Standardize IoT hardware interfacing
+- Reap Matter open-source protocol IoT functionality alongside AOL
+- Enhance embedded controls utilization merged with Plurigrid's defining soft cores reliant on FPGA systems working tirelessly in the background
+
+Collaborative agreements outlined could potentially scope branching pathways for widespread benefits encrypted in the AOL and Plurigrid ventures.
+
+### Challenges and Personal Insights
+
+Unswerving communication about project dynamics fostered a work-driven energy described as, on a side note, interesting yet complex to comply. Still remorseful to some extent, leaning left unsuccessful rather than triumphant, Ellie disclosed after a recent spiral in terms of financially-induced frustration coupled with personal losses that her health suffered but she remains on a slowly ascending recovery trend.
+
+### Conclusion
+
+As shown, the synergy required in connecting lifelong ventures like Plurigrid and AOL include previously detailed collaborative prerequisites using open-minded and alacritous innovators fueled effectively by resource optimization and consistent communication.
+
+Ultimately, Ellie Day's distinctive experience levels beyond hardware and software applications lead these open-ended discussions: one optimistic enthusiast to potential collaborator benchmarks explicitly planning fruitful explorations moving forward.
