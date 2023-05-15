@@ -7813,8 +7813,8 @@
       "height": 56,
       "id": "7479133581062387",
       "position": {
-        "x": 5210.6230999052395,
-        "y": 971.7935343626748
+        "x": 5207.430024005698,
+        "y": 968.6004584631337
       },
       "style": {
         "background": "#d9f3d6"
@@ -7826,8 +7826,8 @@
       },
       "selected": false,
       "positionAbsolute": {
-        "x": 5210.6230999052395,
-        "y": 971.7935343626748
+        "x": 5207.430024005698,
+        "y": 968.6004584631337
       },
       "dragging": false
     },
@@ -8188,7 +8188,7 @@
         "fluxNodeType": "GPT",
         "text": "I'm glad I could help you through the process of developing the data structure for the Plurigrid. If you have any other questions, concerns, or tasks you need assistance with, don't hesitate to reach out. I'm here to help!"
       },
-      "selected": true,
+      "selected": false,
       "positionAbsolute": {
         "x": 6379.094754068865,
         "y": 1292.2357806402354
@@ -8236,6 +8236,1514 @@
       "positionAbsolute": {
         "x": 6739.094754068865,
         "y": 1274.7262154967154
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "24641052436378796",
+      "position": {
+        "x": 7175.358402680302,
+        "y": 1191.308744484314
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "Skip to content  Search or jump ...",
+        "fluxNodeType": "User",
+        "text": "Skip to content\n\nSearch or jump to...\nPull requests\nIssues\nCodespaces\nMarketplace\nExplore\n \n@ajasibley \nlibp2p\n/\nlibp2p\nPublic\nFork your own copy of libp2p/libp2p\nCode\nIssues\n36\nPull requests\n1\nActions\nProjects\nSecurity\nInsights\nlibp2p/libp2p\n 5 branches\n 0 tags\nLatest commit\n@DannyS03\n@mxinden\nDannyS03 and mxinden Quick README updates (#104)\n…\ne9d6556\non Oct 16, 2022\nGit stats\n 49 commits\nFiles\nType\nName\nLatest commit message\nCommit time\n.github/workflows\nchore: Update .github/workflows/stale.yml [skip ci]\n8 months ago\nimg\nFeature/new logo (#14)\n6 years ago\nlogo\nchore: add libp2p text, black and white\n5 years ago\nISSUE-LABELLING.md\nUpdate ISSUE-LABELLING.md\n3 years ago\nLICENSE\nInitial commit\n7 years ago\nREADME.md\nQuick README updates (#104)\n7 months ago\nREADME.md\n\n\n  \n\nlibp2p is a modular networking framework bundled together as a full stack of protocols for peer-to-peer systems.\n\nlibp2p is the product of a long and arduous quest into the internet's network stack and all of the plentiful peer-to-peer protocols of the past. Building large-scale peer-to-peer systems has been complex and challenging in the last fifteen years, and libp2p is a way to fix that. It is a \"network stack\" -- a protocol suite -- that cleanly separates concerns and enables sophisticated applications to only use the protocols they need without giving up interoperability and upgradeability. libp2p grew out of IPFS but is built so that many people can use it for many different projects.\n\nLearn more about libp2p at libp2p.io and docs.libp2p.io.\n\nSpecifications\nView the formal specifications of libp2p on the specifications repository.\n\nImplementations\nFollow the latest libp2p implementations at libp2p.io/implementations.\n\ngo-libp2p in Go\njs-libp2p in Javascript, for Node and the Browser\nrust-libp2p in Rust\npy-libp2p in Python\ncpp-libp2p in C++\nswift-libp2p in Swift\nnim-libp2p in Nim\njvm-libp2p in Kotlin\nerlang-libp2p in Erlang\nCommunity Discussion\nPlease visit our discussion forums at discuss.libp2p.io to get help, ask questions about the past, present, and future of libp2p, and more.\n\nAbout\nA modular and extensible networking stack which solves many challenges of peer-to-peer applications.\n\nlibp2p.io\nResources\n Readme\nLicense\n MIT license\nStars\n 2.3k stars\nWatchers\n 119 watching\nForks\n 247 forks\nReport repository\nReleases\nNo releases published\nPackages\nNo packages published\nContributors 16\n@daviddias\n@mxinden\n@jbenet\n@Stebalien\n@raulk\n@jessicaschilling\n@flyingzumwalt\n@yusefnapora\n@RichardLitt\n@jesseclay\n@Kubuxu\n+ 5 contributors\nFooter\n© 2023 GitHub, Inc.\nFooter navigation\nTerms\nPrivacy\nSecurity\nStatus\nDocs\nContact GitHub\nPricing\nAPI\nTraining\nBlog\nAbout\nlibp2p/libp2p: A modular and extensible networking stack which solves many challenges of peer-to-peer applications."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 7175.358402680302,
+        "y": 1191.308744484314
+      },
+      "dragging": false
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "2376064095349011",
+      "position": {
+        "x": 6995.358402680302,
+        "y": 1295.0491684576489
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "libp2p is a modular and ...",
+        "fluxNodeType": "GPT",
+        "text": "libp2p is a modular and extensible networking framework designed for peer-to-peer (P2P) systems. It provides a protocol suite that cleanly separates concerns, enabling sophisticated applications to use only the necessary protocols without compromising interoperability and upgradeability. libp2p grew out of the InterPlanetary File System (IPFS) project but has been developed for use in various projects.\n\nYou can find more information about libp2p at [libp2p.io](https://libp2p.io/) and the official documentation at [docs.libp2p.io](https://docs.libp2p.io/).\n\nThe libp2p project has formal specifications that can be found in the [specifications repository](https://github.com/libp2p/specs).\n\nThere are several language-specific implementations of libp2p:\n\n- [go-libp2p](https://github.com/libp2p/go-libp2p) in Go\n- [js-libp2p](https://github.com/libp2p/js-libp2p) in JavaScript, for Node and the Browser\n- [rust-libp2p](https://github.com/libp2p/rust-libp2p) in Rust\n- [py-libp2p](https://github.com/libp2p/py-libp2p) in Python\n- [cpp-libp2p](https://github.com/libp2p/cpp-libp2p) in C++\n- [swift-libp2p](https://github.com/libp2p/swift-libp2p) in Swift\n- [nim-libp2p](https://github.com/libp2p/nim-libp2p) in Nim\n- [jvm-libp2p](https://github.com/libp2p/jvm-libp2p) in Kotlin\n- [erlang-libp2p](https://github.com/libp2p/erlang-libp2p) in Erlang\n\nFor discussions, help, and questions about libp2p, you can join the [community forum](https://discuss.libp2p.io/)."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6995.358402680302,
+        "y": 1295.0491684576489
+      },
+      "dragging": false
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "7337171625835293",
+      "position": {
+        "x": 7175.358402680302,
+        "y": 1310.797378180785
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "libp2p is a modular networking ...",
+        "fluxNodeType": "GPT",
+        "text": "libp2p is a modular networking framework designed for peer-to-peer systems. It provides a full stack of protocols that aim to make building large-scale P2P systems easier and more efficient. Developed as part of the IPFS project, libp2p separates concerns and enables applications to only utilize the protocols they need without compromising on interoperability and upgradeability.\n\nYou can find more information about libp2p at [libp2p.io](https://libp2p.io/) and its documentation at [docs.libp2p.io](https://docs.libp2p.io/).\n\nThe libp2p specifications can be viewed in the [specifications repository](https://github.com/libp2p/specs). It has numerous implementations, including:\n\n- [go-libp2p](https://github.com/libp2p/go-libp2p) in Go\n- [js-libp2p](https://github.com/libp2p/js-libp2p) in JavaScript for Node.js and the browser\n- [rust-libp2p](https://github.com/libp2p/rust-libp2p) in Rust\n- [py-libp2p](https://github.com/libp2p/py-libp2p) in Python\n- [cpp-libp2p](https://github.com/libp2p/cpp-libp2p) in C++\n- [swift-libp2p](https://github.com/libp2p/swift-libp2p) in Swift\n- [nim-libp2p](https://github.com/status-im/nim-libp2p) in Nim\n- [jvm-libp2p](https://github.com/libp2p/jvm-libp2p) in Kotlin\n- [erlang-libp2p](https://github.com/helium/erlang-libp2p) in Erlang\n\nFor community discussions or seeking help, you can visit the libp2p discussion forums at [discuss.libp2p.io](https://discuss.libp2p.io/)."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 7175.358402680302,
+        "y": 1310.797378180785
+      },
+      "dragging": false
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "5595887666016599",
+      "position": {
+        "x": 7355.358402680302,
+        "y": 1310.1962798921613
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "libp2p is a modular networking ...",
+        "fluxNodeType": "GPT",
+        "text": "libp2p is a modular networking framework designed for peer-to-peer systems. It offers a full stack of protocols to enable sophisticated applications to use only the necessary protocols while maintaining interoperability and upgradeability. libp2p has emerged from the IPFS project but is built to be used in various other projects as well.\n\nlibp2p provides a suite of protocols for different transport, discovery, routing, peer management, and security concerns. The advantage of a modular design is that developers can choose the components that best suit their needs, and even swap components as requirements change, making the development and maintenance process of peer-to-peer systems simpler and more manageable.\n\nThere are several language implementations where libp2p can be used, including Go, JavaScript (for Node.js and browsers), Rust, Python, C++, Swift, Nim, Kotlin, and Erlang. Official documentation and specifications can be found at docs.libp2p.io and in the specifications repository respectively.\n\nIn order to discuss any aspect of libp2p, you can visit the discussion forums at discuss.libp2p.io. Remember that libp2p is an open-source project which accepts contributions from developers from different platforms; thus, you may also be interested in viewing its source code on its GitHub page along with activity at twitter.com/libp2p."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 7355.358402680302,
+        "y": 1310.1962798921613
+      },
+      "dragging": false
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "7242597937032098",
+      "position": {
+        "x": 6995.358402680302,
+        "y": 1414.976409816867
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "What are the primary ...",
+        "fluxNodeType": "User",
+        "text": "What are the primary applications?"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6995.358402680302,
+        "y": 1414.976409816867
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "7391357046126421",
+      "position": {
+        "x": 6815.358402680302,
+        "y": 1533.2907908565974
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "libp2p is designed for building ...",
+        "fluxNodeType": "GPT",
+        "text": "libp2p is designed for building peer-to-peer (P2P) systems, which provide decentralized alternatives to traditional, centralized systems. It can be used to develop a broad range of applications involving direct connections between peer nodes or devices, without relying on a central authority, making peer-to-peer applications easier to create, maintain, and upgrade. Some primary applications for libp2p include:\n\n1. Distributed storage and file-sharing systems: Such as InterPlanetary File System (IPFS), which is built on top of libp2p, presents a decentralized alternative for data storage and sharing.\n \n2. Decentralized applications (DApps) and P2P networks: libp2p enables the development and extension of various distributed applications and networks that can cater to techno-economic models like cryptocurrency, modern traffic systems, or social media platforms.\n\n3. Privacy-focused communication networks: P2P applications like secure messaging, file sharing, gaming, or anonymous browsing benefit from libp2p's built-in encrypted connections and secure protocols.\n\n4. Blockchain and cryptocurrencies: libp2p is useful in implementing decentralized ledger systems to support cryptocurrencies and secure transactions, such as Ethereum 2.0 using libp2p for its networking layer.\n\n5. IoT devices and networks: Internet of Things (IoT) devices can use libp2p to establish secure, direct connections for managing infrastructure or monitoring systems in a decentralized and fault-tolerant manner.\n\n6. Pub/Sub systems: Publish/Subscribe systems can use libp2p for sending notifications or streaming data, enabling distributed mesh networks for presence detection or data processing.\n\nThese applications leverage libp2p's flexibility, modularity, and swappable protocols to reduce complexity in building, maintaining, scaling, and extending P2P systems while ensuring seamless connectivity between devices and avenues for efficient upgradability."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6815.358402680302,
+        "y": 1533.2907908565974
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "246904779426375",
+      "position": {
+        "x": 6995.358402680302,
+        "y": 1526.6435141808577
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "The primary applications of ...",
+        "fluxNodeType": "GPT",
+        "text": "The primary applications of libp2p revolve around building and enhancing peer-to-peer (P2P) systems where nodes communicate directly with each other without relying on centralized servers. Some prominent applications include:\n\n1. Decentralized and distributed systems: libp2p enables the creation of applications like blockchains, distributed databases, and file protocols (e.g., InterPlanetary File System or IPFS), that run on multiple nodes without using a central coordinator.\n\n2. Decentralized networking environments: P2P networks like mesh networks and community networks benefit from the modular components provided by libp2p, simplifying communication integration with other devices without relying on the internet or additional centralized infrastructure.\n\n3. Messaging and social applications: libp2p enables the building of P2P messaging systems, social networks, and collaborative platforms where users communicate directly without relying on central servers for message distribution.\n\n4. Streaming and real-time applications: libp2p facilitates the communication and data management in P2P multimedia streaming, Voice over IP (VoIP), real-time gaming, and immersive virtual experiences.\n\n5. Content delivery networks (CDNs): libp2p can enhance traditional CDNs bringing content closer to users by allowing them to exchange data with nearby peers, minimizing latency time and bandwidth needed to exchange or access data.\n\n6. Decentralized finance (DeFi) and cryptocurrencies: Implementing core networking components provided by libp2p offers enhanced security, efficiency, and interoperability in DeFi applications, including cryptocurrency platforms like Ethereum 2.0 and various decentralized exchanges (DEXs).\n\nThese applications leverage libp2p's adaptability and extensibility, capitalizing on the multiple protocols and tools embedded in the framework suited to improve efficiency, scaling, resilience, and security in peer-to-peer networks."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6995.358402680302,
+        "y": 1526.6435141808577
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "7366602527735282",
+      "position": {
+        "x": 7175.358402680302,
+        "y": 1531.7283095331784
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "libp2p is a modular networking ...",
+        "fluxNodeType": "GPT",
+        "text": "libp2p is a modular networking stack for building peer-to-peer (P2P) applications. The primary applications of libp2p are for systems that rely on decentralized, distributed P2P networks. These applications can include:\n\n1. **Decentralized file sharing:** Distributed file systems, such as the InterPlanetary File System (IPFS), use libp2p as a core networking component, providing a more efficient way of sharing data and content on the internet.\n\n2. **Blockchain & distributed ledger technologies:** Blockchains, like Ethereum, have used libp2p to improve their network layers, achieve secure and better-resource-managed connectivity, enabling decentralized governance.\n\n3. **Mesh networks:** libp2p can be employed in establishing resilient, decentralized, and self-healing mesh networks in areas where internet penetration is limited or not available. These networks could be used for local communication, disaster relief or critical infrastructure.\n\n4. **Decentralized social networks & messaging platforms:** P2P applications like the Orbit chat, Flunky.space, and StatusIM use libp2p for creating centralized messaging systems based on censorship-resistant protocols.\n\n5. **IoT and edge-computing frameworks:** libp2p can be used to build secure, connected IoT devices and edge computing systems with autonomous, event-driven data processing.\n\n6. **Distributed computation and database platforms:** For applications that require distributed computation and data storage like the data crowdsourcing service Golem, libp2p provides a robust network infrastructure.\n\nThe applications of libp2p are not limited to these, as any project requiring a peer-to-peer networking stack could potentially benefit from leveraging its modular and extensible framework. As the ecosystem evolves, it's likely we'll continue to see libp2p being applied in many more innovative and groundbreaking use-cases."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 7175.358402680302,
+        "y": 1531.7283095331784
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "6097814527975634",
+      "position": {
+        "x": 6318.736290256464,
+        "y": 1508.7347310168166
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "nLabtopos   Home Page  All ...",
+        "fluxNodeType": "User",
+        "text": "nLabtopos\n|  Home Page | All Pages | Latest Revisions | Discuss this page | \nSearch\nContext\nTopos Theory\nCategory Theory\nContents\n1. Idea\n‘What a topos is like:’\n2. Definitions\nElementary toposes\nGrothendieck/sheaf toposes\n�\n-toposes\nToposes over a base\nMorphisms of toposes\n3. Properties\nExtensivity\nAdhesiveness\nEpimorphisms\nRelation to abelian categories\nReasoning in a topos\n4. Examples\nSpecific examples and key results\nClasses of examples\n5. Related concepts\n6. References\nIntroductions\nVideos\nMonographs\nClassifying toposes\nCategorical logic and elementary toposes\nAlgebra, ringed toposes, algebraic geometry\nQuantum theory\nOriginal articles\nHistory\n1. Idea\nThere are various different perspectives on the notion of topos. One is that a topos is a category that looks like a category of spaces that sit by local homeomorphisms over a given base space: all spaces that are locally modeled on a given base space.\n\nThe archetypical class of examples are sheaf toposes \nSh\n(\n�\n)\n=\nEt\n(\n�\n)\n over a topological space \n�\n: these are the categories of étale spaces over \n�\n, topological spaces \n�\n that are equipped with a local homeomorphisms \n�\n→\n�\n.\n\nWhen \n�\n=\n*\n is the point, this is just the category Set of all sets: spaces that are modeled on the point. This is the archetypical topos itself.\n\nWhat makes the notion of topos powerful is the following fact: even though the general topos contains objects that are considerably different from and possibly considerably richer than plain sets and even richer than étale spaces over a topological space, the general abstract category theoretic properties of every topos are essentially the same as those of Set. For instance in every topos all small limits and colimits exist and it is cartesian closed (even locally). This means that a large number of constructions in Set have immediate analogs internal to every topos, and the analogs of the statements about these constructions that are true in \nSet\n are true in every topos.\n\nOn the one hand this may be thought of as saying that toposes are very nice categories of spaces in that whatever construction on spaces one thinks of – for instance formation of quotients or of fiber products or of mapping spaces – the resulting space with the expected general abstract properties will exist in the topos. In this sense toposes are convenient categories for geometry – as in: convenient category of topological spaces, but even more convenient than that.\n\nOn the other hand, by de-emphasizing the geometric interpretation of their objects and just using their good abstract properties, this means that toposes are contexts with a powerful internal logic. The internal logic of toposes is intuitionistic higher order logic. This means that, while the law of excluded middle and the axiom of choice may fail, apart from that, every logical statement not depending on these does hold internal to every topos.\n\nFor this reason toposes are often studied as abstract contexts “in which one can do mathematics”, independently of their interpretation as categories of spaces. These two points of views on toposes, as being about geometry and about logic at the same time, is part of the richness of topos theory.\n\nOn a third hand, however, we can de-emphasize the role of the objects of the topos and instead treat the topos itself as a “generalized space” (and in particular, a categorified space). We then consider the topos \nSh\n(\n�\n)\n as a representative of \n�\n itself, while toposes not of this form are “honestly generalized” spaces. This point of view is supported by the fact that the assignment \n�\n↦\nSh\n(\n�\n)\n is a full embedding of (sufficiently nice) topological spaces into toposes, and that many topological properties of a space \n�\n can be detected at the level of \nSh\n(\n�\n)\n. (This is even more true once we pass to (∞,1)-toposes.)\n\nFrom this point of view, the objects of a topos (regarded as a category) should be thought of instead as sheaves on that topos (regarded as a generalized space). And just as sheaves on a topological space can be identified with local homeomorphisms over it, such “sheaves on a topos” (i.e. objects of the topos qua category) can be identified with other toposes that sit over the given topos via a local homeomorphism of toposes.\n\nFinally, mixing this point of view with the second one, we can regard toposes over a given topos \n�\n instead as “toposes in the \n�\n-world of mathematics.” For this reason, the theory of toposes over a given base is formally quite similar to that of arbitrary toposes. And coming full circle, this fact allows the use of “base change arguments” as a very useful technical tool, even if our interest is only in one or two particular toposes qua categories.\n\n‘What a topos is like:’\n(i) ‘A topos is a category of sheaves on a site’\n\n(ii) ‘A topos is a category with finite limits and power-objects’\n\n(iii) ‘A topos is (the embodiment of) an intuitionistic higher-order theory’\n\n(iv) ‘A topos is (the extensional essence of) a first-order (infinitary) geometric theory’\n\n(v) ‘A topos is a totally cocomplete object in the meta-2-category CART of cartesian (i.e. , finitely complete) categories’\n\n(vi) ‘A topos is a generalized space’\n\n(vii) ‘A topos is a semantics for intuitionistic formal systems’\n\n(viii) ‘A topos is a Morita equivalence class of continuous groupoids’\n\n(ix) ‘A topos is the category of maps of a power allegory’\n\n(x) ‘A topos is a category whose canonical indexing over itself is complete and well-powered’\n\n(xi) ‘A topos is the spatial manifestation of a giraud frame’\n\n(xii) ‘A topos is a setting for synthetic differential geometry’\n\n(xiii) ‘A topos is a setting for synthetic domain theory’,\n\nAnd so on. But the important thing about the elephant is that ‘however you approach it, it is still the same animal’. Elephant\n\n2. Definitions\nThe general notion of topos is that of\n\nElementary toposes.\nA specialization of this which is important enough that much of the literature implicitly takes it to be the general definition is the notion of\n\nGrothendieck/sheaf toposes\nThis is the notion relevant for applications in geometry and geometric logic, whereas the notion of elementary toposes is relevant for more general applications in logic.\n\nFor standard notions of mathematics to be available inside a given topos one typically at least needs a natural numbers object. Its existence is guaranteed by the axioms of a sheaf topos, but not by the more general axioms of an elementary topos. Adding the existence of a natural numbers object to the axioms of an elementary topos yields the notion of a\n\nW-topos.\nElementary toposes\nA quick formal definition is that an elementary topos is a category which\n\nhas finite limits,\n\nis cartesian closed, and\n\nhas a subobject classifier.\n\nThere are alternative ways to state the definition; for instance,\n\nhas finite limits and\nhas power objects.\nIn a way, however, these concise definitions can be misleading, because a topos has a great deal of other structure, which plays a very important role but just happens to follow automatically from these basic axioms. Most importantly, an elementary topos is all of the following:\n\nlocally cartesian closed,\nfinitely cocomplete,\na Heyting category,\na pretopos.\nThe last two imply that it has an internal logic that resembles ordinary mathematical reasoning, and the presence of exponentials and power objects means that this logic is higher order.\n\nGrothendieck/sheaf toposes\nThe above is the definition of an elementary topos. We also have the (historically earlier) notion of Grothendieck topos: a Grothendieck topos is a topos that is neither too small nor too large, in that it is:\n\ncocomplete (not too small), and\nhas a small generating set (not too large).\nEquivalently, a Grothendieck topos is any category equivalent to the category of sheaves on some small site.\n\n�\n-toposes\nThere is a further elementary property of Set that might have gone into the definition of elementary topos but historically did not: the existence of a natural numbers object. Any topos with this property is called a topos with NNO or a \n�\n-topos. The latter term comes from the result that any such topos must have (not only an NNO but also) all W-types.\n\nToposes over a base\nbase topos\nMorphisms of toposes\nThere are two kinds of homomorphisms between toposes that one considers:\n\ngeometric morphism– this is the kind of morphism that regards a topos as a generalized topological space.\n\nlogical morphism– this is the kind of morphism that regards a topos in terms of its internal logic.\n\nAccordingly there is a 2-category Topos of toposes, whose\n\nobjects are toposes;\n\nmorphisms are geometric morphisms;\n\n2-morphisms are natural transformations between the functors underlying the geometric morphisms.\n\n3. Properties\nExtensivity\nEvery topos is an extensive category. For Grothendieck toposes, infinitary extensivity is part of the characterizing Giraud's theorem. For elementary toposes, see toposes are extensive.\n\nAdhesiveness\nEvery topos is an adhesive category. For Grothendieck toposes this follows immediately from the adhesion of Set, for elementary toposes it is due to (Lack-Sobocinski).\n\nEpimorphisms\nIn a topos epimorphisms are stable under pullback and hence the (epi, mono) factorization system in a topos is a stable factorization system.\n\nRelation to abelian categories\nWhile crucially different from abelian categories, there is some intimate relation between toposes and abelian categories. For more on that see AT category.\n\nReasoning in a topos\nAny result in ordinary mathematics whose proof is finitist and constructive automatically holds in any topos. If you remove the restriction that the proof be finitist, then the result holds in any topos with a natural numbers object; if you remove the restrictions that the proof be constructive, then the result holds in any boolean topos. On the other hand, if you add the restriction that the proof be predicative in the weaker sense used by constructivists, then the result may fail in some toposes but holds in any \n�\n-pretopos; if you add the restriction that the proof be predicative in a stronger sense, then the result holds in any Heyting pretopos.\n\nTherefore, one can prove results in toposes and similar categories by reasoning, not about the objects and morphisms in the topos themselves, but instead about sets and functions in the normal language of structural set theory, which is more familiar to most mathematicians. One merely has to be careful about what axioms one uses to get results of sufficient generality.\n\nThe internal language of a topos is called Mitchell-Bénabou language.\n\n4. Examples\nSpecific examples and key results\nThe archetypical topos is Set. Notice that this happens to be a Grothendieck topos: it is the category of sheaves on the point.\n\nThe full subcategory FinSet is also an elementary topos, and the inclusion functor \nFinSet\n↪\nSet\n is a logical morphism. This is not a Grothendieck topos.\n\nMore generally, for \n�\n a strong limit cardinal the full subcategory \nSet\n�\n of sets or cardinality less than \n�\n is a topos.\n\nFor \n�\n any (small) site, the category of sheaves \nSh\n(\n�\n)\n is a Grothendieck topos. Either by definition or by Giraud's theorem, every Grothendieck topos arises in this way. Important examples include:\n\nThe case where the Grothendieck topology is the trivial one, so that also all categories of presheaves (on small categories) are (Grothendieck) toposes.\n\nThe case of sheaves on (the site given by the category of open subsets of) a topological space, or more generally a locale.\n\nThe category \n�\nSet\n of sets equipped with the action of a group \n�\n: this is the topos of presheaves on the category \n�\n�\n which is the delooping groupoid of \n�\n.\n\nContinuing the last example above, if \n�\n is a topological group, the category \n�\nSet\n of sets with a continuous action of G (that is, the action map \n�\n×\n�\n→\n�\n is continuous, where \n�\n has the discrete topology) is a topos, and in fact a Grothendieck topos (though this may not be obvious).\n\nMore generally, \n�\n may be a topological groupoid, or even a localic groupoid. In fact, it is a theorem that every Grothendieck topos can be presented as the topos of “continuous sheaves” on a localic groupoid.\n\nAgain if \n�\n is a topological group, the category \nUnif\n(\n�\n)\n of uniformly continuous \n�\n-sets is also a topos, but not (in general) one of Grothendieck’s. For example, if \n�\n is the profinite completion of \nℤ\n, then a continuous \n�\n-set is a \nℤ\n-set all of whose orbits are finite, while a uniformly continuous one is a \nℤ\n-set with a finite upper bound on the size of all its orbits.\n\nFor \n�\n a topos and \n�\n∈\n�\n any object, also the overcategory or slice category \n�\n/\n�\n is again a topos. (Elephant, A.2.3.2). See also over-topos.\n\nIf \n�\n is a topos and \n�\n:\n�\n→\n�\n is a lex idempotent monad, the category of \n�\n-algebras is a topos. Each such \n�\n corresponds to a Lawvere-Tierney topology in \n�\n, and the category of \n�\n-algebras is equivalent to the category of sheaves for this topology. An example is the double-negation topology.\n\nAn obvious example of an elementary topos that is not a Grothendieck topos is the category FinSet of finite sets. More generally, for any strong limit cardinal \n�\n, the category of sets of cardinality \n<\n�\n is an elementary topos, and as long as \n�\n>\n�\n it has a NNO. \nSet\n<\n�\n doesn’t even admit a geometric morphism to \nSet\n.\n\nSince the definition of elementary topos is “algebraic,” there exist free toposes generated by various kinds of data. The category of toposes (and logical functors) is 2-monadic over the 2-category of categories, functors, and natural isomorphisms. It has an initial object which is sometimes called the free topos. More generally, any higher-order type theory (of the sort which can be interpreted in the internal logic of a topos) generates a free topos containing a model of that theory. Such toposes (for a consistent theory) are never Grothendieck’s.\n\nIf \n�\n is a large groupoid with a small set of objects, then the category \n[\n�\n,\nSet\n]\n (which makes sense if we define “large” and “small” relative to a Grothendieck universe) is a topos, but not in general a Grothendieck topos. Note that this topos is in fact complete and cocomplete, but it does not have a small generating set, and so is an unbounded topos.\n\nIf \nℱ\n is a filter of subterminal objects in any topos \n�\n, then there is a filterquotient? topos \n�\n/\n/\nℱ\n. Grothendieck-ness (and completeness and cocompleteness) are not in general preserved by this construction.\n\nIf \n�\n and \n�\n are toposes and \n�\n:\n�\n→\n�\n is a lex functor, then there is a topos \nGl\n(\n�\n)\n called the Artin gluing of \n�\n and \n�\n along \n�\n, and defined to be the comma category \n(\n�\n/\n�\n)\n. If \n�\n and \n�\n are Grothendieck toposes then \nGl\n(\n�\n)\n is a \nSet\n-topos. If \n�\n is accessible, then \nGl\n(\n�\n)\n is again Grothendieck (hence bounded), but in general it may not be. (Note, though, that it is not clear whether it can be proven in ZFC that there exist any inaccessible lex functors between Grothendieck toposes, although from a proper class of measurable cardinals one can construct an inaccessible lex endofunctor of \nSet\n.)\n\nThe category of coalgebras for any lex comonad on a topos is again a topos: a topos of coalgebras, and if the comonad is accessible, this construction preserves Grothendieck-ness. If the comonad is not accessible, then this topos is unbounded.\n\nFor instance the Artin gluing \nGl\n(\n�\n)\n is equivalent to the category of coalgebras for the comonad on the topos \n�\n×\n�\n defined by \n(\n�\n,\n�\n)\n↦\n(\n�\n,\n�\n×\n�\n(\n�\n)\n)\n.\n\nMore generally, the category of coalgebras for any pullback-preserving comonad on a topos is again a topos. This covers both the preceding result and also the overcategory (slice category) result above, since \n�\n/\n�\n is the category of coalgebras for the pullback-preserving comonad given by \n�\n×\n−\n:\n�\n→\n�\n. It also covers Artin gluing along a pullback-preserving functor.\n\nMore generally still, Todd Trimble has a notion called a “modal operator” on a topos, from which one can construct a new topos of “\n�\n-structures”: see Three topos theorems in one. Special cases include the pullback-preserving comonad result just mentioned, and the result that the category of algebras for a lex idempotent monad is a topos. A related idea is Toby Kenney’s notion of lex distributive diad?, from which one can also construct a topos.\n\nFrom any partial combinatory algebra one can construct a realizability topos, whose internal logic is “computable” or “effective” mathematics relative to that PCA. In particular, for Kleene's first algebra, one obtains the effective topos, the most-studied of realizability toposes. Realizability toposes are generally not Grothendieck toposes.\n\nA topos can also be constructed from any tripos. This includes realizability toposes as well as toposes of sheaves on locales.\n\nClasses of examples\nFor various applications one uses toposes that have extra structure or properties.\n\nIn the foundations of mathematics, one often studies well-pointed toposes, especially models of ETCS as potential replacements for the category Set.\n\nIn synthetic differential geometry one studies smooth toposes as a context for axiomatic differential geometry.\n\n5. Related concepts\ncategory of sheaves, Giraud's theorem\n\nbase topos, indexed topos\n\nslice topos, fundamental theorem of topos theory\n\npredicative topos\n\nboolean topos\n\nlocal topos, locally connected topos, connected topos, cohesive topos\n\npredicative topos\n\npretopos, Π-pretopos, ΠW-pretopos, list-arithmetic pretopos\n\nsmooth structure on a topos\n\nmonoidal topos\n\nisotropy group of a topos\n\ntest topos\n\nclassifying topos\n\nflavors of higher toposes\n\n1-topos\n\n(0,1)-topos\n\n(1,1)-topos = topos\n\n(2,1)-topos\n\n(\n�\n,\n1\n)\n-topos\n\n(∞,1)-topos (\n�\n-localic)\n\n model topos\n\n2-topos\n\n(2,2)-topos (\n�\n-localic)\n\n(∞,2)-topos\n\n�\n-topos\n\n(\n∞\n,\n�\n)\n-topos\nLocally presentable categories: Cocomplete possibly-large categories generated under filtered colimits by small generators under small relations. Equivalently, accessible reflective localizations of free cocompletions. Accessible categories omit the cocompleteness requirement; toposes add the requirement of a left exact localization.\n\n(n,r)-categories\ntoposes\nlocally presentable\tloc finitely pres\tlocalization theorem\tfree cocompletion\taccessible\n(0,1)-category theory\tlocales\tsuplattice\talgebraic lattices\tPorst’s theorem\tpowerset\tposet\ncategory theory\ttoposes\tlocally presentable categories\tlocally finitely presentable categories\tAdámek-Rosický‘s theorem\tpresheaf category\taccessible categories\nmodel category theory\tmodel toposes\tcombinatorial model categories\t\tDugger's theorem\tglobal model structures on simplicial presheaves\tn/a\n(∞,1)-category theory\t(∞,1)-toposes\tlocally presentable (∞,1)-categories\t\tSimpson’s theorem\t(∞,1)-presheaf (∞,1)-categories\taccessible (∞,1)-categories\n6. References\nIntroductions\nIntroductions to topos theory include\n\nRoss Street, A survey of topos theory (notes for students, 1978) pdf\n\nOswald Wyler, Lecture Notes on Topoi and Quasitopoi , World Scientific Singapore 1991 (doi:10.1142/1047)\n\nTom Leinster, An informal introduction to topos theory (2010)\n\nFrancis Borceux, Some glances at topos theory, pdf.\n\nAn introduction amplifying the simple but important case of presheaf toposes is\n\nMarie La Palme Reyes, Gonzalo E. Reyes, Houman Zolfaghari, Generic figures and their glueings. A constructive approach to functor categories, Polimetrica (2008), ISBN: 8876990046. pdf.\nA quick introduction of the basic facts of Grothendieck topos theory is Chapter I, “Background in topos theory” in\n\nIeke Moerdijk, Classifying Spaces and Classifying Topoi?, Lecture Notes in Mathematics 1616 (1995), Springer\nCourse notes covering both Grothendieck toposes and the effective topos:\n\nIeke Moerdijk, Jaap van Oosten, Topos Theory, Master class notes (2007) (pdf)\nA gentle basic introduction is\n\nJohn Baez, Topos Theory in a Nutshell.\nVideos\nAndré Joyal, A crash course in topos theory – The big picture, lecture series at Topos à l’IHES, November 2015, Paris\n\nMathProofsable, Category Theory - Toposes video playlist\n\nMonographs\nPeter Johnstone, Topos theory, London Math. Soc. Monographs 10, Acad. Press 1977, xxiii+367 pp. (Dover reprint 2014)\n\nMichael Barr, Charles Wells, Toposes, Triples, and Theories, Springer Heidelberg 1985. (TAC reprint)\n\nColin McLarty, Elementary Categories, Elementary Toposes, Oxford University Press 1992 (ISBN:9780198514732)\n\nSaunders MacLane, Ieke Moerdijk, Sheaves in Geometry and Logic, 1992\n\nFrancis Borceux, Handbook of Categorical Algebra 3 - Categories of Sheaves, Cambridge UP 1994 (ISBN:9780521061247)\n\nPeter Johnstone, Sketches of an elephant: a topos theory compendium Oxford University Press 2002, Volume 1 (ISBN:9780198534259), Volume 2 (ISBN:9780198515982)\n\nClassifying toposes\nSpecifically on classifying toposes:\n\nIeke Moerdijk, Classifying Spaces and Classifying Topoi, Lecture Notes in Mathematics 1616, Springer 1995 (ISBN: 978-3-540-60319-1, doi:10.1007/BFb0094441)\n\nOlivia Caramello, Theories, Sites, Toposes, Oxford University Press, 2017.\n\ndoi\n\nCategorical logic and elementary toposes\nOn categorical logic via toposes:\n\nColin McLarty, Elementary Categories, Elementary Toposes, Oxford University Press 1992 (reprinted in 2005) (ISBN:9780198514732)\n\nJonathan Chapman, Frederick Rowbottom, Relative Category Theory and Geometric Morphisms. A Logical Approach, Oxford University Press 1992 (ISBN:9780198534341)\n\nJ. L. Bell, Toposes and Local Set Theories. An Introduction, Oxford University Press 1988 (doi:10.2307/2274680)\n\nRobert Goldblatt, Topoi. The categorial analysis of logic, Studies in Logic and the Foundations of Math. 98, North-Holland Publ. Co., Amsterdam, 1979, 1984; (Rus. transl. Mir Publ., Moscow 1983).\n\nJoachim Lambek, Philip J. Scott, Introduction to higher order categorical logic, Cambridge Studies in Advanced Mathematics 7 (1986) (ISBN: 0-521-24665-2)\n\nBart Jacobs, Categorical logic and type theory, Studies in Logic and the Foundations of Mathematics 141 (1999). North-Holland Publishing Co.\n\nISBN: 0-444-50170-3\n\nAlgebra, ringed toposes, algebraic geometry\nMonique Hakim, Topos annelés et schémas relatifs, Ergebnisse der Mathematik und ihrer Grenzgebiete 64 (1972) (ISBN:9783540055730)\n\nFrancis Borceux, Gilberte van den Bossche, Algebra in a localic topos with applications to ring theory, Lecture Notes in Mathematics 1038 (1983), ISBN: 3-540-12711-9 (ISBN:9783540127116)\n\nQuantum theory\nCecilia Flori, A first course in topos quantum theory. Lecture Notes in Physics 868 (2013).\n\nISBN: 978-3-642-35712-1; 978-3-642-35713-8\n\nCecilia Flori, A second course in topos quantum theory. Lecture Notes in Physics 944 (2018).\n\nISBN: 978-3-319-71107-2; 978-3-319-71108-9\n\nOriginal articles\nOriginal source of (Grothendieck) topoi:\n\nSGA4 Exposé IV by Grothendieck and Verdier (and Exposé V for cohomology in a (Grothendieck) topos)\nThat every topos is an adhesive category is discussed in\n\nStephen Lack, Pawel Sobociński, Toposes are adhesive (pdf)\nHistory\nColin McLarty, The Uses and Abuses of the History of Topos Theory , Brit. J. Phil. Sci., 41 (1990) (JSTOR) PDF (direct link)\n\nJohn W. Gray, Fragments of the history of sheaf theory,\n\nin: Applications of Sheaves, pp. 1–79, Lecture Notes in Mathematics 753, ISBN: 978-3-540-09564-4, doi.\n\nAccording to appendix C.1 in\n\nWilliam Lawvere, Robert Rosebrugh, Sets for Mathematics , Cambridge UP 2003. (web)\n“Topos” is a Greek term intended to describe the objects studied by “analysis situs,” the Latin term previously established by Poincaré to signify the science of place [or situation]; in keeping with those ideas, a \n𝒰\n-topos was shown to have presentations in various “sites”.\n\nA historical analysis of Grothendieck’s 1973 Buffalo lecture series on toposes and their precedents is in\n\nColin McLarty, Grothendieck’s 1973 topos lectures, Séminaire Lectures grothendieckiennes, 3 May (2018) (YouTube video)\nLast revised on April 22, 2023 at 12:12:54. See the history of this page for a list of all contributions to it.\n\nEditDiscussPrevious revisionChanges from previous revisionHistory (113 revisions) Cite Print Source"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6318.736290256464,
+        "y": 1508.7347310168166
+      },
+      "dragging": false
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "18008187411988552",
+      "position": {
+        "x": 6138.736290256464,
+        "y": 1616.843809915565
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Topos theory is a branch of ...",
+        "fluxNodeType": "GPT",
+        "text": "Topos theory is a branch of category theory that deals with generalized topological spaces, called toposes. Toposes can be interpreted both geometrically, as categories of spatial objects, and logically, as settings for interpreting logical theories within a given language.\n\nTopos can be thought of as a category that behaves much like the category of sets, while also having properties similar to the category of topological spaces. Toposes are useful in various areas of mathematics, including algebraic geometry, logic, and the study of generalized spaces.\n\nToposes can be defined in a few different ways, such as:\n- Elementary toposes: A category with finite limits, cartesian closed, and has a subobject classifier.\n- Grothendieck toposes: A category which is cocomplete, has a small generating set, and is equivalent to a category of sheaves.\n\nSome properties of toposes include extensivity, adhesiveness, and the existence of various constructions common in mathematics, such as limits and colimits.\n\nThere are many different examples of toposes, such as the category of sets, categories of sheaves on a topological space or site, and categories of coalgebras for a given comonad.\n\nApplications of topos theory can be found, for instance, in algebraic geometry, where they provide a general setting for dealing with both algebraic and schematic structures, as well as in the foundations of mathematics and logic, where they create a natural framework for working with categorical logic and set-theoretic constructs."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6138.736290256464,
+        "y": 1616.843809915565
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "30598104350598665",
+      "position": {
+        "x": 6318.736290256464,
+        "y": 1615.5547075741504
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Topos theory is a branch of ...",
+        "fluxNodeType": "GPT",
+        "text": "Topos theory is a branch of category theory that studies toposes, which are mathematical structures that generalize the concept of a topological space and the logic of set theory. Toposes have a geometric interpretation as categories of spaces and are also used in logic and computer science to study the internal logic of a topos.\n\nA topos can be thought of as a category where certain properties of the category of sets (Set) hold. To be more precise, a topos is characterized by three conditions:\n\n1. It has finite limits.\n2. It is closed under exponentiation (or cartesian closed).\n3. It has a subobject classifier.\n\nTorceux has several formal definitions, particularly highlighting the notion of an elementary topos and a Grothendieck topos, with the latter being a more specific form of topos that has applications in algebraic geometry and logic.\n\nToposes are beneficial because they provide a powerful framework for working with geometric and logical structures, with many useful constructions and properties. Notable examples of toposes include:\n\n- Set, the category of all sets\n- Presheaf categories and categories of sheaves over a site or topological space\n\nTopos theory is applied in numerous areas of mathematics, such as the study of geometric structures, algebra, logic, Homotopy Type Theory, and categorical quantum mechanics. The theory has led to the development of categorical logic in toposes (Mitchell-Bénabou language) providing an account of intuitionistic higher-order logical reasoning/internal logic of toposes. Additionally, it contributes to synthetic differential or domain geometry theory by studying underlying topos categories."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6318.736290256464,
+        "y": 1615.5547075741504
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "2996949356306029",
+      "position": {
+        "x": 6498.736290256464,
+        "y": 1626.4874236492903
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Topos theory is a branch of ...",
+        "fluxNodeType": "GPT",
+        "text": "Topos theory is a branch of mathematics that studies categories, which are general objects at the intersection of geometry and logic, called toposes. These toposes can be thought of as generalized spaces, constituting powerful contexts for logic and mathematics. They provide a versatile framework for many areas of mathematics, particularly algebraic topology and algebraic geometry. It was developed as a category of sheaves over a site (i.e.; it embraces and generalizes set theory) while capturing the essence of mathematical intuitionism and providing a hierarchy of types."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6498.736290256464,
+        "y": 1626.4874236492903
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "8107709375153838",
+      "position": {
+        "x": 7008.111476801114,
+        "y": 1929.3745319985576
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "access chrome application local ...",
+        "fluxNodeType": "User",
+        "text": "access chrome application local storage"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 7008.111476801114,
+        "y": 1929.3745319985576
+      },
+      "dragging": false
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "36893003421792536",
+      "position": {
+        "x": 6828.111476801114,
+        "y": 2030.088454045148
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "To access Google Chrome's ...",
+        "fluxNodeType": "GPT",
+        "text": "To access Google Chrome's application local storage, you'll need to use the browser's `localStorage` object. This JavaScript object can be accessed using the `window` object, and allows you to store, retrieve or delete data from local storage. Here's how you do it:\n\n1. Press `Ctrl` + `Shift` + `J` (Windows/Linux) or `Cmd` + `Option` + `J` (Mac) to open the Chrome Developer Console.\n2. Here, you can use the following JavaScript commands:\n\nTo store a value:\n```javascript\nlocalStorage.setItem('key', 'value');\n```\n\nReplace `key` and `value` with the appropriate data.\n\nTo get a value:\n```javascript\nlet value = localStorage.getItem('key');\nconsole.log(value);\n```\n\nReplace `key` with the appropriate key used when storing the data.\n\nTo delete a value:\n```javascript\nlocalStorage.removeItem('key');\n```\n\nReplace `key` with the appropriate key used when storing the data.\n\nTo clear all data from local storage:\n```javascript\nlocalStorage.clear();\n```\n\nThis will remove all the saved data in the Chrome app's local storage.\n\nFor more information on using `window.localStorage`, refer to [the official Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6828.111476801114,
+        "y": 2030.088454045148
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "5317188349140589",
+      "position": {
+        "x": 7008.111476801114,
+        "y": 2047.7252987082695
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "As an AI, I cannot access your ...",
+        "fluxNodeType": "GPT",
+        "text": "As an AI, I cannot access your local storage directly due to limitations and privacy concerns. However, I can guide you on how to do it.\n\nTo access the local storage in Chrome:\n\n1. Open Chrome browser.\n2. Press F12 or Ctrl+Shift+I to open the Developer Tools.\n3. Click on the \"Application\" tab. If the tab is not visible, click on the double arrow (») to expand the tabs.\n4. On the left sidebar, expand the \"Storage\" section to reveal \"Local Storage.\"\n5. Click on the Local-Storage sub-menu, and it shows you the websites where you have stored data in Chrome's Local Storage.\n6. Click on a site/domain to view the key-value pairs filled under the domain.\n\nKeep in mind, local storage may differ from cookies, as they are two different mechanisms with separate storage locations."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 7008.111476801114,
+        "y": 2047.7252987082695
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "9423734637714534",
+      "position": {
+        "x": 7188.111476801114,
+        "y": 2040.601475919944
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "As an AI language model, I ...",
+        "fluxNodeType": "GPT",
+        "text": "As an AI language model, I cannot directly access your local storage. However, I can instruct you on how to access it yourself:\n\nFollow these steps to access your Chrome application's local storage:\n\n1. Open Google Chrome.\n2. Press `F12` on your keyboard or right-click anywhere within your browser window, and click 'Inspect' in the context menu that appears. This will launch the Chrome Developer Tools.\n3. In the Chrome Developer Tools, find the 'Application' tab in the top menu (you may need to click on the '»' icon to reveal it if there's not enough space).\n4. Click the 'Application' tab, and you'll see various options in the side menu.\n5. Under the side menu, you'll find the 'Storage' section. Expand it if needed, by clicking on the triangle icon next to it.\n6. Click on 'Local Storage' to view your application's locally saved data. From this list, you can navigate the list of stored 'Keys' and associated 'Values.'\n\nRemember that I am only able to offer guidance in text form and cannot interact directly with your system or applications."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 7188.111476801114,
+        "y": 2040.601475919944
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "42388892572307424",
+      "position": {
+        "x": 6828.111476801114,
+        "y": 2140.02202313773
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "Can it be done without JS? ...",
+        "fluxNodeType": "User",
+        "text": "Can it be done without JS? Surely the app has a local file system somewhere on the machine?"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6828.111476801114,
+        "y": 2140.02202313773
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "32113023135088015",
+      "position": {
+        "x": 6648.111476801114,
+        "y": 2243.2794222557345
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Yes, you are correct. Chrome's ...",
+        "fluxNodeType": "GPT",
+        "text": "Yes, you are correct. Chrome's local storage data is stored in a file on your computer. You can explore this file manually, without using JavaScript, to investigate the content. Keep in mind, editing the file can cause unexpected behavior in web apps using it.\n\nHere's how to find the local storage files for Google Chrome on different operating systems:\n\n**Windows:**\n\nNavigate to the following folder path:\n\n```\n%LocalAppData%\\Google\\Chrome\\User Data\\Default\\Local Storage\n```\n\nYou can also paste this path in the Windows Explorer address bar and hit Enter.\n\n**macOS:**\n\nNavigate to the following folder path:\n\n```\n~/Library/Application Support/Google/Chrome/Default/Local Storage\n```\n\nYou can also open Finder, press \"Cmd + Shift + G\", paste this path in the \"Go to folder\" dialog, and hit Enter.\n\n**Linux:**\n\nNavigate to the following folder path:\n\n```\n~/.config/google-chrome/Default/Local Storage\n```\n\nYou can open your file manager, make sure to display hidden files, and access the above path.\n\nInside the \"Local Storage\" folder, you'll find many `.localstorage` files. Most local storage files are associated with specific websites/domains and have a proper naming convention like `http_<domain>_0.localstorage`.\n\nTo view the contents, you may open these files using a SQLite viewer. On Windows, `DB Browser for SQLite` is a popular choice. On macOS/Linux, try using `sqlitebrowser`. Alternatively, you can also use an online SQLite viewer by uploading the `.localstorage` file. However, be cautious when handling sensitive information and don't upload sensitive data.\n\nKeep in mind that these files don't just clear up when you close the browser or delete browsing data; they persist unless you clear site data. Double-check the official documentation for SQLITE_INTERNAL storage, as well as potential Chrome FileSystem APIs, to confirm how to approach any potential adjustments to the content.\n\nHowever, it's not recommended to modify these files to avoid corrupt data or introduce issues when web apps are trying to access this local storage. Always proceed with caution and make backups to avoid unforeseen complications."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6648.111476801114,
+        "y": 2243.2794222557345
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "5904350190590806",
+      "position": {
+        "x": 6828.111476801114,
+        "y": 2245.745523313465
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Yes, the browser local storage ...",
+        "fluxNodeType": "GPT",
+        "text": "Yes, the browser local storage data is saved on your computer as physical files. Depending on your operating system, follow the paths and instructions below to locate the local storage files:\n\n**For Windows**\n\n1. Open Windows File Explorer.\n2. Go to the following file path:\n```\n%LocalAppData%\\Google\\Chrome\\User Data\\Default\\Local Storage\n```\nTo do this, you may paste the path into the address bar and press Enter.\n\n3. Locate files that end in `.localstorage` and `.localstorage-journal`. These files are SQLite databases containing the stored local data for websites.\n\n**For macOS**\n\n1. Open Finder.\n2. Press `Cmd` + `Shift` + `G` to open the Go to Folder prompt.\n3. Enter the following path and press `Enter`:\n```\n~/Library/Application Support/Google/Chrome/Default/Local Storage\n```\n4. Locate files that end in `.localstorage` and `.localstorage-journal`. These files are SQLite databases containing the stored local data for websites.\n\n**For Linux**\n\n1. Open your file manager.\n2. Access one of the following paths:\n```\n~/.config/google-chrome/Default/Local Storage\n```\nor\n```\n~/.config/chromium/Default/Local Storage\n```\n3. Locate files that end in `.localstorage` and `.localstorage-journal`. These files are SQLite databases containing the stored local data for websites.\n\nOnce you have found the local storage files, you will need an SQLite viewer to open and view the contents. Popular SQLite viewers include DB Browser for SQLite, SQLiteSpy, and SQLiteStudio—these applications usually provide a user interface and don't require SQL commands for browsing local storage contents. SqlDataReader might also work for you.\n\nNote that directly modifying these files by hand can cause unpredictable behavior or corrupt your application data, so only do this if you feel comfortable and always make a backup of the files before editing."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6828.111476801114,
+        "y": 2245.745523313465
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "7238498214468041",
+      "position": {
+        "x": 7008.111476801114,
+        "y": 2253.971558650144
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Yes, you can access the local ...",
+        "fluxNodeType": "GPT",
+        "text": "Yes, you can access the local storage data directly from your computer's file system. Google Chrome saves the local storage data in SQLite databases. Follow these steps to access the stored local storage data:\n\n1. First, close Google Chrome to ensure that there are no open or locked SQLite databases.\n2. Next, navigate to the folder where Chrome stores local storage data on your operating system:\n\nFor Windows:\n```\nC:\\Users\\%USERNAME%\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Local Storage\\\n```\n\nFor Mac:\n```\n/Users/[Your_Username]/Library/Application Support/Google/Chrome/Default/Local Storage/\n```\n\nFor Linux:\n```\n/home/[Your_Username]/.config/google-chrome/Default/Local\\ Storage/\n```\n\n3. In this folder, you should see a collection of files with the `.localstorage` and `.localstorage-journal` extensions. The filenames will represent the domain names or extensions which created them.\n\n4. To view or edit the contents of these files, you'll need an SQLite database viewer/editor. One free option is the [DB Browser for SQLite](https://sqlitebrowser.org/) (available for Windows, Mac, and Linux).\n\nAfter you have an SQLite viewer/editor, follow these steps:\n\n1. Open the SQLite viewer/editor and open one of the `.localstorage` files to inspect its content.\n2. Once the SQLite file is opened, navigate to the **Browse Data** tab within the viewer/editor tool.\n3. Select `ItemTable` as Table and you should see the `key`, `value` columns containing the stored data.\n\nPlease be aware that editing these local storage files directly may lead to inconsistent or unexpected behavior within the associated Chrome app or website. Always consider backing up the essential files before editing any data."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 7008.111476801114,
+        "y": 2253.971558650144
+      }
+    },
+    {
+      "width": 150,
+      "height": 38,
+      "id": "8232434152544932",
+      "position": {
+        "x": 6644.591749741056,
+        "y": 2343.6732070359317
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "ls LibraryApplication ...",
+        "fluxNodeType": "User",
+        "text": "ls ~/Library/Application\\ Support/Arc/\nArchiveItemsFaviconCache\nArchiveSnapshotCache\nRemoteAssetDirectory\nSidebarItemsFaviconCache\nStorableARCDocuments\nStorableASEConfiguration.2023-05-08-20-51-55-716.json\nStorableASEConfiguration.2023-05-08-21-01-31-744.json\nStorableASEConfiguration.2023-05-11-07-37-03-877.json\nStorableASEConfiguration.2023-05-12-21-13-31-762.json\nStorableASEConfiguration.json\nStorableArchive.2023-05-08-20-51-55-717.json\nStorableArchive.2023-05-08-21-01-31-745.json\nStorableArchive.2023-05-11-07-37-03-879.json\nStorableArchive.2023-05-12-21-13-31-763.json\nStorableArchive.json\nStorableArchiveItems.json\nStorableAuthState.2023-05-12-21-13-31-760.json\nStorableAuthState.json\nStorableCommandBarAdditionalRanking.json\nStorableDefaultBrowserPrompts.2023-05-08-20-51-55-721.json\nStorableDefaultBrowserPrompts.2023-05-08-21-01-31-749.json\nStorableDefaultBrowserPrompts.2023-05-11-07-37-03-891.json\nStorableDefaultBrowserPrompts.2023-05-12-21-13-31-775.json\nStorableDefaultBrowserPrompts.json\nStorableEducationState.2023-05-04-17-39-36-664.json\nStorableEducationState.2023-05-08-20-51-55-718.json\nStorableEducationState.2023-05-08-21-01-31-746.json\nStorableEducationState.2023-05-11-07-37-03-880.json\nStorableEducationState.2023-05-12-21-13-31-765.json\nStorableEducationState.json\nStorableFeatureFlags.2023-05-08-20-51-55-715.json\nStorableFeatureFlags.2023-05-08-21-01-31-742.json\nStorableFeatureFlags.2023-05-11-07-37-03-873.json\nStorableFeatureFlags.2023-05-12-21-13-31-759.json\nStorableFeatureFlags.json\nStorableHome.2023-05-04-17-39-36-668.json\nStorableHome.2023-05-08-20-51-55-722.json\nStorableHome.2023-05-08-21-01-31-750.json\nStorableHome.2023-05-11-07-37-03-893.json\nStorableHome.2023-05-12-21-13-31-777.json\nStorableHome.json\nStorableKeyBindings.2023-05-08-20-53-32-600.json\nStorableKeyBindings.2023-05-08-20-55-25-685.json\nStorableKeyBindings.2023-05-08-20-55-42-280.json\nStorableKeyBindings.2023-05-08-20-55-56-334.json\nStorableKeyBindings.2023-05-08-20-55-58-139.json\nStorableKeyBindings.2023-05-08-20-56-01-092.json\nStorableKeyBindings.2023-05-08-20-56-05-487.json\nStorableKeyBindings.2023-05-08-20-56-35-839.json\nStorableKeyBindings.2023-05-08-20-57-26-073.json\nStorableKeyBindings.2023-05-08-20-58-24-030.json\nStorableKeyBindings.json\nStorableMembershipCard.2023-05-11-07-37-03-895.json\nStorableMembershipCard.2023-05-12-21-13-31-779.json\nStorableMembershipCard.json\nStorableProfiles.2023-05-04-17-39-36-666.json\nStorableProfiles.2023-05-08-20-51-55-719.json\nStorableProfiles.2023-05-08-21-01-31-748.json\nStorableProfiles.2023-05-11-07-37-03-890.json\nStorableProfiles.2023-05-12-21-13-31-774.json\nStorableProfiles.json\nStorableSidebar.2023-05-08-20-51-55-712.json\nStorableSidebar.2023-05-08-21-01-31-739.json\nStorableSidebar.2023-05-11-07-37-03-869.json\nStorableSidebar.2023-05-12-21-13-31-755.json\nStorableSidebar.json\nStorableWindows.2023-05-08-20-51-55-708.json\nStorableWindows.2023-05-08-21-01-31-737.json\nStorableWindows.2023-05-11-07-37-03-864.json\nStorableWindows.2023-05-12-21-13-31-750.json\nStorableWindows.json\nUser Data\nboosts"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6644.591749741056,
+        "y": 2343.6732070359317
+      },
+      "dragging": false
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "3139086956432371",
+      "position": {
+        "x": 6464.591749741056,
+        "y": 2455.0580690131565
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "You've provided the content of ...",
+        "fluxNodeType": "GPT",
+        "text": "You've provided the content of the `~/Library/Application Support/Arc/` directory, which contains numerous files. These files seem to be related to application settings, data, and cached resources specific to the Arc app. Some common file extensions among them include `.json` files, which store serialized, structured data in human-readable format.\n\nInteracting or modifying this data depends primary on the context of the Arc app and what you aim to achieve. In general, JSON files are easy to read and parse and can be viewed and edited using a text editor or some specialized tools specifically created for working with JSON data.\n\nHowever, it is important to be cautious when handling these files, as unintended errors or accidental changes might have unforeseen consequences and could lead to malfunctioning or loss of functionality for the app. Always perform backups or retain the original copies when tweaking these files."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6464.591749741056,
+        "y": 2455.0580690131565
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "9114951084818945",
+      "position": {
+        "x": 6644.591749741056,
+        "y": 2458.912066054972
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "It looks like you're listing ...",
+        "fluxNodeType": "GPT",
+        "text": "It looks like you're listing the contents of the \"~/Library/Application Support/Arc\" directory on your computer. This directory contains Arc, the application's data files and configuration files. Such files can include user profiles, local data storage, caches for various resources and elements of the application, and other app-specific configurations.\n\nTypically, interacting with these files directly might cause unexpected problems or behaviors in the associated application. It may be best to modify settings, behaviors, and content within the application itself, using the provided UI (User Interface) and application options instead.\n\nIf you run into errors or incompatibility, it's a good idea to reach out to the application developers through their support system and provide details of any unusual problems or crashes. Always be cautious when making changes to files found within this directory and consider making a backup before you proceed."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6644.591749741056,
+        "y": 2458.912066054972
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "46051017927473836",
+      "position": {
+        "x": 6824.591749741056,
+        "y": 2456.6237968712194
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "I can see that you have ...",
+        "fluxNodeType": "GPT",
+        "text": "I can see that you have provided a list of files and directories contained in `~/Library/Application Support/Arc/`. These files appear to be related to an app called `Arc`. Configuration files generally have `.json` extensions and are present in this list, e.g., `StorableProfiles.json`, `StorableFeatureFlags.json`.\n\nYou can examine or modify these JSON files using a text editor. However, be cautious when making changes – always back up the original file before making edits. It's also worth noting that applications associated with these files may behave unexpectedly or become unstable if contents are altered improperly."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6824.591749741056,
+        "y": 2456.6237968712194
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "03676891183259223",
+      "position": {
+        "x": 6464.591749741056,
+        "y": 2573.8830077467665
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "Im looking for the application ...",
+        "fluxNodeType": "User",
+        "text": "Im looking for the application data local storage"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6464.591749741056,
+        "y": 2573.8830077467665
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "5995240884943518",
+      "position": {
+        "x": 6284.591749741056,
+        "y": 2692.5302364233517
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "If you are trying to find the ...",
+        "fluxNodeType": "GPT",
+        "text": "If you are trying to find the local storage files associated with the \"Arc\" application, you can follow a similar approach that I mentioned in the previous response for Chrome's local storage files. Please note that it might be different depending on how Arc app saves its data; look for SQLite or other database files. Double-check the documentation for your specific application and if they utilize any browser-level storage.\n\nIf Arc is a web-based application running within Google Chrome or any other browser, here's a refresher on how to locate local storage files within Google Chrome:\n\n**For Windows:**\n\nNavigate to the following folder path:\n\n```\n%LocalAppData%\\Google\\Chrome\\User Data\\Default\\Local Storage\\\n```\n\nPaste this path into the Windows Explorer address bar and hit Enter.\n\n**For macOS:**\n\nNavigate to the following folder path:\n\n```\n~/Library/Application Support/Google/Chrome/Default/Local Storage\n```\n\nTo access the folder, open Finder, press \"Cmd + Shift + G,\" paste this path in the \"Go to folder\" dialog, and hit Enter.\n\n**For Linux:**\n\nNavigate to the following folder path:\n\n```\n~/.config/google-chrome/Default/Local Storage\n```\n\nIn the file manager, enable display hidden files to access the location.\n\nFor Firefox, the local storage files are usually stored in the profile folder. To access these files, Follow these steps:\n\n1. Open Firefox.\n2. Click on the menu button usually located at the top right.\n3. Choose \"Help\" (a question mark icon).\n4. Select \"Troubleshooting Information.\"\n5. Under \"Application Basics,\" find and click \"Open Folder\" next to the \"Profile Folder\" entry.\n6. In the opened folder, find and open the \"storage\" or \"webappsstore.sqlite\" files.\n\nFor other browsers, you will want to consult the relevant documentation to locate where these browser-specific local storage files are stored.\n\nRemember to open and edit these files using caution. Editing the files directly may cause unintended issues or corrupt the data of respective web applications. Always keep a backup copy before making any changes or exploring file content."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6284.591749741056,
+        "y": 2692.5302364233517
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "6463284281210837",
+      "position": {
+        "x": 6464.591749741056,
+        "y": 2676.3826070749838
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Apologies for the confusion ...",
+        "fluxNodeType": "GPT",
+        "text": "Apologies for the confusion earlier. Here are the local storage folder locations for a few major web browsers for macOS:\n\n1. **Google Chrome:**\n\n```\n~/Library/Application Support/Google/Chrome/Default/Local Storage\n```\n\n2. **Mozilla Firefox:**\n\n```\n~/Library/Application Support/Firefox/Profiles/[YOUR-USER-PROFILE]/storage/default\n```\n\n_here [YOUR-USER-PROFILE] entry is for each unique user using the application; you should modify this_\n\n3. **Safari:** \n\n```\n~/Library/Safari/LocalStorage\n```\n\nReplace the Arc folder mentioned previously in each case to find the respective browser's local storage folder on your macOS system. Inside these folders, you'll find files relevant to each site visited, typically in the SQLite database format.\n\nTo view contents for these databases, follow the previous SQLite browser instructions. Please refrain from editing database files directly without ensuring prior data preservation or handling especially sensitive content (Personal Identifiable Information, Confidential content, arbitrary blobs etc..), remembering that interference in databases might result in serious app disruptions.\n\nNevertheless, for extensively investigating developer-induced provisions, Site Data, and other Web Storage elements intrinsic to browsers, always consider Developer Tools built-in to the browser, which include queries, mutations, and many useful options for site manipulation optimal for most use cases."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6464.591749741056,
+        "y": 2676.3826070749838
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "7981685378893972",
+      "position": {
+        "x": 6644.591749741056,
+        "y": 2687.7971717693354
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "It appears we initially ...",
+        "fluxNodeType": "GPT",
+        "text": "It appears we initially discussed accessing the local storage for Google Chrome, but the directory you provided belongs to the Arc app. In order to give you proper guidance, I need to know which application you want to access data and local storage for - Google Chrome or the Arc app?  If it is a different app, please provide the app's name for further instructions."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6644.591749741056,
+        "y": 2687.7971717693354
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "6254970373481399",
+      "position": {
+        "x": 6284.591749741056,
+        "y": 2812.362852419687
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "Arc Is a chromium based ...",
+        "fluxNodeType": "User",
+        "text": "Arc Is a chromium based browser, as you can see it has a diffrent file system form google chrome"
+      },
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 6284.591749741056,
+        "y": 2812.362852419687
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "7483757077156299",
+      "position": {
+        "x": 6104.591749741056,
+        "y": 2929.7047086169973
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Since Arc is based on the ...",
+        "fluxNodeType": "GPT",
+        "text": "Since Arc is based on the Chromium browser, you can follow a similar approach to find the local storage files associated with the Arc browser. Typically, these files are found in the browser's Default folder (equatorial to Google Chrome).\n\nArc browser local storage files might be under this path:\n\n```\n~/Library/Application Support/Arc/User Data/Default/Local Storage\n```\n\nAs in Google Chrome and Chromium-based browsers, local storage files will typically have filenames with the pattern `http_<domain>_0.localstorage`.\n\nPlease ensure that you exercise caution when you decide to access these files in order not to compromise app functionality or user settings. It is important to take a backup of such files if you intend to manually modify them in any way."
+      },
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 6104.591749741056,
+        "y": 2929.7047086169973
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "8101822943507235",
+      "position": {
+        "x": 6284.591749741056,
+        "y": 2921.3867152087496
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "I apologize for the confusion. ...",
+        "fluxNodeType": "GPT",
+        "text": "I apologize for the confusion. If Arc is a Chromium-based browser, its file structure will be similar, but the file paths may vary from a typical Google Chrome setup. Here's an updated process for finding local storage files for Arc browser:\n\n1. Go to your system's user directory, look for the folder where Arc browser stores its user data. This folder is usually called 'Arc' or 'arc' for most Chromium-based browsers. Although the exact file path depends on your runtime, taken from my previous response, you can look for Arc folder in possible Common locations:\n\n   **For Windows:**\n\n   ```\n   %LocalAppData%\\Arc\n   ```\n\n   **For macOS:**\n\n   ```\n   ~/Library/Application Support/Arc\n   ```\n\n   **For Linux:**\n\n   ```\n   ~/.config/arc\n   ```\n\n2. Look for \"User Data\" and \"Default\" (or \"Profile_x\" for x being Profile's ID if there is a custom profile made rather than default) within this \"Arc\" or \"arc\" directory.\n\n3.  Inside the \"Default\" (or \"Profile_x\"), you will find the \"Local Storage\" folder. There will be SQLite files with `.localstorage` extension or similar filenames:\n   - `http_<domain>_0.localstorage` files are local storage files usually related to specific web applications.\n\n4. To access the SQLite `.localstorage` file contents, utilize an SQLite viewer.\n\nGiven that Arc is also a Chromium-based browser, remember to proceed with caution when accessing these files - don't upload sensitive content on web-based viewers during the process. Always keep backups before manipulating the data to prevent unforeseen complications or possible data corruption for browser apps. It is essential to understand the appropriate strategy for working with these data files by referring to Arc's documentation to accommodate any specific intricacies or implementation differences in comparison to Google Chrome."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6284.591749741056,
+        "y": 2921.3867152087496
+      }
+    },
+    {
+      "width": 150,
+      "height": 38,
+      "id": "17602355121699143",
+      "position": {
+        "x": 6464.591749741056,
+        "y": 2913.86553869018
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Thank you for the ...",
+        "fluxNodeType": "GPT",
+        "text": "Thank you for the clarification. It's important to know Arc is a Chromium-based browser.\n\nGiven that information, the possibility is that Arc stores the application data and local data similar to Google Chrome, but at its own specific directory path in the file system. To locate the local storage files for the Arc browser, you can check the following folder paths:\n\n**For Windows:**\n\nLook for Arc's 'User Data' folder in `AppData\\Local` or `AppData\\Roaming` folders.\nExample path:\n\n```\n%LocalAppData%\\ArcBrowser\\User Data\\Default\\Local Storage\\\n```\n\n**For macOS:**\n\nExample path:\n\n```\n~/Library/Application Support/ArcBrowser/Default/Local Storage\n```\n\n**For Linux:**\n\nThe folder may be at a folder in the `~/.config` hidden folder.\nExample path:\n\n```\n~/.config/ArcBrowser/Default/Local Storage\n```\n\nPlease note the above examples' folder structure may vary slightly depending on the actual place where the Arc Browser stores its data. Modify the path based on the specific folder structure for Arc Browser on your computer.\n\nOnce you locate the correct \"Local Storage\" directory, you can explore the files as previously mentioned for Chrome local storage files. The same advice applies as before: use caution when modifying these files and keep backups to avoid losing data or breaking application functionality."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6464.591749741056,
+        "y": 2913.86553869018
+      }
+    },
+    {
+      "width": 150,
+      "height": 38,
+      "id": "6784164425948302",
+      "position": {
+        "x": 6104.591749741056,
+        "y": 3048.4988499283786
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "ls LibraryApplication ...",
+        "fluxNodeType": "User",
+        "text": "ls ~/Library/Application\\ Support/Arc/User\\ Data/Default/\nAffiliation Database\nAffiliation Database-journal\nAutofillStrikeDatabase\nBudgetDatabase\nCookies\nCookies-journal\nDawnCache\nDownload Service\nExtension Rules\nExtension Scripts\nExtension State\nFavicons\nFavicons-journal\nGPUCache\nHistory\nHistory-journal\nIndexedDB\nLOCK\nLOG\nLOG.old\nLocal Storage\nLogin Data\nLogin Data For Account\nLogin Data For Account-journal\nLogin Data-journal\nNetwork Action Predictor\nNetwork Action Predictor-journal\nNetwork Persistent State\nPreferences\nPreferredApps\nREADME\nReporting and NEL\nReporting and NEL-journal\nSecure Preferences\nSegmentation Platform\nService Worker\nSession Storage\nSessions\nShortcuts\nShortcuts-journal\nSite Characteristics Database\nSync Data\nTop Sites\nTop Sites-journal\nTranslate Ranker Model\nTransportSecurity\nVisited Links\nWeb Data\nWeb Data-journal\nWebStorage\nblob_storage\ncommerce_subscription_db\ncoupon_db\ndatabases\nheavy_ad_intervention_opt_out.db\nheavy_ad_intervention_opt_out.db-journal\noptimization_guide_hint_cache_store\noptimization_guide_model_metadata_store\nshared_proto_db"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6104.591749741056,
+        "y": 3048.4988499283786
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "8828999727248972",
+      "position": {
+        "x": 5924.591749741056,
+        "y": 3157.24553012745
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "It looks like you provided a ...",
+        "fluxNodeType": "GPT",
+        "text": "It looks like you provided a directory listing from the Arc browser's default folder. To specifically locate local storage files for websites, navigate to the \"Local Storage\" subdirectory:\n\n```\n~/Library/Application Support/Arc/User Data/Default/Local Storage\n```\n\nInside the \"Local Storage\" folder, you should find local storage files with names that follow the pattern \"http_<domain>_0.localstorage\". These files are where specific website data associated with your Arc browser is saved."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5924.591749741056,
+        "y": 3157.24553012745
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "7275837919188186",
+      "position": {
+        "x": 6104.591749741056,
+        "y": 3157.675267822677
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "The list you provided shows the ...",
+        "fluxNodeType": "GPT",
+        "text": "The list you provided shows the contents of the `~/Library/Application Support/Arc/User Data/Default/` folder. Local storage files relating to Arc browser are located in the \"Local Storage\" folder. If you want to access these files, navigate to that subfolder:\n\n```\n~/Library/Application Support/Arc/User Data/Default/Local Storage\n```\n\nKeep in mind that you should be cautious when handling your browser's files and always back them up before making changes to avoid data loss or possible malfunction."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6104.591749741056,
+        "y": 3157.675267822677
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "4102152167836115",
+      "position": {
+        "x": 6284.591749741056,
+        "y": 3164.6014949010764
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "You have provided the list of ...",
+        "fluxNodeType": "GPT",
+        "text": "You have provided the list of files and folders in the Arc browser's Default directory. The location of local storage files for the Arc browser can be found inside the `Local Storage` folder. To view the contents of the 'Local Storage' folder, you can enter the following command in your terminal:\n\n```bash\nls ~/Library/Application\\ Support/Arc/User\\ Data/Default/Local\\ Storage\n```\n\nYou should see a list of local storage files with names usually following the pattern `http_<domain>_0.localstorage`. These files represent localStorage data associated with different websites. Be cautious if you consider making any manual modifications to them, as this might impact your browsing experience or compromise user settings. Always have a backup before making changes."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6284.591749741056,
+        "y": 3164.6014949010764
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "9106503054683788",
+      "position": {
+        "x": 5924.591749741056,
+        "y": 3263.2283250899995
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "When I open inspect element I ...",
+        "fluxNodeType": "User",
+        "text": "When I open inspect element I and navigate to application > local storage > http://localhost:5173/ I see a key value store but when I ls the local data directory this what I see:\n\nls ~/Library/Application\\ Support/Arc/User\\ Data/Default/Local\\ Storage/leveldb/\n000004.log\tLOCK\t\tMANIFEST-000001\n000005.ldb\tLOG\nCURRENT\t\tLOG.old"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5924.591749741056,
+        "y": 3263.2283250899995
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "36914990105314116",
+      "position": {
+        "x": 5744.591749741056,
+        "y": 3363.5862432175313
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "The leveldb folder you found ...",
+        "fluxNodeType": "GPT",
+        "text": "The `leveldb` folder you found inside the \"Local Storage\" folder is where Arc browser stores local storage data using LevelDB, which is a lightweight key-value storage engine developed by Google. The data presented in the browser's \"Inspect Element\" popup is stored in the LevelDB as serialized objects split into log and ldb files.\n\nTo read data from the LevelDB, you'll likely need to utilize a library or utility that is LevelDB-compatible in your preferred programming language. Here are two popular libraries:\n\n- Node.js: `level` package (Link: https://www.npmjs.com/package/level)\n- Python: `plyvel` package (Link: https://plyvel.readthedocs.io/en/latest/)\n\nEnsure that the library or utility you select can properly deserialize the binary format of LevelDB files. Manual inspection and manipulation of these files without appropriate tools are not advised, as it could lead to the risk of data corruption."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5744.591749741056,
+        "y": 3363.5862432175313
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "2369535447734925",
+      "position": {
+        "x": 5924.591749741056,
+        "y": 3374.1112169856433
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "In modern Chromium-based ...",
+        "fluxNodeType": "GPT",
+        "text": "In modern Chromium-based browsers like Arc, local storage data can likely be found in a LevelDB folder within the app data. The list of files you provided indicates that the local storage data is stored in a LevelDB format.\n\nLevelDB is a NoSQL key-value data store, and you cannot access it directly with simple text or SQLite tools. To explore Arc's local storage in LevelDB, you can use a Python library such as plyvel or a Node.js library like leveldown.\n\nWhile with the earlier Storages SQLite was mainly used, modern variations encode and store data differently, which means files are spread into files like you're seeing.\n\nIf you wish to access key-value pairs stored in LevelDB programmatically, consider using these libraries:\n\nPython: https://plyvel.readthedocs.io/en/latest/\n\nNode.js: https://github.com/Level/leveldown"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5924.591749741056,
+        "y": 3374.1112169856433
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "8810455009399534",
+      "position": {
+        "x": 6104.591749741056,
+        "y": 3370.3458020176517
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "In the directory you've ...",
+        "fluxNodeType": "GPT",
+        "text": "In the directory you've provided, you're looking at the LevelDB storage, which is essentially a back-end database system used by Chromium-based browsers (including Arc) to implement localStorage and other web storage APIs for more complex and highly efficient storage.\n\nThe files in the `leveldb` directory itself don't have human-readable keys and values; instead, they are obfuscated and arranged through the internal organization of LevelDB. Consequently, viewing the contents of such files directly is not quite straightforward.\n\nIf you'd like to access the key-value data stored using localStorage while using Arc, you should instead inspect your desired website through the browser's built-in developer tools. Since the API calls to localStorage are done using simple Javascript using standardized getItem() and setItem() methods, your interaction with them should be familiar, being similar to Google Chrome and other Chromium-based browsers.\n\nFollowing is an example to set and get localStorage data via the provided the website `http://localhost:5173/`\n\n1. Open the Arc browser and access the given site, `http://localhost:5173/`.\n2. Right-click on the page and select \"Inspect Element,\" then select the \"Application\" tab.\n3. Within the console toolbar, you should see a section for \"Storage.\" Extend this and you will see the \"Local Storage\" sub-section.\n4. Click on the listed site, in this case `http://localhost:5173/`, to view Local Storage key-value pairs on the right side.\n\nFrom a development perspective or to programmatically catch the localStorage data, you can always get and set the appropriate values by implementing Javascript such as:\n\n```javascript\nwindow.localStorage.setItem('key', 'value');\nlet value = window.localStorage.getItem('key');\n```\n\nRemember as always, accessing or modifying storage information unfamiliar to one's user experience settings, website settings or data parsed in developer stations might inadvertently invalidate important user features or data structures which are hard to recover."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6104.591749741056,
+        "y": 3370.3458020176517
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "45062665651768286",
+      "position": {
+        "x": 5744.591749741056,
+        "y": 3475.0086329605606
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "Write me a python program that ...",
+        "fluxNodeType": "User",
+        "text": "Write me a python program that will print out all the data in the database"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5744.591749741056,
+        "y": 3475.0086329605606
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "6036968461613268",
+      "position": {
+        "x": 5564.591749741056,
+        "y": 3580.105389834455
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "To read and print out the data ...",
+        "fluxNodeType": "GPT",
+        "text": "To read and print out the data stored in the LevelDB directory, you'll need to install the `plyvel` package:\n\n```\npip install plyvel\n```\n\nHere's a Python script that uses `plyvel` to do the job:\n\n```python\nimport plyvel\nimport os\n\ndb_path = os.path.expanduser('~/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb')\ndb = plyvel.DB(db_path, create_if_missing=False)\n\nprint(\"LevelDB Contents:\")\ntry:\n    for key, value in db.iterator():\n        decoded_key = key.decode(\"utf-8\", errors=\"ignore\")\n        decoded_value = value.decode(\"utf-8\", errors=\"ignore\")\n        print(f\"{decoded_key}: {decoded_value}\")\n\nfinally:\n    db.close()\n```\n\nPaste the script into a Python file (e.g., `print_"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5564.591749741056,
+        "y": 3580.105389834455
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "44602938443218987",
+      "position": {
+        "x": 5744.591749741056,
+        "y": 3594.035431572043
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "To read the LevelDB data and ...",
+        "fluxNodeType": "GPT",
+        "text": "To read the LevelDB data and print it using Python, first install plyvel using pip:\n\n```sh\npip install plyvel\n```\n\nNext, create a python script (e.g., read_arc_leveldb.py) with the following code:\n\n```python\nimport plyvel\n\ndb_path = '~/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb/'\ndb_path = os.path.expanduser(db_path)\n\ndb = plyvel.DB(db_path, create_if_missing=False)\n\ntry:\n    for key, value in db.iterator():\n        print(key.decode('utf-8'), '->', value.decode('utf-8'))\nfinally:\n    db.close()\n```\n\nEnsure you replace `db_path` with the path appropriate for your machine. Running this script with Python, it will open the LevelDB instance located in the specified path, loop through all key-value pairs"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5744.591749741056,
+        "y": 3594.035431572043
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "9943390484708683",
+      "position": {
+        "x": 5924.591749741056,
+        "y": 3587.475217577648
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "To access and print data stored ...",
+        "fluxNodeType": "GPT",
+        "text": "To access and print data stored as key-value pairs in the LevelDB database, you can use the `plyvel` package for Python. First, make sure to install it with:\n\n```\npip install plyvel\n```\n\nThen, create a Python script, say `read_leveldb.py`:\n\n```python\nimport plyvel\n\nldb_path = '~/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb'\nldb_path = os.path.expanduser(ldb_path)\n\ndb = plyvel.DB(ldb_path, create_if_missing=False)\n\nprint(\"Key, Value\")\nfor key, value in db:\n    print(key.decode('utf-8'), value.decode('utf-8'))\n\ndb.close()\n```\n\nThis script opens the specified LevelDB and prints decoded key-value pairs in the format \"Key, Value\", closing the database afterward. Ensure to input the correct"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5924.591749741056,
+        "y": 3587.475217577648
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "3385248622172541",
+      "position": {
+        "x": 5564.591749741056,
+        "y": 3691.617829240164
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "This error is occuring becuase ...",
+        "fluxNodeType": "User",
+        "text": "This error is occuring becuase I am running this code on apple silicon meaning I must run it in a docker container and the filesytem hasnet been maped at the root:\n\n(plurigrid-py3.10) bash-5.1# python flow-data-export.py\nTraceback (most recent call last):\n  File \"/plurigrid/flow-data-export.py\", line 5, in <module>\n    db = plyvel.DB(db_path, create_if_missing=False)\n  File \"plyvel/_plyvel.pyx\", line 247, in plyvel._plyvel.DB.__init__\n  File \"plyvel/_plyvel.pyx\", line 94, in plyvel._plyvel.raise_for_status\nplyvel._plyvel.Error: b'NotFound: /root/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb/LOCK: No such file or directory'"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5564.591749741056,
+        "y": 3691.617829240164
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "476336006640639",
+      "position": {
+        "x": 5384.591749741056,
+        "y": 3806.9694564941406
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "To read data from your host ...",
+        "fluxNodeType": "GPT",
+        "text": "To read data from your host machine's file system in a Docker container, you'll need to mount the relevant directory as a volume while launching the container. First, make sure the container image you're using (referenced in your `Dockerfile`) includes the necessary dependencies like Python and the `plyvel` package.\n\nIn the following example, replace `path/to/your/script` with the folder containing your Python script (`flow-data-export.py`). Update the `path/to/arc/leveldb` placeholder with the directly to your Arc browser's LevelDB folder on the host:\n\n```bash\ndocker run -it -v path/to/your/script:/data -v path/to/arc/leveldb:/leveldb your_docker_image_name /bin/bash\n```\n\nNow let's update the Python script to access the mounted LevelDB path in the `/leveldb` folder:\n\n```python\nimport plyvel\nimport os\n\ndb_path = \"/leveldb\"\ndb = plyvel.DB(db_path, create_if_missing=False)\n\nprint(\"LevelDB Contents:\")\ntry:\n    for key, value in db.iterator():\n        decoded_key = key.decode(\"utf-8\", errors=\"ignore\")\n        decoded_value = value.decode(\"utf-8\", errors=\"ignore\")\n        print(f\"{decoded_key}: {decoded_value}\")\n\nfinally:\n    db.close()\n```\n\nEnsure the file is saved in the `path/to/your/script` directory discussed earlier. Since you've configured your container, run the Python script inside the container using the following command:\n\n```bash\npython /data/flow-data-export.py\n```\n\nThe script should now access the LevelDB data from the host and display its contents."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5384.591749741056,
+        "y": 3806.9694564941406
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "24033600137029354",
+      "position": {
+        "x": 5564.591749741056,
+        "y": 3792.99526852164
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "In this case, you need to mount ...",
+        "fluxNodeType": "GPT",
+        "text": "In this case, you need to mount your system's specific local storage directory into your Docker container and modify your script accordingly as the location may differ. To correctly mount the directory as a volume, use the `-v` option in the `docker run command`.\n\nHere's an example `docker run` command that mounts your system's local storage directory inside the container at `/app/local_storage`:\n\n```bash\ndocker run -it -v ~/Library/Application\\ Support/Arc/User\\ Data/Default/Local\\ Storage/leveldb:/app/local_storage <CONTAINER_NAME> /bin/bash\n```\n\nUse your specific Docker container in `<CONTAINER_NAME>`. \n\nAfter that, modify the script to reflect the new path inside the container:\n\n```python\nimport plyvel\nimport os\n\ndb_path = '/app/local_storage'\ndb = plyvel.DB(db_path, create_if_missing=False)\n\nprint(\"LevelDB Contents:\")\ntry:\n    for key, value in db.iterator():\n        decoded_key = key.decode(\"utf-8\", errors=\"ignore\")\n        decoded_value = value.decode(\"utf-8\", errors=\"ignore\")\n        print(f\"{decoded_key}: {decoded_value}\")\n\nfinally:\n    db.close()\n```\n\nNow run the script within your Python environment in the Docker container. The script should correctly identify the LevelDB's path and print out the contents."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5564.591749741056,
+        "y": 3792.99526852164
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "22808016383418495",
+      "position": {
+        "x": 5744.591749741056,
+        "y": 3808.8581357445296
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "To resolve the error, you need ...",
+        "fluxNodeType": "GPT",
+        "text": "To resolve the error, you need to adjust the `db_path` variable to point to the LevelDB directory that is accessible within your Docker container. You should share the corresponding file locations between your host machine (Mac) and the Docker container using a volume.\n\n1. Map a host folder to the container when running the Docker container:\n\n```bash\ndocker run -v \"/Users/your_username/local_directory_path:/container_directory_path\" [OTHER_OPTIONS] your_container\n```\n\n Replace `your_username`, `local_directory_path`, and `container_directory_path` with your actual paths. Choose a location that holds the necessary substrings like 'Default/Local Storage/leveldb'.\n\n2. Change the `db_path` variable in the script to point to the new LevelDB directory location inside the Docker container. Assuming you are using the alias from the docker run command, it should look like this:\n\n```python\ndb_path = '/container_directory_path/Local Storage/leveldb'\n```\n\nRemember, the container path must match the path you supplied to map the volume from your host to the container.\n\nBy correctly assigning the file paths between the docker container and your computer's native volume, you should be able to open and read the LevelDB files with the provided Python script."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5744.591749741056,
+        "y": 3808.8581357445296
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "2859863086261223",
+      "position": {
+        "x": 5384.591749741056,
+        "y": 3913.8016602447365
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "you will recal that the path to ...",
+        "fluxNodeType": "User",
+        "text": "you will recal that the path to the database is: ls ~/Library/Application\\ Support/Arc/User\\ Data/Default/Local\\ Storage/leveldb/\nthe path to my script is: /Users/aja/Documents/Projects/flow-data-export.py\nplease modify my docker command acordingly: docker run -it --platform=linux/amd64 -v \"$(pwd)\":/plurigrid nixos/nix bash -c \"cd /plurigrid;nix-shell\""
+      },
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 5384.591749741056,
+        "y": 3913.8016602447365
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "8634939065931295",
+      "position": {
+        "x": 5204.591749741056,
+        "y": 4030.4927577172125
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Based on the provided ...",
+        "fluxNodeType": "GPT",
+        "text": "Based on the provided information, you can modify your Docker run command like this:\n\n```bash\ndocker run -it --platform=linux/amd64 -v \"/Users/aja/Documents/Projects:/plurigrid\" -v \"~/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb:/leveldb\" nixos/nix bash -c \"cd /plurigrid;nix-shell\"\n```\n\nMake sure to update the Python script to use the mounted LevelDB path in the `/leveldb` folder as mentioned earlier:\n\n```python\ndb_path = \"/leveldb\"\n```"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5204.591749741056,
+        "y": 4030.4927577172125
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "12778808554538013",
+      "position": {
+        "x": 5384.591749741056,
+        "y": 4013.984741790294
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Use the following docker run ...",
+        "fluxNodeType": "GPT",
+        "text": "Use the following `docker run` command to mount the required folders with your provided `flow-data-export.py` script and Arc's LevelDB path:\n\nAssuming you're launching the Docker container from `/Users/aja/Documents/Projects`,\n\n```bash\ndocker run -it --platform=linux/amd64 -v \"$(pwd)\":/plurigrid -v ~/Library/Application\\ Support/Arc/User\\ Data/Default/Local\\ Storage/leveldb:/leveldb nixos/nix bash -c \"cd /plurigrid;nix-shell\"\n```\n\nRemember to modify your `flow-data-export.py` script within `/Users/aja/Documents/Projects` as mentioned earlier to include the mounted path for the LevelDB:\n\n```python\nimport plyvel\nimport os\n\ndb_path = \"/leveldb\"\ndb = plyvel.DB(db_path, create_if_missing=False)\n\nprint(\"LevelDB Contents:\")\ntry:\n    for key, value in db.iterator():\n        decoded_key = key.decode(\"utf-8\", errors=\"ignore\")\n        decoded_value = value.decode(\"utf-8\", errors=\"ignore\")\n        print(f\"{decoded_key}: {decoded_value}\")\n\nfinally:\n    db.close()\n```\n\nNow that the container correctly references and includes both folders, run the script in a container shell to access the LevelDB data from the host:\n\n```bash\npython /plurigrid/flow-data-export.py\n```"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5384.591749741056,
+        "y": 4013.984741790294
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "28477423360109877",
+      "position": {
+        "x": 5564.591749741056,
+        "y": 4018.273025342115
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "First, let's update your Docker ...",
+        "fluxNodeType": "GPT",
+        "text": "First, let's update your Docker command by mounting the host's Arc LevelDB:\n\n```bash\ndocker run -it --platform=linux/amd64 -v \"$(pwd)\":/plurigrid -v \"/Users/aja/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb\":/leveldb nixos/nix bash -c \"cd /plurigrid;nix-shell\"\n```\n\nAs mentioned, you should also modify the Python `flow-data-export.py` script to reference the new mounted LevelDB path:\n\n```python\nimport plyvel\nimport os\n\ndb_path = \"/leveldb\"\ndb = plyvel.DB(db_path, create_if_missing=False)\n\nprint(\"LevelDB Contents:\")\ntry:\n    for key, value in db.iterator():\n        decoded_key = key.decode(\"utf-8\", errors=\"ignore\")\n        decoded_value = value.decode(\"utf-8\", errors=\"ignore\")\n        print(f\"{decoded_key}: {decoded_value}\")\n\nfinally:\n    db.close()\n```\n\nSo, the full sequence of commands to run the updated Python script is:\n\n```bash\n# Run the updated Docker command\ndocker run -it --platform=linux/amd64 -v \"$(pwd)\":/plurigrid -v \"/Users/aja/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb\":/leveldb nixos/nix bash -c \"cd /plurigrid;nix-shell\"\n\n# Once in the Docker container, install Plyvel if necessary and run the flow-data-export.py script\npip install plyvel\npython /plurigrid/flow-data-export.py\n```\n\nThis should allow the Python script to properly access the LevelDB data inside the Docker container."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5564.591749741056,
+        "y": 4018.273025342115
+      }
+    },
+    {
+      "width": 150,
+      "height": 38,
+      "id": "10698251548272819",
+      "position": {
+        "x": 5204.591749741056,
+        "y": 4138.746163957754
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "docker run -it ...",
+        "fluxNodeType": "User",
+        "text": "docker run -it --platform=linux/amd64 -v \"/Users/aja/Documents/Projects:/plurigrid\" -v \"~/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb:/leveldb\" nixos/nix bash -c \"cd /plurigrid;nix-shell\"\ndocker: Error response from daemon: create ~/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb: \"~/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb\" includes invalid characters for a local volume name, only \"[a-zA-Z0-9][a-zA-Z0-9_.-]\" are allowed. If you intended to pass a host directory, use absolute path.\nSee 'docker run --help'."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5204.591749741056,
+        "y": 4138.746163957754
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "7976130646362332",
+      "position": {
+        "x": 5024.591749741056,
+        "y": 4247.625996281049
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "I apologize for the oversight. ...",
+        "fluxNodeType": "GPT",
+        "text": "I apologize for the oversight. Docker does not expand the `~` character to your home directory. Instead, you should use the absolute path or a relative path for the volume mount. Here's the updated `docker run` command:\n\n```bash\ndocker run -it --platform=linux/amd64 -v \"/Users/aja/Documents/Projects:/plurigrid\" -v \"/Users/aja/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb:/leveldb\" nixos/nix bash -c \"cd /plurigrid;nix-shell\"\n```\n\nThis command maps the folder containing your Python script and the `leveldb` folder to the corresponding directories inside the Docker container. Ensure the updated mount paths are accurate, and the Python script is referencing `/leveldb` as the `db_path`. Once the container starts successfully, you can proceed to run the Python script."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5024.591749741056,
+        "y": 4247.625996281049
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "21229559730351122",
+      "position": {
+        "x": 5204.591749741056,
+        "y": 4255.472673457217
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Sorry for the confusion. It ...",
+        "fluxNodeType": "GPT",
+        "text": "Sorry for the confusion. It appears that Docker rejects volume paths containing the tilde symbol (`~`). Please replace the tilde with the full absolute path. We also need to remove the spaces from the host's part of the volume to avoid escaping errors. \n\nFirst, find the absolute path of your home folder by executing the following command:\n\n```bash\necho $HOME\n```\n\nWhen you have your absolute home path, replace the tilde (`~`) with the output from the aforementioned command. Let's assume that the output of the `echo $HOME` command is `/Users/aja`. Your updated Docker run command would look like:\n\n```bash\ndocker run -it --platform=linux/amd64 -v \"/Users/aja/Documents/Projects:/plurigrid\" -v \"/Users/aja/Library/Application\\ Support/Arc/User\\ Data/Default/Local\\ Storage/leveldb/:/leveldb\" nixos/nix bash -c \"cd /plurigrid;nix-shell\"\n```\nThis command mounts your script directory to `/plurigrid` and LevelDB to `/leveldb` within the Docker container. Ensure the modified Python script inside `/Users/aja/Documents/Projects` uses the \"/leveldb\" directory as the LevelDB path."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5204.591749741056,
+        "y": 4255.472673457217
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "3092341047775695",
+      "position": {
+        "x": 5384.591749741056,
+        "y": 4249.017806410718
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "I apologize for the mistake in ...",
+        "fluxNodeType": "GPT",
+        "text": "I apologize for the mistake in using the `~` character. In this case, you should use the absolute path instead:\n\n```bash\ndocker run -it --platform=linux/amd64 -v \"/Users/aja/Documents/Projects:/plurigrid\" -v \"/Users/aja/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb:/leveldb\" nixos/nix bash -c \"cd /plurigrid;nix-shell\"\n```\n\nThis command will mount the `flow-data-export.py` script at `/plurigrid`, and mount the Arc browser's LevelDB folder at `/leveldb`. Be sure your Python script still contains the updated `db_path` (as previously mentioned):\n\n```python\ndb_path = \"/leveldb\"\n```"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5384.591749741056,
+        "y": 4249.017806410718
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "9660978215078808",
+      "position": {
+        "x": 5024.591749741056,
+        "y": 4355.809281236356
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "Should be using shell.nix not ...",
+        "fluxNodeType": "User",
+        "text": "Should be using shell.nix not defualt nix:\n\ndocker run -it --platform=linux/amd64 -v \"/Users/aja/Documents/Projects:/Projects\" -v \"/Users/aja/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb:/leveldb\" nixos/nix bash -c \"cd /GitHub/plurigrid;nix-shell\"\n/root/.nix-profile/bin/bash: line 1: cd: /GitHub/plurigrid: No such file or directory\nerror: getting status of '/default.nix': No such file or directory"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5024.591749741056,
+        "y": 4355.809281236356
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "3109619863136728",
+      "position": {
+        "x": 4844.591749741056,
+        "y": 4457.621845909029
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "I apologize for the confusion. ...",
+        "fluxNodeType": "GPT",
+        "text": "I apologize for the confusion. It appears that the working directory passed to the command is incorrect – please update it to the new volume mapping `/Projects` in your `docker run` command:\n\n```bash\ndocker run -it --platform=linux/amd64 -v \"/Users/aja/Documents/Projects:/Projects\" -v \"/Users/aja/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb:/leveldb\" nixos/nix bash -c \"cd /Projects/plurigrid;nix-shell\"\n```\n\nThis command correctly maps the `/Users/aja/Documents/Projects` directory (containing your script) on the host to the `/Projects` directory in the container. It then navigates to the `/Projects/plurigrid` folder before invoking `nix-shell`. Ensure the script is using the correct mounted path (`/leveldb`), and then you will be able to run the Python script once you have a running container."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 4844.591749741056,
+        "y": 4457.621845909029
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "4988542977309507",
+      "position": {
+        "x": 5024.591749741056,
+        "y": 4470.754301537608
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Based on the details you ...",
+        "fluxNodeType": "GPT",
+        "text": "Based on the details you mentioned, your Python script `flow-data-export.py` is in `/Users/aja/Documents/Projects`. Assuming you also have a `shell.nix` file in the same folder, here's the modified `docker run` command:\n\n```bash\ndocker run -it --platform=linux/am&type_codelist=indexd64 -v \"/Users/aja/Documents/Projects:/Projects\" -v \"/Users/aja/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb:/leveldb\" nixos/nix bash -c \"cd /Projects; nix-shell\"\n```\n\nAfter executing the above command, the Docker container should enter the `nix-shell`, and you'll have access to the environment specified in your `shell.nix`. Ensure that the paths are correct before proceeding to run your Python script using `python flow-data-export.py`."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5024.591749741056,
+        "y": 4470.754301537608
+      }
+    },
+    {
+      "width": 150,
+      "height": 38,
+      "id": "7372503859281585",
+      "position": {
+        "x": 5204.591749741056,
+        "y": 4474.751625290073
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "I apologize for ...",
+        "fluxNodeType": "GPT",
+        "text": "I apologize for misunderstanding your original command. To correctly use `shell.nix` while also fixing the directory issue, you'll need to update your `docker run` command:\n\n```\ndocker run -it --platform=linux/amd64 -v \"/Users/aja/Documents/Projects:/Projects\" -v \"/Users/aja/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb:/leveldb\" nixos/nix bash -c \"cd /Projects; nix-shell --run 'python flow-data-export.py'\"\n```\n\nThis command will mount your Projects folder under `/Projects` inside the Docker container, map the `leveldb` folder, change the current directory to `/Projects`, and run `nix-shell` to execute your `flow-data-export.py` script. Make sure you've already updated `db_path` in your script to `/leveldb`."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5204.591749741056,
+        "y": 4474.751625290073
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "1404451468055199",
+      "position": {
+        "x": 4844.591749741056,
+        "y": 4563.465594262576
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "plurigrid-py3.10 bash-5.1 ...",
+        "fluxNodeType": "User",
+        "text": "(plurigrid-py3.10) bash-5.1# python ~/../Projects/flow-data-export.py\nTraceback (most recent call last):\n  File \"/root/../Projects/flow-data-export.py\", line 1, in <module>\n    import plyvel\nModuleNotFoundError: No module named 'plyvel'\n(plurigrid-py3.10) bash-5.1# poetry add plyvel\nThe following packages are already present in the pyproject.toml and will be skipped:\n\n  • plyvel\n\nIf you want to update it to the latest compatible version, you can use `poetry update package`.\nIf you prefer to upgrade it to the latest available version, you can use `poetry add package@latest`.\n\nNothing to add."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 4844.591749741056,
+        "y": 4563.465594262576
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "9375297992732403",
+      "position": {
+        "x": 4664.591749741056,
+        "y": 4680.574246734523
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "I see that plyvel is already ...",
+        "fluxNodeType": "GPT",
+        "text": "I see that `plyvel` is already included in your `pyproject.toml`, but it's possible that the Nix environment is missing this dependency. To allow the Python script to locate `plyvel` inside the container, you may need to add the package `plyvel` to the shell.nix configuration.\n\nModify the `shell.nix` file in your project folder:\n\n1. Remove the `plyvel` dependency from `pyproject.toml`, since your Nix-based environment will manage it.\n\n2. Add the `plyvel` package to your `shell.nix`, update your dependencies array:\n\n```nix\n# Your other dependencies can remain in their dedicated origin(s)\npythonPackages.\"plyvel\",\n```\n\n3. Optionally, you might want to run `nix-collect-garbage` to ensure Nix removes any unused cache to prevent mixing different environments.\n\nAfter modifying `shell.nix`, exit your running container and restart it with the modified `docker run`:\n\n```bash\ndocker run -it --platform=linux/amd64 -v \"/Users/aja/Documents/Projects:/Projects\" -v \"/Users/aja/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb:/leveldb\" nixos/nix bash -c \"cd /Projects/plurigrid;nix-shell\"\n```\n\nNow, try running the Python script again, as the container should contain the `plyvel` package installed in its new Nix environment:\n\n```bash\npython flow-data-export.py\n```"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 4664.591749741056,
+        "y": 4680.574246734523
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "9990392724235941",
+      "position": {
+        "x": 4844.591749741056,
+        "y": 4677.700581937204
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Navigating to the specified ...",
+        "fluxNodeType": "GPT",
+        "text": "Navigating to the specified directory may not modify the `$PYTHONPATH` in the running instance of your Docker container. You can execute the python script without a `cd` command like this to ensure the current Python interpreter recognizes all installed packages, even those in custom locations inside the container:\n\n```\npython /Projects/flow-data-export.py\n```\n\nAlternatively, executing the script from inside the project directory might help:\n\n```bash\ndocker run -it --platform=linux/amd64 -v \"/Users/aja/Documents/Projects:/Projects\" -v \"/Users/aja/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb:/leveldb\" nixos/nix bash -c \"cd /Projects; nix-shell --run 'cd plurigrid; python flow-data-export.py'\"\n```\n\nThis Docker command both enters the plurigrid directory and runs the `flow-data-export.py` script in the said directory.\n\nPlease make sure that the `plyvel` package is properly installed in the environment where you're trying to run your script inside the container. Double-check by running `pip freeze` or `poetry show` to see the list of installed packages in your container."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 4844.591749741056,
+        "y": 4677.700581937204
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "8344712985780331",
+      "position": {
+        "x": 5024.591749741056,
+        "y": 4673.596078087389
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "The error message indicates ...",
+        "fluxNodeType": "GPT",
+        "text": "The error message indicates that the `plyvel` module is not available within the current Python environment provided by the container you are executing the script in. You need to ensure that the container used (`nixos/nix` in your case) includes a Python environment with `plyvel` installed.\n\nFrom the given info, it seems like your project uses Poetry to manage dependencies. You can create a custom Docker image encapsulating your project dependencies by utilizing a `Dockerfile`. Create a `Dockerfile` in your project's root directory (`/Users/aja/Documents/Projects/plurigrid`) with the following content:\n\n```dockerfile\nFROM python:3.10\n\nRUN pip install --upgrade pip\n\nCOPY ./pyproject.toml ./poetry.lock* /app/\n\nWORKDIR /app\n\nRUN pip install poetry \\\n    && poetry config virtualenvs.create false \\\n    && poetry install --no-interaction --no-ansi\n\nCOPY . /app/\n```\n\nThen, build the custom Docker image by running the following command in your project's root directory (`/Users/aja/Documents/Projects/plurigrid`):\n\n```bash\ndocker build -t my_custom_image .\n```\n\nReplace the `nixos/nix` image with `my_custom_image` in your run command:\n\n```bash\ndocker run -it --platform=linux/amd64 -v \"/Users/aja/Documents/Projects:/Projects\" -v \"/Users/aja/Library/Application Support/Arc/User Data/Default/Local Storage/leveldb:/leveldb\" my_custom_image bash -c \"cd /Projects/plurigrid;nix-shell\"\n```\n\nNow, in your running container, the Python environment should have `plyvel` available, and you can execute your script without encountering `ModuleNotFoundError`."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5024.591749741056,
+        "y": 4673.596078087389
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "030068322120920143",
+      "position": {
+        "x": 4664.591749741056,
+        "y": 4783.634333064741
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "Lets just temportailly add it ...",
+        "fluxNodeType": "User",
+        "text": "Lets just temportailly add it using nix add ia"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 4664.591749741056,
+        "y": 4783.634333064741
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "27088139234028286",
+      "position": {
+        "x": 4484.591749741056,
+        "y": 4898.945792786402
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "I apologize, ianix-instantiate ...",
+        "fluxNodeType": "GPT",
+        "text": "I apologize, `ia(nix-instantiate Shell)` is a live NixOps deployment (Server Administrator).\n\nTo help amend the issue, leaving `shell.nix` untouched. Then importing `plyvel` into the container before running your script to limit overhurdles:\n\nInside your existing container session, install the `plyvel` package through the Nix channel temporarily:\n\n```bash\nnix-env -iA nixpkgs.pythonPackages.plyvel\n```\n\nSubsequently, execute the Python script:\n\n`python flow-data-export.py`\n\nThe temporary `plyvel` installation will function in the active container prior to termination."
+      },
+      "selected": true,
+      "positionAbsolute": {
+        "x": 4484.591749741056,
+        "y": 4898.945792786402
+      },
+      "dragging": false
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "6113737943347932",
+      "position": {
+        "x": 4664.591749741056,
+        "y": 4894.250241797483
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "It seems you want to ...",
+        "fluxNodeType": "GPT",
+        "text": "It seems you want to temporarily install the `plyvel` package for testing using `nix-env`. Also consider including it in `shell.nix` to make it a permanent dependency.\n\nTo temporarily add `plyvel`, execute the following command:\n\n```bash\nnix-env -i python3.9-plyvel -f '<nixpkgs>'\n```\n\nOnce you've done that, `plyvel` should now be available. Try running your Python script again:\n\n```bash\npython flow-data-export.py\n```\n\nRemember that with this method, `plyvel` is installed only in the current shell. Installing dependencies in `shell.nix` is a better practice as it guarantees a reproducible project environment."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 4664.591749741056,
+        "y": 4894.250241797483
+      },
+      "dragging": false
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "6354393632152648",
+      "position": {
+        "x": 4844.591749741056,
+        "y": 4898.968125939759
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Unfortunately, the nix package ...",
+        "fluxNodeType": "GPT",
+        "text": "Unfortunately, the nix package manager doesn't have an `add` command since Nix differs from other package managers because it replaces environments in isolation. Modifying the Nix packages would mean creating a new environment or derivations.\n\nNevertheless, you can install a Python package temporarily in Nix using `nix-shell`. Add this line to your `shell.nix` to install `plyvel` temporarily:\n\n```nix\n  (pythonBuildEnv.override { extraPackages = [ self.pplyvel ]; })\n```\n\nHere's an example of how to include it in a minimal `shell.nix` file:\n\n```nix\nlet\n  pkgs = import <nixpkgs> { };\n\n  only_add_plyvel = import pkgs { }:\n    pkgs.python3.buildEnv.override {\n      scope = pkgs.python3Packages;\n      setup = import pkgs.lib.update-python-lib.finalPackageEvaluator ./default.nix {packages= pkgs.stereotypePackages;};\n      package = pkgs.repyIn.nix-pin;\n\n      propagatedBuildInputs = nn ++ [\"pplyvel\"] ;\n    };\nin\n{\n   repl = pkgs.buildEnv {\n            name = only_add_plyvel.name + '-' + 'repl-interpreter';\n            paths = only_add_plyvel ++\n           getBuildInputs(req.env.buildInputs, interpreter).];\n    }\n@NoArgsConstructor: NoModulepplyvepylldystatechange{packageName=\"onn\"}/BUILD_PROFILEe}"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 4844.591749741056,
+        "y": 4898.968125939759
       }
     }
   ],
@@ -12808,11 +14316,499 @@
       "source": "08773577576940661",
       "target": "8483604678652066",
       "animated": false
+    },
+    {
+      "id": "7072792145835147-24641052436378796",
+      "source": "7072792145835147",
+      "target": "24641052436378796",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "24641052436378796-2376064095349011",
+      "source": "24641052436378796",
+      "target": "2376064095349011",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "24641052436378796-7337171625835293",
+      "source": "24641052436378796",
+      "target": "7337171625835293",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "24641052436378796-5595887666016599",
+      "source": "24641052436378796",
+      "target": "5595887666016599",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "2376064095349011-7242597937032098",
+      "source": "2376064095349011",
+      "target": "7242597937032098",
+      "animated": false
+    },
+    {
+      "id": "7242597937032098-7391357046126421",
+      "source": "7242597937032098",
+      "target": "7391357046126421",
+      "animated": false
+    },
+    {
+      "id": "7242597937032098-246904779426375",
+      "source": "7242597937032098",
+      "target": "246904779426375",
+      "animated": false
+    },
+    {
+      "id": "7242597937032098-7366602527735282",
+      "source": "7242597937032098",
+      "target": "7366602527735282",
+      "animated": false
+    },
+    {
+      "id": "7072792145835147-6097814527975634",
+      "source": "7072792145835147",
+      "target": "6097814527975634",
+      "animated": false
+    },
+    {
+      "id": "6097814527975634-18008187411988552",
+      "source": "6097814527975634",
+      "target": "18008187411988552",
+      "animated": false
+    },
+    {
+      "id": "6097814527975634-30598104350598665",
+      "source": "6097814527975634",
+      "target": "30598104350598665",
+      "animated": false
+    },
+    {
+      "id": "6097814527975634-2996949356306029",
+      "source": "6097814527975634",
+      "target": "2996949356306029",
+      "animated": false
+    },
+    {
+      "id": "7072792145835147-8107709375153838",
+      "source": "7072792145835147",
+      "target": "8107709375153838",
+      "animated": false
+    },
+    {
+      "id": "8107709375153838-36893003421792536",
+      "source": "8107709375153838",
+      "target": "36893003421792536",
+      "animated": false
+    },
+    {
+      "id": "8107709375153838-5317188349140589",
+      "source": "8107709375153838",
+      "target": "5317188349140589",
+      "animated": false
+    },
+    {
+      "id": "8107709375153838-9423734637714534",
+      "source": "8107709375153838",
+      "target": "9423734637714534",
+      "animated": false
+    },
+    {
+      "id": "42388892572307424-32113023135088015",
+      "source": "42388892572307424",
+      "target": "32113023135088015",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "42388892572307424-5904350190590806",
+      "source": "42388892572307424",
+      "target": "5904350190590806",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "42388892572307424-7238498214468041",
+      "source": "42388892572307424",
+      "target": "7238498214468041",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "32113023135088015-8232434152544932",
+      "source": "32113023135088015",
+      "target": "8232434152544932",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "8232434152544932-054875783638978604",
+      "source": "8232434152544932",
+      "target": "054875783638978604",
+      "animated": true,
+      "selected": false
+    },
+    {
+      "id": "8232434152544932-13765333214643216",
+      "source": "8232434152544932",
+      "target": "13765333214643216",
+      "animated": true,
+      "selected": false
+    },
+    {
+      "id": "8232434152544932-6078177892391576",
+      "source": "8232434152544932",
+      "target": "6078177892391576",
+      "animated": true,
+      "selected": false
+    },
+    {
+      "id": "4746027237219923-09921973886352142",
+      "source": "4746027237219923",
+      "target": "09921973886352142",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "8232434152544932-3139086956432371",
+      "source": "8232434152544932",
+      "target": "3139086956432371",
+      "animated": false
+    },
+    {
+      "id": "8232434152544932-9114951084818945",
+      "source": "8232434152544932",
+      "target": "9114951084818945",
+      "animated": false
+    },
+    {
+      "id": "8232434152544932-46051017927473836",
+      "source": "8232434152544932",
+      "target": "46051017927473836",
+      "animated": false
+    },
+    {
+      "source": "36893003421792536",
+      "sourceHandle": null,
+      "target": "42388892572307424",
+      "targetHandle": null,
+      "id": "reactflow__edge-36893003421792536-42388892572307424"
+    },
+    {
+      "id": "3139086956432371-03676891183259223",
+      "source": "3139086956432371",
+      "target": "03676891183259223",
+      "animated": false
+    },
+    {
+      "id": "03676891183259223-5995240884943518",
+      "source": "03676891183259223",
+      "target": "5995240884943518",
+      "animated": false
+    },
+    {
+      "id": "03676891183259223-6463284281210837",
+      "source": "03676891183259223",
+      "target": "6463284281210837",
+      "animated": false
+    },
+    {
+      "id": "03676891183259223-7981685378893972",
+      "source": "03676891183259223",
+      "target": "7981685378893972",
+      "animated": false
+    },
+    {
+      "id": "6254970373481399-8217987071466912",
+      "source": "6254970373481399",
+      "target": "8217987071466912",
+      "animated": true,
+      "selected": false
+    },
+    {
+      "id": "6254970373481399-6536241350822256",
+      "source": "6254970373481399",
+      "target": "6536241350822256",
+      "animated": true,
+      "selected": false
+    },
+    {
+      "id": "6254970373481399-5350659091875143",
+      "source": "6254970373481399",
+      "target": "5350659091875143",
+      "animated": true,
+      "selected": false
+    },
+    {
+      "id": "6254970373481399-7483757077156299",
+      "source": "6254970373481399",
+      "target": "7483757077156299",
+      "animated": false
+    },
+    {
+      "id": "6254970373481399-8101822943507235",
+      "source": "6254970373481399",
+      "target": "8101822943507235",
+      "animated": false
+    },
+    {
+      "id": "6254970373481399-17602355121699143",
+      "source": "6254970373481399",
+      "target": "17602355121699143",
+      "animated": false
+    },
+    {
+      "id": "7483757077156299-6784164425948302",
+      "source": "7483757077156299",
+      "target": "6784164425948302",
+      "animated": false
+    },
+    {
+      "id": "6784164425948302-8828999727248972",
+      "source": "6784164425948302",
+      "target": "8828999727248972",
+      "animated": false
+    },
+    {
+      "id": "6784164425948302-7275837919188186",
+      "source": "6784164425948302",
+      "target": "7275837919188186",
+      "animated": false
+    },
+    {
+      "id": "6784164425948302-4102152167836115",
+      "source": "6784164425948302",
+      "target": "4102152167836115",
+      "animated": false
+    },
+    {
+      "id": "8828999727248972-9106503054683788",
+      "source": "8828999727248972",
+      "target": "9106503054683788",
+      "animated": false
+    },
+    {
+      "id": "9106503054683788-36914990105314116",
+      "source": "9106503054683788",
+      "target": "36914990105314116",
+      "animated": false
+    },
+    {
+      "id": "9106503054683788-2369535447734925",
+      "source": "9106503054683788",
+      "target": "2369535447734925",
+      "animated": false
+    },
+    {
+      "id": "9106503054683788-8810455009399534",
+      "source": "9106503054683788",
+      "target": "8810455009399534",
+      "animated": false
+    },
+    {
+      "id": "36914990105314116-45062665651768286",
+      "source": "36914990105314116",
+      "target": "45062665651768286",
+      "animated": false
+    },
+    {
+      "id": "45062665651768286-6036968461613268",
+      "source": "45062665651768286",
+      "target": "6036968461613268",
+      "animated": false
+    },
+    {
+      "id": "45062665651768286-44602938443218987",
+      "source": "45062665651768286",
+      "target": "44602938443218987",
+      "animated": false
+    },
+    {
+      "id": "45062665651768286-9943390484708683",
+      "source": "45062665651768286",
+      "target": "9943390484708683",
+      "animated": false
+    },
+    {
+      "id": "6036968461613268-4018741300643063",
+      "source": "6036968461613268",
+      "target": "4018741300643063",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "6036968461613268-3385248622172541",
+      "source": "6036968461613268",
+      "target": "3385248622172541",
+      "animated": false
+    },
+    {
+      "id": "3385248622172541-476336006640639",
+      "source": "3385248622172541",
+      "target": "476336006640639",
+      "animated": false
+    },
+    {
+      "id": "3385248622172541-24033600137029354",
+      "source": "3385248622172541",
+      "target": "24033600137029354",
+      "animated": false
+    },
+    {
+      "id": "3385248622172541-22808016383418495",
+      "source": "3385248622172541",
+      "target": "22808016383418495",
+      "animated": false
+    },
+    {
+      "id": "476336006640639-2859863086261223",
+      "source": "476336006640639",
+      "target": "2859863086261223",
+      "animated": false
+    },
+    {
+      "id": "2859863086261223-829687435162398",
+      "source": "2859863086261223",
+      "target": "829687435162398",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "2859863086261223-8062827607515575",
+      "source": "2859863086261223",
+      "target": "8062827607515575",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "2859863086261223-10863648894597278",
+      "source": "2859863086261223",
+      "target": "10863648894597278",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "2859863086261223-8634939065931295",
+      "source": "2859863086261223",
+      "target": "8634939065931295",
+      "animated": false
+    },
+    {
+      "id": "2859863086261223-12778808554538013",
+      "source": "2859863086261223",
+      "target": "12778808554538013",
+      "animated": false
+    },
+    {
+      "id": "2859863086261223-28477423360109877",
+      "source": "2859863086261223",
+      "target": "28477423360109877",
+      "animated": false
+    },
+    {
+      "id": "8634939065931295-10698251548272819",
+      "source": "8634939065931295",
+      "target": "10698251548272819",
+      "animated": false
+    },
+    {
+      "id": "10698251548272819-7976130646362332",
+      "source": "10698251548272819",
+      "target": "7976130646362332",
+      "animated": false
+    },
+    {
+      "id": "10698251548272819-21229559730351122",
+      "source": "10698251548272819",
+      "target": "21229559730351122",
+      "animated": false
+    },
+    {
+      "id": "10698251548272819-3092341047775695",
+      "source": "10698251548272819",
+      "target": "3092341047775695",
+      "animated": false
+    },
+    {
+      "id": "7976130646362332-9660978215078808",
+      "source": "7976130646362332",
+      "target": "9660978215078808",
+      "animated": false
+    },
+    {
+      "id": "9660978215078808-3109619863136728",
+      "source": "9660978215078808",
+      "target": "3109619863136728",
+      "animated": false
+    },
+    {
+      "id": "9660978215078808-4988542977309507",
+      "source": "9660978215078808",
+      "target": "4988542977309507",
+      "animated": false
+    },
+    {
+      "id": "9660978215078808-7372503859281585",
+      "source": "9660978215078808",
+      "target": "7372503859281585",
+      "animated": false
+    },
+    {
+      "id": "3109619863136728-1404451468055199",
+      "source": "3109619863136728",
+      "target": "1404451468055199",
+      "animated": false
+    },
+    {
+      "id": "1404451468055199-9375297992732403",
+      "source": "1404451468055199",
+      "target": "9375297992732403",
+      "animated": false
+    },
+    {
+      "id": "1404451468055199-9990392724235941",
+      "source": "1404451468055199",
+      "target": "9990392724235941",
+      "animated": false
+    },
+    {
+      "id": "1404451468055199-8344712985780331",
+      "source": "1404451468055199",
+      "target": "8344712985780331",
+      "animated": false
+    },
+    {
+      "id": "9375297992732403-030068322120920143",
+      "source": "9375297992732403",
+      "target": "030068322120920143",
+      "animated": false
+    },
+    {
+      "id": "030068322120920143-27088139234028286",
+      "source": "030068322120920143",
+      "target": "27088139234028286",
+      "animated": false
+    },
+    {
+      "id": "030068322120920143-6113737943347932",
+      "source": "030068322120920143",
+      "target": "6113737943347932",
+      "animated": false
+    },
+    {
+      "id": "030068322120920143-6354393632152648",
+      "source": "030068322120920143",
+      "target": "6354393632152648",
+      "animated": false
     }
   ],
   "viewport": {
-    "x": -1629.905439043854,
-    "y": -44.26968446382955,
-    "zoom": 0.3131776479675006
+    "x": -1765.4594277667225,
+    "y": -1439.4040323571974,
+    "zoom": 0.39394479297249996
   }
 }
