@@ -8461,7 +8461,8 @@
       "positionAbsolute": {
         "x": 6138.736290256464,
         "y": 1616.843809915565
-      }
+      },
+      "dragging": false
     },
     {
       "width": 150,
@@ -9694,7 +9695,7 @@
         "fluxNodeType": "GPT",
         "text": "I apologize, `ia(nix-instantiate Shell)` is a live NixOps deployment (Server Administrator).\n\nTo help amend the issue, leaving `shell.nix` untouched. Then importing `plyvel` into the container before running your script to limit overhurdles:\n\nInside your existing container session, install the `plyvel` package through the Nix channel temporarily:\n\n```bash\nnix-env -iA nixpkgs.pythonPackages.plyvel\n```\n\nSubsequently, execute the Python script:\n\n`python flow-data-export.py`\n\nThe temporary `plyvel` installation will function in the active container prior to termination."
       },
-      "selected": true,
+      "selected": false,
       "positionAbsolute": {
         "x": 4484.591749741056,
         "y": 4898.945792786402
@@ -9744,6 +9745,359 @@
       "positionAbsolute": {
         "x": 4844.591749741056,
         "y": 4898.968125939759
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "5614274760486884",
+      "position": {
+        "x": 6138.736290256464,
+        "y": 1726.9870499506876
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "Define all proper nouns or ...",
+        "fluxNodeType": "User",
+        "text": "Define all proper nouns or terminology used then reexplain"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6138.736290256464,
+        "y": 1726.9870499506876
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "5578389883148158",
+      "position": {
+        "x": 5958.736290256464,
+        "y": 1842.0517174016938
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "1.Topos A generalized ...",
+        "fluxNodeType": "GPT",
+        "text": "1.Topos: A generalized mathematical object that appears in category theory, combining features of set theory and topology. A topos can be interpreted as a generalized topological space and also has an internal logical structure.\n\n2.Category theory: A branch of mathematics that studies relationships and structure among mathematical objects, as well as structures that arise from these relationships. This is done by abstractly defining objects, arrows (usually called \"morphisms\"), and the resulting diagrams.\n\n3.Topological space: A mathematical object that formalizes the concepts of continuity and convergence, having a set of points and specifying a structure on how these points can be \"close\" to each other.\n\n4.Sets: Collections of well-defined elements where each element can be distinguished from the others. In mathematics, set theory treats \"sets\" as fundamental objects on which other mathematical objects are built upon.\n\n5.Logical theories: Sets of axioms and the logical relationships they obey within a particular language. When constructing mathematical objects, logical theories give practical ways for discussing and reasoning about these objects.\n\n6.Sheaves: Mathematical objects that generalize the notion of sections of bundles over a topological space. In topology and algebraic geometry, sheaves are used to link local and global aspects of the structures under study.\n\n7.Cartesian closed: A property of categories where the existence and uniqueness of certain limit constructions (product and exponential objects) is guaranteed. It plays an important role because constructions and results about classical set theory extend to these more general settings.\n\n8.Subobject classifier: An object in a category that can intuitively be thought of as classifying subobjects of its domain (i.e., it keeps track of properties and spatial features of all subobjects).\n\n9.Finite limits: In category theory, limits of diagrams having finitely many morphisms and objects. A category with finite limits has a well-behaved internal structure that resembles set theory.\n\n10.Cocomplete: A category with the property of having all small colimits. Categories that are cocomplete can be thought of as not being too small compared to a given object.\n\n11.Algebraic geometry: A branch of mathematics that combines techniques and results from both abstract algebra and classic algebra. Algebraic geometry focuses on the solutions of algebraic equations, its geometric interpretation and on functions defined on a space that are expressible as algebraic combinations of coordinates.\n\n12.Coalgebras: In mathematics, a coalgebra for a given functor is a dual concept to an algebra. Coalgebras reverse the arrows and involve turning notions from algebraic or categorical structures into those of their opposites. They have applications in logic, automata theory, and programming languages.\n\nOverall, topos theory deals with generalized topological spaces called toposes in category theory. Toposes have properties similar to both sets and topological spaces, thus merging geometry and logic. The study of toposes, such as elementary toposes and Grothendieck toposes, reveals extensive comprehension of functional and spatial features within mathematics. Topos theory has applications in various domains like algebraic geometry, logic, and generalized spaces, providing a unified framework for examining multiple mathematical objects and structures."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5958.736290256464,
+        "y": 1842.0517174016938
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "551255197734061",
+      "position": {
+        "x": 6138.736290256464,
+        "y": 1846.4990660165506
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "In the context of topos theory, ...",
+        "fluxNodeType": "GPT",
+        "text": "In the context of topos theory, some of the terminology and proper nouns include:\n\n1. Category theory: A branch of mathematics that deals with abstract structures and their relationships, generalizing various properties across different domains in mathematics.\n\n2. Topological spaces: A fundamental concept in topology that allows for the formal definition of concepts such as convergence, continuity, and compactness in mathematics.\n\n3. Toposes (plural of topos): Generalized topological spaces, which possess both set-theoretic and topological properties.\n\n4. Category of sets (usually denoted as Set): The category whose objects are mathematical sets, and morphisms are functions between these sets.\n\n5. Cartesian closed: A property of a category when it has all finite products and exponentials, making it suitable for studying functions and computation.\n\n6. Subobject classifier: A specific object and arrow in a category that helps characterize subobjects, which are intuitive generalizations of subsets in the category of sets.\n\n7. Cocomplete category: A category where all small colimits (best approximations of collections of morphisms) exist and can be described inside the category.\n\n8. Sheaves: Mathematical constructs used to generalize the notion of functions with local properties. The category of sheaves is crucial for understanding the behavior of algebraic and geometric objects from a general viewpoint.\n\n9. Topological space: A mathematical structure in which notions like continuity, convergence, and compactness can be defined.\n\n10. Site: A category equipped with additional data (called a Grothendieck topology) used to define sheaves on this category.\n\n11. Coalgebras: Dual to algebras, mathematical constructs (typically structures with operations) that are used to study state-based systems and related concepts in computer science, representation theory, and many other areas. Combining topos theory and coalgebra theory offers refined tools for exploring such subjects.\n\nTo reexplain topos theory, it is a branch of category theory that involves generalized topological spaces called toposes. These can reflect both set-theoretic and topological properties and are useful for understanding various kinds of mathematical structures and relationships. Toposes can be described either as elementary toposes or Grothendieck toposes, which emphasize their logical or geometric aspects. Some essential properties of toposes include being extensive, adhesive, and having certain constructions, like limits and colimits. There are various examples and applications of toposes found in different fields, such as algebraic geometry or foundations of mathematics and logic."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6138.736290256464,
+        "y": 1846.4990660165506
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "6113327631601451",
+      "position": {
+        "x": 6318.736290256464,
+        "y": 1837.264292376522
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Topos A topos is a generalized ...",
+        "fluxNodeType": "GPT",
+        "text": "Topos: A topos is a generalized topological space that can be interpreted both geometrically (as a category of spatial objects) and logically (as a setting for interpreting logical theories within a given language).\n\nCategory theory: A branch of mathematics that deals with abstract structures called categories, which are collections of objects and arrows (also called morphisms) between those objects, somewhat similar to the way sets are collections of elements.\n\nTopological space: A fundamental concept in topology that abstracts the ideas of closeness, continuity, and limits.\n\nSets: Collections of distinct objects, considered as an object in its own right.\n\nSheaves: Mathematical structures that help in associating to each open set in a topological space a given algebraic object (like a ring, module or vector space).\n\nCategories: In category theory, a category represents an abstract structure, defined by objects and arrows (or morphisms), with certain required properties such as associativity and identity.\n\nLimits and colimits: Tools in category theory to describe the behavior of objects and morphisms related to other objects within a category. They generalize many constructions from other categories, like products, coproducts, equalizers, and pullbacks.\n\nElementary toposes: A category with finite limits, cartesian closed (binary products, exponentials, terminal object), and a subobject classifier. This represents a general topos endowed with several useful properties.\n\nGrothendieck toposes: A special class of toposes which are cocomplete (has all small colimits) and has a small generating set (contains a small set of objects such that every other object can be expressed in terms of these small set objects). They are related with categories of sheaves over some defined topological base or site.\n\nIn summary, topos theory is a branch of category theory that deals with a more generalized concept of topological spaces called 'toposes.' A topos can be regarded both geometrically and logically. Toposes are cocomplete categories with unique and versatile structures. They have applications in geometry as categories of sheaves on a topological space, foundations of mathematics, and logic with categorical interpretations. Popular types of toposes include Elementary toposes and Grothendieck toposes, used routinely in various mathematical investigations."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6318.736290256464,
+        "y": 1837.264292376522
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "28469513322590223",
+      "position": {
+        "x": 5958.736290256464,
+        "y": 1953.4973226494867
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "tell me more about sheaths",
+        "fluxNodeType": "User",
+        "text": "tell me more about sheaths"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5958.736290256464,
+        "y": 1953.4973226494867
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "16604989937256187",
+      "position": {
+        "x": 5778.736290256464,
+        "y": 2063.5719284534484
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Sheaves not sheaths are ...",
+        "fluxNodeType": "GPT",
+        "text": "Sheaves (not sheaths) are mathematical objects that capture and formalize the concept of locality and continuity in several fields, such as algebraic geometry, topology, and differential geometry. Formally defined as functors between categories that satisfy certain conditions, sheaves provide a way to shift between local and global aspects of the structures under study.\n\nFor example, consider the study of a topological space like a sphere or a torus. In general, we are interested in understanding the behavior of not only these spaces globally but also the local properties around certain points. Sheaves help us tie up these local properties with global properties.\n\nTo illustrate, think of sheaves informing us about functions defined on the topological space: \n1. Functions defined as algebraic combinations of coordinates.\n2. Functions with certain smoothness properties, such as continuous functions, infinitely differentiable functions, etc.\n\nSheaves associate each open set of the topological space with the collection of functions defined on that open set. Also, they satisfy certain axioms - \"idempotence\" and \"glueing\"; they ensure sheaves can carry local information and allow patching together local information to derive global information consistently.\n\nFor example, sheaves enable us to establish results for individual open sets and extend them to the entire topological space by ensuring the required connectivity and consistency amongst all patchworks.\n\nIn algebraic geometry and topology, sheaves are a critical instrument linked with cohomology theories and used to analyze various topological invariants associated with the space in question.\n\nSheaf theory plays a vital role in studying advanced concepts tied to derived categories and via exotic frameworks like: \n1. Topos theory - which allows us to generalize sheaves to understand newer constructions e.g., étale topos in algebraic topology is a crucial concept in number theory and algebraic geometry.\n2. Microlocal analysis - focuses on partial differential equations and their solubility by analyzing certain local structures, admits a sheaf-theoretic interpretation.\n\nSheaves are less of objects than a language, as a powerful tool: the focus is enclosed in a harmonious development of several different aspects in fundamental results, whose goal lies often very far away from sheaf theory themselves."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5778.736290256464,
+        "y": 2063.5719284534484
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "13904363379379636",
+      "position": {
+        "x": 5958.736290256464,
+        "y": 2057.083833204528
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "I think you mean sheaves, which ...",
+        "fluxNodeType": "GPT",
+        "text": "I think you mean \"sheaves\", which are a central concept in many fields of mathematics related to topology and geometry, such as algebraic geometry, complex analysis, and differential geometry. Sheaves provide a bridge between local information and global structure, allowing us to study topological spaces and their algebraic or geometric attributes more effectively.\n\nA sheaf is an abstract mathematical structure that associates a set (or an algebraic object) to each open set of a given topological space, and these sets satisfy certain gluing and restriction principles.\n\nMore precisely, a sheaf F on a topological space X is composed of several ingredients:\n\n1. To each open set U of the topological space X, F assigns a set or another algebraic object, denoted F(U). The elements of F(U) are called \"sections over U.\"\n2. If U and V are two open sets and U ⊆ V, F has a \"restriction map\" that takes sections over V to sections over U. The restriction map satisfies the requirement of being consistent and functorial, meaning that it preserves equality and sequence diagrams related to the elements.\n\nSheaves need to satisfy some essential properties, such as the \"identity\" condition (where equal sections become equal when restricted from V to any smaller open subset) and the \"gluing\" condition (which states that there should be a unique section over a larger open set that restricts to given local sections on smaller open sets).\n\nMany examples of sheaves consist of various mathematical notions over topological spaces:\n\n1. Continuous or differentiable functions: For example, given a topological space, we can associate every open set a collection of continuous (or smooth, complex analytic) functions defined on it. The restriction of these functions makes it a sheaf, and therefore, this sheaf organizes the local-to-global study of these kinds of functions.\n2. Solutions to differential equations: Over an open set of a manifold whose elements are solutions to a specified differential equation, e.g., possessing a prescribed differential form. Again, these solutions can be restricted, forming a sheaf that relates the local interior of differential equations with their global behavior.\n\nIn algebraic geometry, the notion of a sheaf is refined as \"coherent sheaves\" or \"quasi-coherent sheaves.\" These encapsulate algebraic structures and constructions carrying much richer algebraic information related to schemes and more general spaces.\n\nAs a powerful tool in mathematics, sheaves and their cohomological properties (_i.e._, cohomology of sheaves) help solve problems involving geometry, algebraic topology, analysis, and more through localization, approximation, and existence arguments."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 5958.736290256464,
+        "y": 2057.083833204528
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "041654946679011484",
+      "position": {
+        "x": 6138.736290256464,
+        "y": 2062.7621215760596
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Sheaves are mathematical ...",
+        "fluxNodeType": "GPT",
+        "text": "Sheaves are mathematical objects used in areas such as topology, algebraic geometry, and category theory. They are particularly useful for linking local properties of spaces to global properties and for capturing the concept of \"continuous\" or \"smooth\" functions on these spaces. The abstraction and generalization of sheaves offer a powerful approach to study varied spatial and arithmetic structures.\n\nInformally, a sheaf can be thought of an object attaching a piece of data (e.g., sets) to every open set of a topological space so that these data align well upon the intersections of open sets. This alignment criterion is referred to as \"gluing condition\" and ensures consistency across these multiple assimplifiedigned sets. In simple terms, a sheaf is a way to keep track of compatible local information that can be combined inside a topological space.\n\nImportant types in sheaf concepts include:\n\n1. Presheaves: They are functions assigning an object (e.g., set, group) to each open set in a topological space without satisfying the gluing condition. Presheaves act more as a preliminary stage before the sheaf is constructed and help maintain local information within a space.\n\n2. Stalks: Stalks represent the data associated with a single point within the topological space. The intuition behind stalks is that they record data from a sheaf at a point or combine local information around a particular point. Examining stalks may assist in identifying invariants or key properties of spaces or sheaves.\n\n3. Direct image and inverse image sheaves: In dealing with spaces and maps between spaces, direct image and inverse image sheaves are natural constructions in sheaf theory. They facilitate transferring the elements and ideas to understand complex spaces and adjacent objects on them.\n\nSheaves have been successful in applications like:\n\n1. Algebraic geometry: Sheaves play a central role in algebraic geometry by providing a link between locally defined algebraic-geometry structures and global ones.\n\n2. Topology: Sheaves assist in defining de Rham cohomology, an essential tool in differential topology for describing the invariants of a topological space.\n\n3. Analyzing singularities: Sheaves enable various tools for describing and understanding singularities that may arise within spaces, such as semi-continuity theorems.\n\n4. Differential equations: Sheaves provide a theoretical framework to examine solutions to partial differential equations.\n\n5. Physics: Sheaves appear in mathematical physics, for instance, in studying the behavior of fields defined over particle interactions or understanding condensed matter dynamics on lattices.\n\nUnderstanding sheaves and their properties offer insights into global structures tempered with nuanced local details at the core of manifold mathematical investigations. Diversity, versatility, and efficacy in a plethora of real-world problems set sheaves on solid footing in their various domain endeavors."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 6138.736290256464,
+        "y": 2062.7621215760596
+      }
+    },
+    {
+      "width": 150,
+      "height": 38,
+      "id": "3548906964290788",
+      "position": {
+        "x": 8053.002140788161,
+        "y": 1238.7731871468754
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "function  def ...",
+        "fluxNodeType": "User",
+        "text": "function:\n\ndef text_completion_tool(prompt: str):\n  messages = [{\"role\": \"user\", \"content\": prompt}]  \n  \n  for i in range(3): # Retry 3 times     \n    try:        \n      response = openai.ChatCompletion.create(model=\"gpt-3.5-turbo\",\n                                messages=messages,  \n                                max_tokens=1500,             \n                                temperature=0.2,\n                                top_p=1,              \n                                frequency_penalty=0,\n                                presence_penalty=0)\n      return response.choices[0].message['content'].strip()  \n      \n    except openai.error.RateLimitError:        \n      time.sleep(10) # Sleep for\n\nerror:\n\nTraceback (most recent call last):\n  File \"main.py\", line 350, in <module>\n    execute_task(task, task_list, OBJECTIVE)\n  File \"main.py\", line 260, in execute_task\n    task_output = web_search_tool(str(task['task']))\n  File \"main.py\", line 128, in web_search_tool\n    content = web_scrape_tool(url, task)\n  File \"main.py\", line 156, in web_scrape_tool\n    info = extract_relevant_info(OBJECTIVE, text[0:5000], task)\n  File \"main.py\", line 214, in extract_relevant_info\n    response = openai.ChatCompletion.create(\n  File \"/home/runner/grid-and/venv/lib/python3.10/site-packages/openai/api_resources/chat_completion.py\", line 25, in create\n    return super().create(*args, **kwargs)\n  File \"/home/runner/grid-and/venv/lib/python3.10/site-packages/openai/api_resources/abstract/engine_api_resource.py\", line 153, in create\n    response, _, api_key = requestor.request(\n  File \"/home/runner/grid-and/venv/lib/python3.10/site-packages/openai/api_requestor.py\", line 226, in request\n    resp, got_stream = self._interpret_response(result, stream)\n  File \"/home/runner/grid-and/venv/lib/python3.10/site-packages/openai/api_requestor.py\", line 620, in _interpret_response\n    self._interpret_response_line(\n  File \"/home/runner/grid-and/venv/lib/python3.10/site-packages/openai/api_requestor.py\", line 683, in _interpret_response_line\n    raise self.handle_error_response(\nopenai.error.RateLimitError: That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 6e79aa13350e3520f79ef5c8f6449e11 in your message.)"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 8053.002140788161,
+        "y": 1238.7731871468754
+      },
+      "dragging": false
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "30273588338382185",
+      "position": {
+        "x": 7873.002140788161,
+        "y": 1350.4031556036043
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "The error you are encountering ...",
+        "fluxNodeType": "GPT",
+        "text": "The error you are encountering is a RateLimitError. This error occurs when too many requests are sent to the GPT-3 server, overwhelming its processing capability. To handle this error, you should implement a backoff strategy that retries the request after a certain amount of time. \n\nIn your existing code, you already have a try-except block for handling RateLimitError. However, it is not being executed because it only covers the `text_completion_tool` function and the error occurs outside of this function.\n\nTo fix the error, you can apply similar retry logic with a try-except block around the problematic code. Here's an example/revised code:\n\n1. Add `import time` at the beginning of your file to make sure you can use the `time.sleep()` function.\n\nFor the functions that require error handling, add the following code structure:\n\n```python\ndef web_search_tool(query: str):\n    max_retries = 3\n    for attempt in range(max_retries):\n        try:\n            # Original web_search_tool function code here\n            ...\n\n        except openai.error.RateLimitError:\n            if attempt < max_retries - 1:  # Only retry if max_retries has not been reached\n                sleep_time = 10 + (2 ** attempt)  # Exponential backoff\n                time.sleep(sleep_time)\n            else:\n                raise  # If reach max_retries, re-raise the error to handle it in outer scope or log it\n```\n\nDo the same for other functions that use the GPT-3 API, like the `web_scrape_tool` and any other functions that may encounter the RateLimitError.\n\nThis way, if a RateLimitError occurs, the program will pause for an increasing number of seconds before attempting the request again. Once the maximum number of retries has been reached and if the error persists, the error will be raised for handling or logging."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 7873.002140788161,
+        "y": 1350.4031556036043
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "4755148444786963",
+      "position": {
+        "x": 8053.002140788161,
+        "y": 1340.5453261800315
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Your program is experiencing a ...",
+        "fluxNodeType": "GPT",
+        "text": "Your program is experiencing a RateLimitError which indicates that the model, gpt-3.5-turbo in this case, is overloaded with other requests and it cannot handle more requests at the moment. \n\nTo fix this issue, you can modify the exception handling in the try-except block to handle the RateLimitError and wait for some time before retrying the request. Your existing code is already doing that, sleeping for 10 seconds. You can increase the sleeping time and add the `NotImplemented_Error` exception which you have not imported in your code yet.\n\nHere's the modified code:\n\n```python\nimport time  # Make sure to import time at the beginning of your script.\n\ndef text_completion_tool(prompt: str):\n    messages = [{\"role\": \"user\", \"content\": prompt}]  \n\n    for i in range(3): # Retry 3 times     \n        try:        \n            response = openai.ChatCompletion.create(model=\"gpt-3.5-turbo\",\n                                messages=messages,  \n                                max_tokens=1500,             \n                                temperature=0.2,\n                                top_p=1,              \n                                frequency_penalty=0,\n                                presence_penalty=0)\n            return response.choices[0].message['content'].strip()  \n      \n        except openai.error.RateLimitError as e:        \n            print('Received RateLimitError. Retrying in {} seconds...'.format((i + 1) * 30))\n            time.sleep((i + 1) * 30)  # Sleep for i * 30 seconds before retrying.\n        except openai.error.ValidationError as e:\n            print(f\"Received ValidationError, not retrying: {e}\")\n            return ''\n```\n\nNow, when a RateLimitError is encountered, the code will pause for i * 30 seconds (i starts at 0, so first it sleeps for 30, then 60 and then 90 seconds) between each attempt in 3 retries, which provides enough time for the model to clear up before receiving another request. Adjust these values based on your needs, this is just an example."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 8053.002140788161,
+        "y": 1340.5453261800315
+      }
+    },
+    {
+      "width": 150,
+      "height": 38,
+      "id": "5180771256366576",
+      "position": {
+        "x": 8233.002140788161,
+        "y": 1356.1170832905393
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "It looks like you are ...",
+        "fluxNodeType": "GPT",
+        "text": "It looks like you are experiencing a RateLimitError when making a request to the OpenAI API. This error occurs when the model is overloaded with too many requests from other users, and you need to wait and retry your request after some time.\n\nTo handle this, you can modify your existing code to include better handling for the RateLimitError by sleeping for the duration specified by the `wait_time` in the exception. Here's a modified version of your `text_completion_tool` function that handles this issue:\n\n```python\nimport openai\nimport time\n\ndef text_completion_tool(prompt: str):\n    messages = [{\"role\": \"user\", \"content\": prompt}]\n\n    for i in range(3):  # Retry 3 times\n        try:\n            response = openai.ChatCompletion.create(model=\"gpt-3.5-turbo\",\n                                                    messages=messages,\n                                                    max_tokens=1500,\n                                                    temperature=0.2,\n                                                    top_p=1,\n                                                    frequency_penalty=0,\n                                                    presence_penalty=0)\n            return response.choices[0].message['content'].strip()\n\n        except openai.error.RateLimitError as e:\n            wait_time = e.get_waiting_time_seconds()  # Obtain waiting time\n            print(f\"Rate limited. Waiting {wait_time} seconds before retrying.\")\n            time.sleep(wait_time)  # Sleep for the wait_time duration\n```\n\nIn this modified version, when a RateLimitError occurs, it retrieves the recommended waiting time from the exception and sleeps for that duration before trying again. This should allow for smoother handling when the model is overloaded."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 8233.002140788161,
+        "y": 1356.1170832905393
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "8910840577984029",
+      "position": {
+        "x": 7873.002140788161,
+        "y": 1457.110466897533
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "Which function is causing the ...",
+        "fluxNodeType": "User",
+        "text": "Which function is causing the error?"
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 7873.002140788161,
+        "y": 1457.110466897533
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "06834198418823756",
+      "position": {
+        "x": 7693.002140788161,
+        "y": 1574.4280183223727
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "The function causing the ...",
+        "fluxNodeType": "GPT",
+        "text": "The function causing the `RateLimitError` is not directly visible in the traceback, but a closer examination of the error message and the code reveals that the error is occurring while calling `openai.ChatCompletion.create()`. It seems you are calling this method inside the `extract_relevant_info()` function. \n\nTo handle the `RateLimitError` specifically for this function, you can apply try-except logic to the `openai.ChatCompletion.create()` call, similar to what you did with the `text_completion_tool` function. Here's an example:\n\n```python\ndef extract_relevant_info(OBJECTIVE, textchunk, task):\n    ...\n    \n    for attempt in range(3):  # Retry 3 times\n        try:\n            response = openai.ChatCompletion.create(\n                ...\n            )\n\n            # Return result or perform additional operations\n            return response.best_match ... \n          \n        except openai.error.RateLimitError:\n            if attempt < 2:  # Only retry if less than the max_retries (equals 3 in this example) have been reached\n                sleep_time = 10 + (2 ** attempt)  # Exponential backoff\n                time.sleep(sleep_time)\n            else:\n                raise  # If reach max_retries, re-raise the error to handle it in outer scope or log it\n                \n   ...\n```\n\nMake sure that any other occurrences of GPT-3 API usage are covered by similar logic to prevent the script from failing due to the same error."
+      },
+      "selected": true,
+      "positionAbsolute": {
+        "x": 7693.002140788161,
+        "y": 1574.4280183223727
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "3823110670996228",
+      "position": {
+        "x": 7873.002140788161,
+        "y": 1558.4900490145308
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "The error is occurring within ...",
+        "fluxNodeType": "GPT",
+        "text": "The error is occurring within the `extract_relevant_info` function, specifically at the part where it calls the GPT-3 API using `openai.ChatCompletion.create()`. This function might be hitting the rate limit as many requests are made in a short period causing its overload, subsequently leading to the RateLimitError. \n\nApplying the retry logic and backoff strategy for the `extract_relevant_info` function should help alleviate the issue. Here's a modified version of the function with the error handling:\n\n```python\ndef extract_relevant_info(prompt: str, text: str, context: Dict[str, str]):\n    max_retries = 3\n    for attempt in range(max_retries):\n        try:\n            index_wrapper = []\n            texts_embedded = \"\"\n            \n            # or do nlp = spacy(...)\n            OBJECTIVE = choice([\"synthesize information from various pieces of text\",\n                       \"keep track of data from different information sources\",\n                       \"analyze and combine pieces of information\"])\n\n            return type_approaches[random_type][text][-100:-150]\n\n            break\n        except openai.error.RateLimitError:\n            if attempt < max_retries - 1:\n                sleep_time = 10 + (2 ** attempt)\n                time.sleep(sleep_time)\n            else:\n                raise  # Re-raise the error if max_retries has been reached\n```\n\nThis implementation will try to handle the RateLimitError by retrying the request using an exponential backoff and will raise the error if the problem persists after all retries are exhausted."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 7873.002140788161,
+        "y": 1558.4900490145308
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "960222425708062",
+      "position": {
+        "x": 8053.002140788161,
+        "y": 1574.5021658064675
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "The specific function causing ...",
+        "fluxNodeType": "GPT",
+        "text": "The specific function causing the error is not apparent from the traceback provided, but usually, such errors happen while interacting with the GPT-3 API. In your code, the error may have occurred in the `openai.ChatCompletion.create()` function.\n\nThe functions causing the error are, thus, likely:\n1. `text_completion_tool`\n2. Any other functions that use `openai.ChatCompletion.create()` in your code\n\nWhen searching for parts of your code that use the GPT-3 API, look for any calls to `openai.ChatCompletion.create()` and apply the suggested retry logic with a try-except block to handle RateLimitError."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 8053.002140788161,
+        "y": 1574.5021658064675
       }
     }
   ],
@@ -14804,11 +15158,135 @@
       "source": "030068322120920143",
       "target": "6354393632152648",
       "animated": false
+    },
+    {
+      "id": "18008187411988552-5614274760486884",
+      "source": "18008187411988552",
+      "target": "5614274760486884",
+      "animated": false
+    },
+    {
+      "id": "5614274760486884-5578389883148158",
+      "source": "5614274760486884",
+      "target": "5578389883148158",
+      "animated": false
+    },
+    {
+      "id": "5614274760486884-551255197734061",
+      "source": "5614274760486884",
+      "target": "551255197734061",
+      "animated": false
+    },
+    {
+      "id": "5614274760486884-6113327631601451",
+      "source": "5614274760486884",
+      "target": "6113327631601451",
+      "animated": false
+    },
+    {
+      "id": "5578389883148158-28469513322590223",
+      "source": "5578389883148158",
+      "target": "28469513322590223",
+      "animated": false
+    },
+    {
+      "id": "28469513322590223-16604989937256187",
+      "source": "28469513322590223",
+      "target": "16604989937256187",
+      "animated": false
+    },
+    {
+      "id": "28469513322590223-13904363379379636",
+      "source": "28469513322590223",
+      "target": "13904363379379636",
+      "animated": false
+    },
+    {
+      "id": "28469513322590223-041654946679011484",
+      "source": "28469513322590223",
+      "target": "041654946679011484",
+      "animated": false
+    },
+    {
+      "id": "7072792145835147-5374977251052189",
+      "source": "7072792145835147",
+      "target": "5374977251052189",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "7072792145835147-3548906964290788",
+      "source": "7072792145835147",
+      "target": "3548906964290788",
+      "animated": false
+    },
+    {
+      "id": "3548906964290788-3911270942038707",
+      "source": "3548906964290788",
+      "target": "3911270942038707",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "3548906964290788-10745240848061366",
+      "source": "3548906964290788",
+      "target": "10745240848061366",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "3548906964290788-14056957425828176",
+      "source": "3548906964290788",
+      "target": "14056957425828176",
+      "animated": false,
+      "selected": false
+    },
+    {
+      "id": "3548906964290788-30273588338382185",
+      "source": "3548906964290788",
+      "target": "30273588338382185",
+      "animated": false
+    },
+    {
+      "id": "3548906964290788-4755148444786963",
+      "source": "3548906964290788",
+      "target": "4755148444786963",
+      "animated": false
+    },
+    {
+      "id": "3548906964290788-5180771256366576",
+      "source": "3548906964290788",
+      "target": "5180771256366576",
+      "animated": false
+    },
+    {
+      "id": "30273588338382185-8910840577984029",
+      "source": "30273588338382185",
+      "target": "8910840577984029",
+      "animated": false
+    },
+    {
+      "id": "8910840577984029-06834198418823756",
+      "source": "8910840577984029",
+      "target": "06834198418823756",
+      "animated": false
+    },
+    {
+      "id": "8910840577984029-3823110670996228",
+      "source": "8910840577984029",
+      "target": "3823110670996228",
+      "animated": false
+    },
+    {
+      "id": "8910840577984029-960222425708062",
+      "source": "8910840577984029",
+      "target": "960222425708062",
+      "animated": false
     }
   ],
   "viewport": {
-    "x": -1765.4594277667225,
-    "y": -1439.4040323571974,
-    "zoom": 0.39394479297249996
+    "x": -1082.354878089233,
+    "y": -81.66968474052277,
+    "zoom": 0.19064171687503556
   }
 }
