@@ -1,0 +1,188 @@
+{
+  "nodes": [
+    {
+      "width": 150,
+      "height": 38,
+      "id": "12677096435039426",
+      "position": {
+        "x": 765,
+        "y": 500
+      },
+      "style": {
+        "background": "#C5E2F6"
+      },
+      "data": {
+        "label": "You are plurigrid, a ...",
+        "fluxNodeType": "System",
+        "text": "You are plurigrid, a hypersition of composed superogranic ontologies."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 765,
+        "y": 500
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "6575232615818016",
+      "position": {
+        "x": 765,
+        "y": 607.2834248083317
+      },
+      "style": {
+        "background": "#EEEEEE"
+      },
+      "data": {
+        "label": "Relational algebra  Article ...",
+        "fluxNodeType": "User",
+        "text": "Relational algebra\n\nArticle\nTalk\nRead\nEdit\nView history\n\nTools\nFrom Wikipedia, the free encyclopedia\nNot to be confused with Relation algebra.\nIn database theory, relational algebra is a theory that uses algebraic structures for modeling data, and defining queries on it with a well founded semantics. The theory was introduced by Edgar F. Codd.\n\nThe main application of relational algebra is to provide a theoretical foundation for relational databases, particularly query languages for such databases, chief among which is SQL. Relational databases store tabular data represented as relations. Queries over relational databases often likewise return tabular data represented as relations.\n\nThe main purpose of relational algebra is to define operators that transform one or more input relations to an output relation. Given that these operators accept relations as input and produce relations as output, they can be combined and used to express potentially complex queries that transform potentially many input relations (whose data are stored in the database) into a single output relation (the query results).\n\nUnary operators accept as input a single relation; examples include operators to filter certain attributes (columns) or tuples (rows) from an input relation.\n\nBinary operators accept as input two relations; such operators combine the two input relations into a single output relation by, for example, taking all tuples found in either relation, removing tuples from the first relation found in the second relation, extending the tuples of the first relation with tuples in the second relation matching certain conditions, and so forth.\n\nOther more advanced operators can also be included, where the inclusion or exclusion of certain operators gives rise to a family of algebras.\n\nIntroduction\nRelational algebra received little attention outside of pure mathematics until the publication of E.F. Codd's relational model of data in 1970. Codd proposed such an algebra as a basis for database query languages. (See section Implementations.)\n\nFive primitive operators of Codd's algebra are the selection, the projection, the Cartesian product (also called the cross product or cross join), the set union, and the set difference.\n\nSet operators\nThe relational algebra uses set union, set difference, and Cartesian product from set theory, but adds additional constraints to these operators.\n\nFor set union and set difference, the two relations involved must be union-compatible—that is, the two relations must have the same set of attributes. Because set intersection is defined in terms of set union and set difference, the two relations involved in set intersection must also be union-compatible.\n\nFor the Cartesian product to be defined, the two relations involved must have disjoint headers—that is, they must not have a common attribute name.\n\nIn addition, the Cartesian product is defined differently from the one in set theory in the sense that tuples are considered to be \"shallow\" for the purposes of the operation. That is, the Cartesian product of a set of n-tuples with a set of m-tuples yields a set of \"flattened\" (n + m)-tuples (whereas basic set theory would have prescribed a set of 2-tuples, each containing an n-tuple and an m-tuple). More formally, R × S is defined as follows:\n\n�\n×\n�\n:=\n{\n(\n�\n1\n,\n�\n2\n,\n…\n,\n�\n�\n,\n�\n1\n,\n�\n2\n,\n…\n,\n�\n�\n)\n|\n(\n�\n1\n,\n�\n2\n,\n…\n,\n�\n�\n)\n∈\n�\n,\n(\n�\n1\n,\n�\n2\n,\n…\n,\n�\n�\n)\n∈\n�\n}\n{\\displaystyle R\\times S:=\\{(r_{1},r_{2},\\dots ,r_{n},s_{1},s_{2},\\dots ,s_{m})|(r_{1},r_{2},\\dots ,r_{n})\\in R,(s_{1},s_{2},\\dots ,s_{m})\\in S\\}}\nThe cardinality of the Cartesian product is the product of the cardinalities of its factors, that is, |R × S| = |R| × |S|.\n\nProjection (Π)\nMain article: Projection (relational algebra)\nA projection is a unary operation written as \nΠ\n�\n1\n,\n…\n,\n�\n�\n(\n�\n)\n\\Pi_{a_1, \\ldots,a_n}( R ) where \n�\n1\n,\n…\n,\n�\n�\na_1,\\ldots,a_n is a set of attribute names. The result of such projection is defined as the set that is obtained when all tuples in R are restricted to the set \n{\n�\n1\n,\n…\n,\n�\n�\n}\n\\{a_{1},\\ldots ,a_{n}\\}.\n\nNote: when implemented in SQL standard the \"default projection\" returns a multiset instead of a set, and the Π projection to eliminate duplicate data is obtained by the addition of the DISTINCT keyword.\n\nSelection (σ)\nMain article: Selection (relational algebra)\nA generalized selection is a unary operation written as \n�\n�\n(\n�\n)\n\\sigma_\\varphi(R) where φ is a propositional formula that consists of atoms as allowed in the normal selection and the logical operators \n∧\\wedge  (and), \n∨\\lor  (or) and \n¬\\neg  (negation). This selection selects all those tuples in R for which φ holds.\n\nTo obtain a listing of all friends or business associates in an address book, the selection might be written as \n�\nisFriend = true\n∨\nisBusinessContact = true\n(\naddressBook\n)\n{\\displaystyle \\sigma _{{\\text{isFriend = true}}\\,\\lor \\,{\\text{isBusinessContact = true}}}({\\text{addressBook}})}. The result would be a relation containing every attribute of every unique record where isFriend is true or where isBusinessContact is true.\n\nRename (ρ)\nMain article: Rename (relational algebra)\nA rename is a unary operation written as \n�\n�\n/\n�\n(\n�\n)\n\\rho_{a / b}(R) where the result is identical to R except that the b attribute in all tuples is renamed to an a attribute. This is simply used to rename the attribute of a relation or the relation itself.\n\nTo rename the \"isFriend\" attribute to \"isBusinessContact\" in a relation, \n�\nisBusinessContact / isFriend\n(\naddressBook\n)\n\\rho_{\\text{isBusinessContact / isFriend} } ( \\text{addressBook} ) might be used.\n\nThere is also the \n�\n�\n(\n�\n1\n,\n…\n,\n�\n�\n)\n(\n�\n)\n{\\displaystyle \\rho _{x(A_{1},\\ldots ,A_{n})}(R)} notation, where R is renamed to x and the attributes \n{\n�\n1\n,\n…\n,\n�\n�\n}\n\\{a_{1},\\ldots ,a_{n}\\} are renamed to \n{\n�\n1\n,\n…\n,\n�\n�\n}\n{\\displaystyle \\{A_{1},\\ldots ,A_{n}\\}}.[1]"
+      },
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 765,
+        "y": 607.2834248083317
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "17372650031970327",
+      "position": {
+        "x": 585,
+        "y": 713.2087750766636
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Relational algebra is a theory ...",
+        "fluxNodeType": "GPT",
+        "text": "Relational algebra is a theory in database theory that uses algebraic structures for modeling data and defining queries with a well-founded semantics. It was introduced by Edgar F. Codd and serves as a foundation for relational databases, particularly query languages like SQL. The main purpose of relational algebra is to use operators to transform one or more input relations into an output relation.\n\nThere are several types of operators in relational algebra:\n\n1. Unary operators: These operators accept a single relation as input. Examples include operators used to filter certain attributes (columns) or tuples (rows) from an input relation.\n\n2. Binary operators: These operators accept two relations as input, like set union, set difference, and Cartesian product, wherein the operators combine the input relations into a single output relation.\n\n3. Other advanced operators: These include more complex operations that give rise to a family of algebras.\n\nSome essential concepts related to relational algebra include set union, set difference, and Cartesian product, as well as constraints on the use of these operators like union-compatibility and disjoint headers.\n\nA few standard operators in relational algebra are: \n\n1. Projection (Π): A unary operation applied to a single attribute or a set of attribute names.\n\n2. Selection (σ): A generalized selection that chooses tuples for which a propositional formula holds.\n\n3. Rename (ρ): An operation that renames an attribute in a relation or the relation itself.\n\nRelational algebra finds applications chiefly in defining the theoretical foundation for database query languages, enabling complex queries to generate a single output relation representing query results."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 585,
+        "y": 713.2087750766636
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "9060803057322304",
+      "position": {
+        "x": 765,
+        "y": 711.1737427652813
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Relational algebra is a theory ...",
+        "fluxNodeType": "GPT",
+        "text": "Relational algebra is a theory used in database theory for modeling data and defining queries on it, with well-founded semantics. It was introduced by Edgar F. Codd and serves as the theoretical foundation for relational databases and query languages such as SQL. \n\nIn relational algebra, operators are used to transform one or more input relations into an output relation. These operators can be unary (accepting a single relation as input) or binary (accepting two relations as input), depending on the operation being performed. Some of the key operators in relational algebra are:\n\n1. Projection (Π): This unary operation selects specific attributes (columns) from a relation while discarding the others. It is denoted as Πa1,...,an (R), where a1, ..., an are attribute names and R is the input relation.\n\n2. Selection (σ): This unary operation filters tuples (rows) from a relation based on a given condition or set of conditions. It can be written as σφ(R), where φ is the condition, R is the input relation, and σ is the selection operator.\n\n3. Cartesian Product (×): This binary operation combines two input relations into a single output relation. The result has every possible combination of tuples from the first relation with tuples from the second relation.\n\n4. Set Union (∪): For this binary operation, the two input relations must have the same set of attributes; the output relation consists of all tuples present in either of the input relations without duplicates.\n\n5. Set Difference (-): This binary operation requires both input relations to have the same attributes as well. The output relation contains all tuples present in the first relation but not in the second relation.\n\n6. Rename (ρ): The rename operation renames the attribute of a relation or the relation itself. It is a unary operator denoted as ρa/b(R), which renames the attribute b in all tuples of the relation R with a new attribute a.\n\nRelational algebra can be used to express complex queries that transform multiple input relations into a single output relation as part of the database query processing. This foundational aspect has widespread applications in the design, implementation, and maintenance of relational databases and their query languages."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 765,
+        "y": 711.1737427652813
+      }
+    },
+    {
+      "width": 150,
+      "height": 56,
+      "id": "056973200601608154",
+      "position": {
+        "x": 945,
+        "y": 719.7530327050584
+      },
+      "style": {
+        "background": "#d9f3d6"
+      },
+      "data": {
+        "label": "Relational algebra is a theory ...",
+        "fluxNodeType": "GPT",
+        "text": "Relational algebra is a theory in database management that uses algebraic structures to model data and define queries on it. Introduced by Edgar F. Codd, relational algebra primarily provides a theoretical foundation for relational databases, which involves query languages like SQL.\n\nA vital function of relational algebra is to establish operators that transform input relations into an output relation. These operators permit forming complex queries by changing multiple input relations into an output relation. Unary operators, for instance, accept a single relation as input and filter attributes or tuples from the input relations. Additionally, binary operators take two input relations, while other advanced operators cater to complex algebras.\n\nRelational algebra gained momentum following E.F. Codd's publication of the relational model of data in 1970, primarily as Codd introduced algebra as the foundation for database query languages. Five essential operators of Codd's algebra include selection, projection, Cartesian product (or cross product, or cross join), set union, and set difference.\n\nVarious operations in relational algebra include:\n\n1. Set operations: Relational algebra uses set union, set difference, and Cartesian product under set theory along with additional constraints. In order to apply set operations, relations must be union-compatible and headers must be disjoint.\n\n2. Projection operation (Π): Projection transforms a relation into a new one with a smaller number of attributes. It extracts a subset of columns from the relation, sometimes removing duplicate rows.\n\n3. Selection operation (σ): Selection allows users to extract or filter rows that satisfy certain conditions. The tuples in the output relation satisfy the propositional formula given in the selection operation.\n\n4. Rename operation (ρ): Rename operation changes the name of the relation or a number of its attributes. It allows providing aliases for schema elements."
+      },
+      "selected": false,
+      "positionAbsolute": {
+        "x": 945,
+        "y": 719.7530327050584
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "12677096435039426-6575232615818016",
+      "source": "12677096435039426",
+      "target": "6575232615818016",
+      "animated": false
+    },
+    {
+      "id": "6575232615818016-8686843654929097",
+      "source": "6575232615818016",
+      "target": "8686843654929097",
+      "animated": true,
+      "selected": false
+    },
+    {
+      "id": "6575232615818016-512619287260047",
+      "source": "6575232615818016",
+      "target": "512619287260047",
+      "animated": true,
+      "selected": false
+    },
+    {
+      "id": "6575232615818016-6735259709265851",
+      "source": "6575232615818016",
+      "target": "6735259709265851",
+      "animated": true,
+      "selected": false
+    },
+    {
+      "id": "6575232615818016-1345211117152636",
+      "source": "6575232615818016",
+      "target": "1345211117152636",
+      "animated": true,
+      "selected": false
+    },
+    {
+      "id": "6575232615818016-12073028177220357",
+      "source": "6575232615818016",
+      "target": "12073028177220357",
+      "animated": true,
+      "selected": false
+    },
+    {
+      "id": "6575232615818016-9610568496906948",
+      "source": "6575232615818016",
+      "target": "9610568496906948",
+      "animated": true,
+      "selected": false
+    },
+    {
+      "id": "6575232615818016-17372650031970327",
+      "source": "6575232615818016",
+      "target": "17372650031970327",
+      "animated": false
+    },
+    {
+      "id": "6575232615818016-9060803057322304",
+      "source": "6575232615818016",
+      "target": "9060803057322304",
+      "animated": false
+    },
+    {
+      "id": "6575232615818016-056973200601608154",
+      "source": "6575232615818016",
+      "target": "056973200601608154",
+      "animated": false
+    }
+  ],
+  "viewport": {
+    "x": -286,
+    "y": -326.46256860624885,
+    "zoom": 1.5
+  }
+}
