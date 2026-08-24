@@ -1,0 +1,17 @@
+{:tasks
+ {refresh {:doc "Fetch every GitHub-visible ontology history root via GraphQL"
+            :task (shell "clojure -M:run refresh")}
+  walk {:doc "Walk cached commit history; pass CLI options after --"
+         :task (apply shell "clojure" "-M:run" "walk" *command-line-args*)}
+  summary {:doc "Summarize cached history"
+            :task (shell "clojure -M:run summary")}
+  test {:doc "Run Clojure tests"
+         :task (shell "clojure -M:test")}
+  lint {:doc "Lint Clojure and Emacs Lisp entry points"
+         :task (do
+                 (doseq [file ["src/plurigrid/ontology/history.clj"
+                               "test/plurigrid/ontology/history_test.clj"
+                               "test/plurigrid/ontology/test_runner.clj"]]
+                   (shell "joker" "--lint" file))
+                 (shell "emacsclient" "-s" "godel-machine-gate" "--eval"
+                        "(progn (find-file (expand-file-name \"ontology-history.el\" default-directory)) (check-parens) (byte-compile-file buffer-file-name))"))}}}
