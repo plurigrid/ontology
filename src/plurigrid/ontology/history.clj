@@ -16,10 +16,40 @@
            (java.security MessageDigest)))
 
 (def repository "plurigrid/ontology")
+(def organization "plurigrid")
 (def default-seed 21211)
 (def default-steps 24)
 (def default-cache-file ".cache/ontology-history.edn")
+(def default-org-cache-file ".cache/plurigrid-org.edn")
 (def max-page-size 100)
+(def default-org-page-size 25)
+
+(def ^:private organization-query
+  "query($org:String!,$cursor:String,$pageSize:Int!){
+     organization(login:$org){
+       login name url
+       repositories(first:$pageSize,after:$cursor,orderBy:{field:NAME,direction:ASC}){
+         totalCount pageInfo{hasNextPage endCursor}
+         nodes{nameWithOwner name url description createdAt updatedAt pushedAt
+               isArchived isFork isEmpty isPrivate visibility diskUsage
+               defaultBranchRef{name target{... on Commit{
+                 oid abbreviatedOid committedDate messageHeadline history(first:1){totalCount}}}}}
+       }
+     }
+     rateLimit{cost remaining resetAt nodeCount}
+   }")
+
+(def ^:private org-commit-query
+  "query($owner:String!,$name:String!,$oid:GitObjectID!){
+     repository(owner:$owner,name:$name){
+       nameWithOwner url
+       object(oid:$oid){__typename ... on Commit{
+         oid abbreviatedOid committedDate messageHeadline additions deletions changedFilesIfAvailable
+         author{name email user{login}} committer{name email user{login}}
+         parents(first:100){totalCount nodes{oid abbreviatedOid committedDate messageHeadline}} tree{oid}}}
+     }
+     rateLimit{cost remaining resetAt nodeCount}
+   }")
 
 (def ^:private history-query
   "query($owner:String!,$name:String!,$cursor:String){
@@ -117,6 +147,14 @@
                         {:type ::graphql-errors :errors errors})))
       {:result result :response response})))
 
+(defn- graphql-organization-page [gh-runner org cursor page-size]
+  (graphql-call gh-runner organization-query
+                {:org org :cursor cursor :pageSize page-size}))
+
+(defn- graphql-org-commit [gh-runner owner name oid]
+  (:response (graphql-call gh-runner org-commit-query
+                           {:owner owner :name name :oid oid})))
+
 (defn- graphql-page [gh-runner owner name cursor]
   (graphql-call gh-runner history-query
                 {:owner owner :name name :cursor cursor}))
@@ -158,6 +196,172 @@
               (recur (into queue parents)
                      (assoc by-oid oid commit)
                      (conj fetched oid)))))))))
+
+(defn- normalize-organization-repository [repo]
+  (let [full (:nameWithOwner repo)
+        head (get-in repo [:defaultBranchRef :target])
+        head-oid (or (:head-oid repo) (:oid head))]
+    (assoc repo
+           :head-oid head-oid
+           :head-key (when (and (not (str/blank? full))
+                                (not (str/blank? head-oid)))
+                       [full head-oid])
+           :default-branch (or (:default-branch repo)
+                               (get-in repo [:defaultBranchRef :name]))
+           :default-branch-commits (or (:default-branch-commits repo)
+                                       (get-in head [:history :totalCount])))))
+
+(defn fetch-organization
+  "Fetch a complete, name-ordered repository catalog for a GitHub organization.
+
+  Options:
+  - `:organization` organization login (default plurigrid)
+  - `:gh-runner` injectable gh process function
+  - `:page-size` repositories per query (default 25, maximum 100)
+  - `:max-pages` pagination safety bound (default 10000)
+
+  Empty repositories are retained with nil `:head-oid`; each non-empty repo
+  has a namespaced head key `[nameWithOwner oid]`, preventing shared fork OIDs
+  from collapsing into one node. Duplicate repositories at page boundaries are
+  removed by `:nameWithOwner`, and GitHub order is normalized by that key."
+  ([] (fetch-organization {}))
+  ([{:keys [organization gh-runner page-size max-pages]
+     :or {organization organization
+          gh-runner default-gh-runner
+          page-size default-org-page-size
+          max-pages 10000}}]
+   (when (str/blank? (str organization))
+     (throw (ex-info "Organization login must not be blank"
+                     {:type ::invalid-organization :organization organization})))
+   (when-not (and (integer? page-size) (<= 1 page-size max-page-size))
+     (throw (ex-info "Organization page-size must be an integer from 1 through 100"
+                     {:type ::invalid-option :option "page-size" :value page-size})))
+   (loop [cursor nil pages 0 org-meta nil repos {} rates []]
+     (when (>= pages max-pages)
+       (throw (ex-info "Organization pagination exceeded max-pages"
+                       {:type ::pagination-limit :max-pages max-pages :cursor cursor})))
+     (let [{:keys [response]} (graphql-organization-page
+                               gh-runner organization cursor page-size)
+           org (get-in response [:data :organization])]
+       (when (nil? org)
+         (throw (ex-info "GitHub organization was not found or is inaccessible"
+                         {:type ::organization-not-found :organization organization})))
+       (let [connection (:repositories org)
+             page-info (:pageInfo connection)
+             nodes (or (:nodes connection) [])
+             repos (reduce (fn [acc repo]
+                             (let [full (:nameWithOwner repo)]
+                               (if (str/blank? full)
+                                 acc
+                                 (assoc acc full
+                                        (normalize-organization-repository repo)))))
+                           repos nodes)
+             has-next? (true? (:hasNextPage page-info))
+             next-cursor (:endCursor page-info)
+             rates (conj rates (get-in response [:data :rateLimit]))]
+         (when-not (and (map? connection)
+                        (integer? (:totalCount connection))
+                        (map? page-info))
+           (throw (ex-info "GitHub organization response was missing repository pagination data"
+                           {:type ::invalid-response
+                            :organization organization})))
+         (when (and has-next? (or (str/blank? next-cursor) (= cursor next-cursor)))
+           (throw (ex-info "Organization pagination did not advance"
+                           {:type ::stalled-pagination
+                            :cursor cursor :next-cursor next-cursor})))
+         (if has-next?
+           (recur next-cursor (inc pages)
+                  (or org-meta (select-keys org [:login :name :url]))
+                  repos rates)
+           (let [repositories (->> (vals repos) (sort-by :nameWithOwner) vec)
+                 meta* (merge org-meta (select-keys org [:login :name :url]))
+                 reported (:totalCount connection)]
+             (when-not (= reported (count repositories))
+               (throw (ex-info "Organization repository count changed during pagination"
+                               {:type ::catalog-count-mismatch
+                                :organization (:login meta*)
+                                :reported reported
+                                :fetched (count repositories)})))
+             {:schema-version 1
+              :kind :github-organization
+              :organization (:login meta*)
+              :name (:name meta*)
+              :url (:url meta*)
+              :fetched-at (str (java.time.Instant/now))
+              :pages (inc pages)
+              :reported-repositories reported
+              :repositories repositories
+              :by-name (into {} (map (juxt :nameWithOwner identity)) repositories)
+              :rate-limit rates})))))))
+
+(defn organization-repositories
+  "Select organization repositories with a Specter path.
+
+  With no path, returns all repositories. Example:
+  `(organization-repositories catalog [sp/ALL #(not (:isFork %))])`."
+  ([catalog] (:repositories catalog))
+  ([catalog path] (sp/select path (:repositories catalog))))
+
+(defn organization-summary [catalog]
+  (let [repos (mapv normalize-organization-repository
+                    (:repositories catalog))
+        commit-counts (keep :default-branch-commits repos)]
+    {:organization (:organization catalog)
+     :repositories (count repos)
+     :reported-repositories (:reported-repositories catalog)
+     :source-repositories (count (remove :isFork repos))
+     :forks (count (filter :isFork repos))
+     :archived (count (filter :isArchived repos))
+     :empty (count (filter :isEmpty repos))
+     :nonempty (count (remove :isEmpty repos))
+     :default-branch-commits (reduce + 0 commit-counts)
+     :pages (:pages catalog)}))
+
+(defn fetch-org-commit
+  "Fetch one commit in one repository. The identity is `[repository oid]`.
+
+  This intentionally keeps repository identity even when forks share an OID.
+  Returns nil only when `:missing-ok?` is true and GitHub has no such commit."
+  ([repository oid] (fetch-org-commit repository oid {}))
+  ([repository oid {:keys [gh-runner missing-ok?]
+                    :or {gh-runner default-gh-runner missing-ok? false}}]
+   (when (or (nil? oid) (str/blank? (str oid)))
+     (throw (ex-info "Commit OID must not be blank"
+                     {:type ::invalid-commit :repository repository :oid oid})))
+   (let [[owner name] (parse-repository repository)
+         response (graphql-org-commit gh-runner owner name oid)
+         repo (get-in response [:data :repository])
+         commit (get repo :object)]
+     (cond
+       (nil? repo)
+       (if missing-ok? nil
+           (throw (ex-info "GitHub repository was not found or is inaccessible"
+                           {:type ::repository-not-found :repository repository})))
+
+       (not= "Commit" (:__typename commit))
+       (if missing-ok? nil
+           (throw (ex-info "Commit was not found in repository"
+                           {:type ::commit-not-found :repository repository :oid oid})))
+
+       :else
+       (let [full (:nameWithOwner repo)
+             parents (:parents commit)
+             parent-count (:totalCount parents)
+             parent-nodes (or (:nodes parents) [])]
+         (when-not (= parent-count (count parent-nodes))
+           (throw (ex-info "Commit parent list exceeded the GraphQL page"
+                           {:type ::truncated-parents
+                            :repository full
+                            :oid (:oid commit)
+                            :reported parent-count
+                            :fetched (count parent-nodes)})))
+         (-> commit
+             (dissoc :__typename)
+             (assoc :repository full
+                    :key [full (:oid commit)]
+                    :parent-keys (mapv (fn [{:keys [oid]}] [full oid])
+                                       parent-nodes)
+                    :rate-limit (get-in response [:data :rateLimit]))))))))
 
 (defn fetch-history
   "Fetch every page of the repository's default-branch history via GraphQL.
@@ -302,11 +506,14 @@
               (throw (ex-info "History cache is not valid EDN"
                               {:type ::invalid-cache :path (str path)} cause))))
           expected (:sha256 envelope)
-          actual (sha256 (pr-str (canonical-data history)))]
+          actual (sha256 (pr-str (canonical-data history)))
+          shaped? (or (vector? (:commits history))
+                      (and (= :github-organization (:kind history))
+                           (vector? (:repositories history))))]
       (when-not (and (= format :plurigrid.ontology/history-cache)
                      (= version 1)
                      (= expected actual)
-                     (vector? (:commits history)))
+                     shaped?)
         (throw (ex-info "History cache failed validation"
                         {:type ::invalid-cache
                          :path (str path)
@@ -317,12 +524,20 @@
       history)))
 
 (defn refresh!
-  "Fetch complete history and atomically refresh `:cache-file`."
+  "Fetch complete repository history and atomically refresh `:cache-file`."
   ([] (refresh! {}))
   ([{:keys [cache-file] :or {cache-file default-cache-file} :as opts}]
    (let [history (fetch-history opts)]
      (write-cache! cache-file history)
      history)))
+
+(defn refresh-organization!
+  "Fetch the complete organization catalog and atomically cache it."
+  ([] (refresh-organization! {}))
+  ([{:keys [cache-file] :or {cache-file default-org-cache-file} :as opts}]
+   (let [catalog (fetch-organization opts)]
+     (write-cache! cache-file catalog)
+     catalog)))
 
 (defn- commit-index [history]
   (into {} (map-indexed (fn [index commit] [(:oid commit) index]) (:commits history))))
@@ -430,6 +645,114 @@
 (defn- unsigned-index [random-long n]
   (when (pos? n)
     (int (Long/remainderUnsigned (long random-long) (long n)))))
+
+(defn organization-random-walk
+  "Lazily random-walk commit history across a GitHub organization.
+
+  The first seeded choice selects a non-empty repository (or `:repository`
+  selects one explicitly); subsequent choices select commit parents via live
+  `gh api graphql` calls. At a root, `:restart?` selects another non-empty
+  repository and continues. Each commit key is `[repository oid]`, so equal
+  OIDs in forks remain distinct. `:steps` is the maximum number of transitions;
+  zero returns only the selected repository head. An injected `:gh-runner`
+  makes every network and failure path testable.
+
+  Supported options: `:seed`, `:steps`, `:repository`, `:start-oid`,
+  `:restart?`, `:gh-runner`."
+  ([catalog] (organization-random-walk catalog {}))
+  ([catalog {:keys [seed steps repository start-oid restart? gh-runner]
+             :or {seed default-seed
+                  steps default-steps
+                  restart? false
+                  gh-runner default-gh-runner}}]
+   (let [seed (parse-long-value "seed" seed)
+         steps (parse-long-value "steps" steps)
+         all-repos (mapv normalize-organization-repository
+                         (:repositories catalog))
+         repos (vec (remove #(or (:isEmpty %) (str/blank? (:head-oid %)))
+                            all-repos))
+         by-name (into {} (map (juxt :nameWithOwner identity)) all-repos)]
+     (when (neg? steps)
+       (throw (ex-info "Steps must be non-negative"
+                       {:type ::invalid-option :option "steps" :value steps})))
+     (when (and repository (nil? (get by-name repository)))
+       (throw (ex-info "Walk repository is not present in organization catalog"
+                       {:type ::invalid-start :repository repository})))
+     (when (and repository
+                (or (:isEmpty (get by-name repository))
+                    (str/blank? (:head-oid (get by-name repository)))))
+       (throw (ex-info "Cannot start an organization walk in an empty repository"
+                       {:type ::empty-repository :repository repository})))
+     (when (empty? repos)
+       (throw (ex-info "Cannot walk an organization with no non-empty repositories"
+                       {:type ::empty-organization
+                        :organization (:organization catalog)})))
+     (let [[state choice] (splitmix64 seed)
+           start-repo (or (get by-name repository)
+                          (nth repos (unsigned-index choice (count repos))))
+           start-oid (or start-oid (:head-oid start-repo))]
+       (when (str/blank? (str start-oid))
+         (throw (ex-info "Organization walk start OID must not be blank"
+                         {:type ::invalid-start
+                          :repository (:nameWithOwner start-repo)
+                          :oid start-oid})))
+       (loop [repo start-repo
+              oid start-oid
+              state state
+              transition 0
+              visited #{}
+              path []]
+         (let [full (:nameWithOwner repo)
+               key [full oid]
+               commit (fetch-org-commit full oid {:gh-runner gh-runner})
+               [next-state random-long] (splitmix64 state)
+               parent-keys (:parent-keys commit)
+               fresh (vec (remove visited parent-keys))
+               pool (if (seq fresh) fresh parent-keys)
+               walk-step (-> commit
+                             (dissoc :rate-limit)
+                             (assoc :step transition
+                                    :degree (count parent-keys)
+                                    :trit (trit random-long)
+                                    :color (color random-long)))
+               path (conj path walk-step)]
+           (cond
+             (>= transition steps) path
+
+             (seq pool)
+             (let [[next-repo next-oid]
+                   (nth pool (unsigned-index random-long (count pool)))]
+               (recur (get by-name next-repo repo) next-oid next-state
+                      (inc transition) (conj visited key) path))
+
+             restart?
+             (let [visited (conj visited key)
+                   unvisited-repos
+                   (vec (remove #(contains? (set visited)
+                                            [(:nameWithOwner %) (:head-oid %)])
+                                repos))]
+               (if (seq unvisited-repos)
+                 (let [next-repo (nth unvisited-repos
+                                      (unsigned-index random-long
+                                                      (count unvisited-repos)))
+                       path-index (dec (count path))]
+                   (recur next-repo (:head-oid next-repo) next-state
+                          (inc transition) (conj visited key)
+                          (assoc (vec path) path-index
+                                 (assoc (nth path path-index) :teleport true))))
+                 path))
+
+             :else path)))))))
+
+(defn format-organization-walk [walk]
+  (with-out-str
+    (doseq [{:keys [step repository abbreviatedOid committedDate messageHeadline
+                    degree trit color teleport]} walk]
+      (printf "%02d  %s  %-38s  %s  %s  trit=%s  degree=%d%s%n"
+              step color repository abbreviatedOid
+              (subs (or committedDate "") 0 (min 10 (count (or committedDate ""))))
+              (format "%+d" trit) degree (if teleport "  teleport" ""))
+      (println "    " messageHeadline))))
 
 (defn- neighbors [prepared oid direction]
   (let [{:keys [parents-known children-known]} (get-in prepared [:by-oid oid])]
@@ -556,15 +879,24 @@
       (println "    " messageHeadline))))
 
 (defn- usage []
-  (str "Usage: clojure -M:run [refresh|walk|summary|select] [options]\n"
-       "  --repo OWNER/NAME       repository (default plurigrid/ontology)\n"
-       "  --cache PATH            cache EDN (default " default-cache-file ")\n"
+  (str "Usage: clojure -M:run COMMAND [options]\n"
+       "Repository commands: refresh | walk | summary | select\n"
+       "Organization commands: org-refresh | org-walk | org-summary | org-select\n"
+       "  --org LOGIN             organization (default plurigrid)\n"
+       "  --repo OWNER/NAME       repository / org-walk start repository\n"
+       "  --cache PATH            cache EDN (command-specific default)\n"
        "  --seed N|0xHEX          deterministic SplitMix64 seed\n"
        "  --steps N               maximum transitions\n"
-       "  --direction past|future|both\n"
+       "  --direction past|future|both (repository walk)\n"
        "  --start head|latest|oldest|REF|OID\n"
        "  --restart               teleport at dead ends\n"
        "  --refresh               refresh cache before command\n"))
+
+(defn- option-value [option value]
+  (when (or (nil? value) (str/starts-with? value "--"))
+    (throw (ex-info (str option " requires a value")
+                    {:type ::missing-option-value :option option})))
+  value)
 
 (defn- parse-args [args]
   (loop [args (seq args) opts {:command :walk}]
@@ -576,37 +908,66 @@
           "walk" (recur (next args) (assoc opts :command :walk))
           "summary" (recur (next args) (assoc opts :command :summary))
           "select" (recur (next args) (assoc opts :command :select))
-          "--repo" (recur more (assoc opts :repository value))
-          "--cache" (recur more (assoc opts :cache-file value))
-          "--seed" (recur more (assoc opts :seed value))
-          "--steps" (recur more (assoc opts :steps value))
-          "--direction" (recur more (assoc opts :direction (keyword value)))
-          "--start" (recur more (assoc opts :start (case value
-                                                      "head" :head
-                                                      "newest" :head
-                                                      "latest" :latest
-                                                      "oldest" :oldest
-                                                      value)))
+          "org-refresh" (recur (next args) (assoc opts :command :org-refresh))
+          "org-walk" (recur (next args) (assoc opts :command :org-walk))
+          "org-summary" (recur (next args) (assoc opts :command :org-summary))
+          "org-select" (recur (next args) (assoc opts :command :org-select))
+          "--org" (recur more (assoc opts :organization (option-value arg value)))
+          "--repo" (recur more (assoc opts :repository (option-value arg value)))
+          "--cache" (recur more (assoc opts :cache-file (option-value arg value)))
+          "--seed" (recur more (assoc opts :seed (option-value arg value)))
+          "--steps" (recur more (assoc opts :steps (option-value arg value)))
+          "--direction" (recur more (assoc opts :direction
+                                             (keyword (option-value arg value))))
+          "--start" (let [value (option-value arg value)]
+                      (recur more (assoc opts :start (case value
+                                                       "head" :head
+                                                       "newest" :head
+                                                       "latest" :latest
+                                                       "oldest" :oldest
+                                                       value))))
           "--restart" (recur (next args) (assoc opts :restart? true))
           "--refresh" (recur (next args) (assoc opts :refresh? true))
           (throw (ex-info (str "Unknown argument: " arg) {:type ::unknown-argument :argument arg})))))))
 
 (defn load-history
-  "Read cache, refreshing when requested or when cache is missing."
+  "Read repository cache, refreshing when requested or missing."
   [{:keys [cache-file refresh?] :or {cache-file default-cache-file} :as opts}]
   (if (or refresh? (not (.isFile (io/file cache-file))))
     (refresh! opts)
     (read-cache cache-file)))
 
+(defn load-organization
+  "Read organization cache, refreshing when requested or missing."
+  [{:keys [cache-file refresh?] :or {cache-file default-org-cache-file} :as opts}]
+  (if (or refresh? (not (.isFile (io/file cache-file))))
+    (refresh-organization! opts)
+    (read-cache cache-file)))
+
 (defn -main [& args]
   (try
-    (let [{:keys [command] :as opts} (parse-args args)
-          history (if (= command :refresh) (refresh! opts) (load-history opts))]
+    (let [{:keys [command cache-file] :as parsed} (parse-args args)
+          org-command? (contains? #{:org-refresh :org-walk :org-summary :org-select}
+                                  command)
+          opts (if (and org-command? (nil? cache-file))
+                 (assoc parsed :cache-file default-org-cache-file)
+                 parsed)
+          data (cond
+                 (= command :refresh) (refresh! opts)
+                 (= command :org-refresh) (refresh-organization! opts)
+                 org-command? (load-organization opts)
+                 :else (load-history opts))]
       (case command
-        :refresh (pprint/pprint (summary history))
-        :summary (pprint/pprint (summary history))
-        :select (doseq [headline (commit-headlines history)] (println headline))
-        :walk (print (format-walk (random-walk history opts))))
+        :refresh (pprint/pprint (summary data))
+        :summary (pprint/pprint (summary data))
+        :select (doseq [headline (commit-headlines data)] (println headline))
+        :walk (print (format-walk (random-walk data opts)))
+        :org-refresh (pprint/pprint (organization-summary data))
+        :org-summary (pprint/pprint (organization-summary data))
+        :org-select (doseq [name (sp/select [:repositories sp/ALL :nameWithOwner] data)]
+                      (println name))
+        :org-walk (print (format-organization-walk
+                          (organization-random-walk data opts))))
       (shutdown-agents))
     (catch clojure.lang.ExceptionInfo error
       (binding [*out* *err*]

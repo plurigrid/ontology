@@ -11,7 +11,7 @@
 (require 'nrepl-dict)
 
 (defgroup ontology-history nil
-  "Explore plurigrid/ontology's Git history in CIDER."
+  "Explore repository and organization Git history in CIDER."
   :group 'clojure)
 
 (defcustom ontology-history-directory
@@ -21,6 +21,14 @@
 
 (defcustom ontology-history-cache ".cache/ontology-history.edn"
   "Cache path relative to `ontology-history-directory`."
+  :type 'string)
+
+(defcustom ontology-history-organization "plurigrid"
+  "GitHub organization queried by organization history commands."
+  :type 'string)
+
+(defcustom ontology-history-organization-cache ".cache/plurigrid-org.edn"
+  "Organization cache path relative to `ontology-history-directory`."
   :type 'string)
 
 (defun ontology-history--clojure-file ()
@@ -50,6 +58,15 @@ The project-local :cider alias provides nREPL and matching CIDER middleware."
   (cider-nrepl-send-eval-request
    form callback :ns "plurigrid.ontology.history"))
 
+(defun ontology-history--display-output (buffer-name response)
+  (when-let ((out (nrepl-dict-get response "out")))
+    (with-current-buffer (get-buffer-create buffer-name)
+      (let ((inhibit-read-only t))
+        (erase-buffer)
+        (insert out)
+        (special-mode))
+      (display-buffer (current-buffer)))))
+
 (defun ontology-history-refresh ()
   "Refresh all default-branch history through gh GraphQL from CIDER."
   (interactive)
@@ -73,16 +90,45 @@ The project-local :cider alias provides nREPL and matching CIDER middleware."
     (ontology-history--eval
      (format
       (concat "(let [h (read-cache %S)] "
-              "(print (format-walk (random-walk h {:seed %S :steps %d :direction %S}))))")
-      cache seed steps direction)
+              "(print (format-walk (random-walk h {:seed %S :steps %d :direction :%s}))))")
+      cache seed steps (symbol-name direction))
      (lambda (response)
-       (when-let ((out (nrepl-dict-get response "out")))
-         (with-current-buffer (get-buffer-create "*ontology-history-walk*")
-           (let ((inhibit-read-only t))
-             (erase-buffer)
-             (insert out)
-             (special-mode))
-           (display-buffer (current-buffer))))))))
+       (ontology-history--display-output "*ontology-history-walk*" response)))))
+
+(defun ontology-history-organization-refresh ()
+  "Refresh the organization repository catalog through CIDER."
+  (interactive)
+  (let ((cache (expand-file-name ontology-history-organization-cache
+                                 ontology-history-directory)))
+    (ontology-history--eval
+     (format
+      "(organization-summary (refresh-organization! {:organization %S :cache-file %S}))"
+      ontology-history-organization cache)
+     (lambda (response)
+       (when-let ((value (nrepl-dict-get response "value")))
+         (message "ontology organization: %s" value))))))
+
+(defun ontology-history-organization-walk (repository seed steps restart)
+  "Evaluate an organization walk, optionally starting in REPOSITORY."
+  (interactive
+   (list (read-string "Repository (blank for seeded selection): ")
+         (read-string "SplitMix64 seed: " "21211")
+         (read-number "Transitions: " 24)
+         (y-or-n-p "Restart in another repository at roots? ")))
+  (let ((cache (expand-file-name ontology-history-organization-cache
+                                 ontology-history-directory)))
+    (ontology-history--eval
+     (format
+      (concat "(let [catalog (read-cache %S)] "
+              "(print (format-organization-walk "
+              "(organization-random-walk catalog "
+              "{:seed %S :steps %d :restart? %s%s}))))")
+      cache seed steps (if restart "true" "false")
+      (if (string-empty-p repository)
+          ""
+        (format " :repository %S" repository)))
+     (lambda (response)
+       (ontology-history--display-output "*ontology-organization-walk*" response)))))
 
 (defun ontology-history-specter-scratch ()
   "Insert a prepared Specter query scratchpad into the current CIDER REPL."
@@ -98,6 +144,22 @@ The project-local :cider alias provides nREPL and matching CIDER middleware."
             "(def h (prepare-history (read-cache %S)))\n"
             "(specter-select [:commits sp/ALL :messageHeadline] h)\n")
     (expand-file-name ontology-history-cache ontology-history-directory))))
+
+(defun ontology-history-organization-specter-scratch ()
+  "Insert an organization catalog Specter query into the current CIDER REPL."
+  (interactive)
+  (let ((repl (cider-current-repl)))
+    (unless repl
+      (user-error "No CIDER connection; run M-x ontology-history-jack-in"))
+    (pop-to-buffer repl))
+  (goto-char (point-max))
+  (insert
+   (format
+    (concat "\n(require '[com.rpl.specter :as sp])\n"
+            "(def org (read-cache %S))\n"
+            "(organization-repositories org [sp/ALL #(not (:isFork %%)) :nameWithOwner])\n")
+    (expand-file-name ontology-history-organization-cache
+                      ontology-history-directory))))
 
 (provide 'ontology-history)
 ;;; ontology-history.el ends here

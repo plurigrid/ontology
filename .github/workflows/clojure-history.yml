@@ -4,12 +4,18 @@ on:
   push:
     paths:
       - "deps.edn"
+      - "bb.edn"
+      - "ontology-history.el"
+      - "README.history.md"
       - "src/**/*.clj"
       - "test/**/*.clj"
       - ".github/workflows/clojure-history.yml"
   pull_request:
     paths:
       - "deps.edn"
+      - "bb.edn"
+      - "ontology-history.el"
+      - "README.history.md"
       - "src/**/*.clj"
       - "test/**/*.clj"
       - ".github/workflows/clojure-history.yml"
