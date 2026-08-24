@@ -6,8 +6,8 @@ It uses `gh api graphql` to collect:
 
 - all 237 commits reachable from the default branch, with every parent edge;
 - every current branch and tag, including annotated tags;
-- all 57 pull requests and the commits retained by open, closed, and merged PRs;
-- the transitive parent closure of those roots (253 unique commits at the 2026-08-24 refresh).
+- all 58 pull requests and the commits retained by open, closed, and merged PRs;
+- the transitive parent closure of those roots (256 unique commits at the 2026-08-24 refresh).
 
 The result is cached as checksummed EDN, prepared as a bidirectional commit DAG, queried with real [`com.rpl/specter`](https://github.com/redplanetlabs/specter), and walked with deterministic SplitMix64 choices. A walk step includes the commit, topology degree, GF(3) trit, and color. Every completed walk conserves its trits: `Σ trits ≡ 0 (mod 3)`.
 

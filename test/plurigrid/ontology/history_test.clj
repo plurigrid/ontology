@@ -299,6 +299,30 @@
                             {:max-pages 0,
                              :gh-runner (constantly
                                           {:exit 0, :out "{}", :err ""})}))))
+  (testing "truncated parents in the default-branch history"
+    (let [head (assoc (commit "head" ["root"])
+                 :parents {:totalCount 101, :nodes [{:oid "root"}]})]
+      (is (thrown-with-msg?
+            clojure.lang.ExceptionInfo
+            #"parent list exceeded"
+            (history/fetch-history
+              {:gh-runner (fake-runner
+                            (atom [(response {:nodes [head]})])
+                            (atom []))})))))
+  (testing "truncated parents in a retained-root closure"
+    (let [retained (assoc (commit "retained" ["root"])
+                     :parents {:totalCount 101, :nodes [{:oid "root"}]})]
+      (is (thrown-with-msg?
+            clojure.lang.ExceptionInfo
+            #"parent list exceeded"
+            (history/fetch-history
+              {:gh-runner
+                 (fake-runner
+                   (atom [(response {:nodes [(commit "head" [])],
+                                    :refs [{:name "retained",
+                                            :target {:oid "retained"}}]})
+                          (org-commit-response "plurigrid/ontology" retained)])
+                   (atom []))})))))
   (testing "invalid repository name"
     (is (thrown-with-msg? clojure.lang.ExceptionInfo
                           #"OWNER/NAME"
@@ -483,18 +507,19 @@
                                                           {:nameWithOwner
                                                              "plurigrid/alpha",
                                                            :object nil}}}),
-                                         :err ""})})))))
-(is (thrown-with-msg? clojure.lang.ExceptionInfo
-                      #"identity changed"
-                      (history/fetch-org-commit
-                        "plurigrid/alpha"
-                        "head"
-                        {:gh-runner (constantly {:exit 0,
-                                                 :out (json/write-str
-                                                        (org-commit-response
-                                                          "plurigrid/renamed"
-                                                          (commit "head" []))),
-                                                 :err ""})})))
+                                         :err ""})})))
+    (is (thrown-with-msg? clojure.lang.ExceptionInfo
+                          #"identity changed"
+                          (history/fetch-org-commit
+                            "plurigrid/alpha"
+                            "head"
+                            {:gh-runner (constantly
+                                          {:exit 0,
+                                           :out (json/write-str
+                                                  (org-commit-response
+                                                    "plurigrid/renamed"
+                                                    (commit "head" []))),
+                                           :err ""})})))))
 
 (deftest cli-option-values-fail-closed
   (is (thrown-with-msg? clojure.lang.ExceptionInfo

@@ -192,6 +192,21 @@
   [ref]
   (or (get-in ref [:target :oid]) (get-in ref [:target :target :oid])))
 
+(defn- validate-complete-parents
+  [commit context]
+  (let [parents (:parents commit)
+        reported (:totalCount parents)
+        nodes (:nodes parents)
+        fetched (when (sequential? nodes) (count nodes))]
+    (when-not (and (integer? reported) (some? fetched) (= reported fetched))
+      (throw (ex-info "Commit parent list exceeded the GraphQL page"
+                      (merge {:type ::truncated-parents,
+                              :oid (:oid commit),
+                              :reported reported,
+                              :fetched fetched}
+                             context))))
+    commit))
+
 (defn- fetch-commit-closure
   "Complete every parent chain rooted at ROOT-OIDS, stopping at KNOWN commits."
   [runner owner name known root-oids]
@@ -209,7 +224,10 @@
             (when-not (= "Commit" (:__typename commit))
               (throw (ex-info "Referenced commit could not be fetched"
                               {:type ::commit-not-found, :oid oid})))
-            (let [commit (dissoc commit :__typename)
+            (let [commit (-> commit
+                             (validate-complete-parents
+                               {:repository (str owner "/" name)}))
+                  commit (dissoc commit :__typename)
                   parents (->> (get-in commit [:parents :nodes])
                                (map :oid)
                                (remove #(or (str/blank? %)
@@ -424,8 +442,8 @@
                             :oid oid})))
        :else
          (let [full (:nameWithOwner repo)
+               commit (validate-complete-parents commit {:repository full})
                parents (:parents commit)
-               parent-count (:totalCount parents)
                parent-nodes (or (:nodes parents) [])]
            (when-not (= repository full)
              (throw
@@ -435,13 +453,6 @@
                   :requested repository,
                   :current full,
                   :oid oid})))
-           (when-not (= parent-count (count parent-nodes))
-             (throw (ex-info "Commit parent list exceeded the GraphQL page"
-                             {:type ::truncated-parents,
-                              :repository full,
-                              :oid (:oid commit),
-                              :reported parent-count,
-                              :fetched (count parent-nodes)})))
            (-> commit
                (dissoc :__typename)
                (assoc :repository full
@@ -487,7 +498,11 @@
              page-info (:pageInfo page)
              nodes (or (:nodes page) [])
              [by-oid order] (reduce (fn [[m o] commit]
-                                      (let [oid (:oid commit)]
+                                      (let [oid (:oid commit)
+                                            commit
+                                              (validate-complete-parents
+                                                commit
+                                                {:repository repository})]
                                         (if (or (str/blank? oid)
                                                 (contains? m oid))
                                           [m o]
