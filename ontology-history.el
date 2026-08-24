@@ -108,10 +108,12 @@ The project-local :cider alias provides nREPL and matching CIDER middleware."
        (when-let ((value (nrepl-dict-get response "value")))
          (message "ontology organization: %s" value))))))
 
-(defun ontology-history-organization-walk (repository seed steps restart)
-  "Evaluate an organization walk, optionally starting in REPOSITORY."
+(defun ontology-history-organization-walk
+    (repository start-oid seed steps restart)
+  "Evaluate an organization walk from REPOSITORY and optional START-OID."
   (interactive
    (list (read-string "Repository (blank for seeded selection): ")
+         (read-string "Start commit OID (blank for repository head): ")
          (read-string "SplitMix64 seed: " "21211")
          (read-number "Transitions: " 24)
          (y-or-n-p "Restart in another repository at roots? ")))
@@ -122,11 +124,14 @@ The project-local :cider alias provides nREPL and matching CIDER middleware."
       (concat "(let [catalog (read-cache %S)] "
               "(print (format-organization-walk "
               "(organization-random-walk catalog "
-              "{:seed %S :steps %d :restart? %s%s}))))")
+              "{:seed %S :steps %d :restart? %s%s%s}))))")
       cache seed steps (if restart "true" "false")
       (if (string-empty-p repository)
           ""
-        (format " :repository %S" repository)))
+        (format " :repository %S" repository))
+      (if (string-empty-p start-oid)
+          ""
+        (format " :start-oid %S" start-oid)))
      (lambda (response)
        (ontology-history--display-output "*ontology-organization-walk*" response)))))
 

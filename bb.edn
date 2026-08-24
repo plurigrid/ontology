@@ -7,6 +7,10 @@
          :task (apply shell "clojure" "-M:run" "walk" *command-line-args*)}
   org-walk {:doc "Lazily walk commits across the organization catalog"
             :task (apply shell "clojure" "-M:run" "org-walk" *command-line-args*)}
+  org-live-check {:doc "Refresh plurigrid and run a two-transition live GraphQL walk"
+                  :task (do
+                          (shell "clojure -M:run org-refresh --org plurigrid")
+                          (shell "clojure -M:run org-walk --repo plurigrid/ontology --steps 2"))}
   summary {:doc "Summarize cached history"
             :task (shell "clojure -M:run summary")}
   org-summary {:doc "Summarize the cached organization catalog"
