@@ -39,17 +39,22 @@
              (commit "d" ["b"]) (commit "e" ["c" "d"] "merge side")]})
 
 (defn response
-  [{:keys [nodes has-next? cursor refs tags], :or {nodes [], has-next? false}}]
-  {:data {:repository {:nameWithOwner "plurigrid/ontology",
-                       :url "https://github.com/plurigrid/ontology",
-                       :defaultBranchRef {:name "main"},
-                       :refs {:nodes (or refs [])},
-                       :tags {:nodes (or tags [])},
-                       :pullRequests {:nodes []},
-                       :object {:history {:pageInfo {:hasNextPage has-next?,
-                                                     :endCursor cursor},
-                                          :nodes nodes}}},
-          :rateLimit {:cost 1, :remaining 4999}}})
+  [{:keys [nodes has-next? cursor refs tags pull-requests],
+    :or {nodes [], has-next? false}}]
+  (let [refs (or refs [])
+        tags (or tags [])
+        pull-requests (or pull-requests [])]
+    {:data {:repository {:nameWithOwner "plurigrid/ontology",
+                         :url "https://github.com/plurigrid/ontology",
+                         :defaultBranchRef {:name "main"},
+                         :refs {:totalCount (count refs), :nodes refs},
+                         :tags {:totalCount (count tags), :nodes tags},
+                         :pullRequests {:totalCount (count pull-requests),
+                                        :nodes pull-requests},
+                         :object {:history {:pageInfo {:hasNextPage has-next?,
+                                                       :endCursor cursor},
+                                            :nodes nodes}}},
+            :rateLimit {:cost 1, :remaining 4999}}}))
 
 (defn fake-runner
   [responses calls]
@@ -172,6 +177,30 @@
                                             {:data {:organization
                                                       {:login "plurigrid"}}}),
                                      :err ""})}))))
+  (testing "malformed organization pagination nodes"
+    (let [page (update-in (org-response {})
+                          [:data :organization :repositories]
+                          dissoc
+                          :nodes)]
+      (is (thrown-with-msg?
+            clojure.lang.ExceptionInfo
+            #"missing repository pagination"
+            (history/fetch-organization
+              {:gh-runner (constantly {:exit 0,
+                                       :out (json/write-str page),
+                                       :err ""})})))))
+  (testing "malformed organization pagination flag"
+    (let [page (update-in (org-response {})
+                          [:data :organization :repositories :pageInfo]
+                          dissoc
+                          :hasNextPage)]
+      (is (thrown-with-msg?
+            clojure.lang.ExceptionInfo
+            #"missing repository pagination"
+            (history/fetch-organization
+              {:gh-runner (constantly {:exit 0,
+                                       :out (json/write-str page),
+                                       :err ""})})))))
   (testing "organization count changes during pagination"
     (is (thrown-with-msg?
           clojure.lang.ExceptionInfo
@@ -293,6 +322,18 @@
                                   {:data {:repository
                                           {:nameWithOwner "plurigrid/ontology"}}}),
                            :err ""})}))))
+  (testing "malformed history pagination flag"
+    (let [page (update-in (response {})
+                          [:data :repository :object :history :pageInfo]
+                          dissoc
+                          :hasNextPage)]
+      (is (thrown-with-msg?
+            clojure.lang.ExceptionInfo
+            #"missing commit pagination"
+            (history/fetch-history
+              {:gh-runner (constantly {:exit 0,
+                                       :out (json/write-str page),
+                                       :err ""})})))))
   (testing "stalled cursor"
     (is (thrown-with-msg? clojure.lang.ExceptionInfo
                           #"did not advance"
@@ -333,6 +374,30 @@
                                     :refs [{:name "retained",
                                             :target {:oid "retained"}}]})
                           (org-commit-response "plurigrid/ontology" retained)])
+                   (atom []))})))))
+  (testing "truncated branch roots"
+    (let [page (assoc-in
+                 (response {:nodes [(commit "head" [])],
+                            :refs [{:name "main", :target {:oid "head"}}]})
+                 [:data :repository :refs :totalCount]
+                 101)]
+      (is (thrown-with-msg?
+            clojure.lang.ExceptionInfo
+            #"branch list was missing or truncated"
+            (history/fetch-history
+              {:gh-runner (fake-runner (atom [page]) (atom []))})))))
+  (testing "truncated pull-request commits"
+    (let [pull-request {:number 70,
+                        :commits {:totalCount 101,
+                                  :nodes [{:commit {:oid "head"}}]}}]
+      (is (thrown-with-msg?
+            clojure.lang.ExceptionInfo
+            #"pull request commit list was missing or truncated"
+            (history/fetch-history
+              {:gh-runner
+                 (fake-runner
+                   (atom [(response {:nodes [(commit "head" [])],
+                                    :pull-requests [pull-request]})])
                    (atom []))})))))
   (testing "invalid repository name"
     (is (thrown-with-msg? clojure.lang.ExceptionInfo

@@ -55,9 +55,9 @@
   "query($owner:String!,$name:String!,$cursor:String){
      repository(owner:$owner,name:$name){
        nameWithOwner url defaultBranchRef{name}
-       refs(refPrefix:\"refs/heads/\",first:100){nodes{name target{... on Commit{oid}}}}
-       tags:refs(refPrefix:\"refs/tags/\",first:100){nodes{name target{__typename ... on Commit{oid} ... on Tag{target{__typename ... on Commit{oid}}}}}}
-       pullRequests(first:100){nodes{number title state url createdAt closedAt mergedAt
+       refs(refPrefix:\"refs/heads/\",first:100){totalCount nodes{name target{... on Commit{oid}}}}
+       tags:refs(refPrefix:\"refs/tags/\",first:100){totalCount nodes{name target{__typename ... on Commit{oid} ... on Tag{target{__typename ... on Commit{oid}}}}}}
+       pullRequests(first:100){totalCount nodes{number title state url createdAt closedAt mergedAt
                                     commits(first:100){totalCount nodes{commit{oid}}}}}
        object(expression:\"HEAD\"){... on Commit{
          history(first:100,after:$cursor){
@@ -207,6 +207,23 @@
                              context))))
     commit))
 
+(defn- complete-connection-nodes
+  [connection label context]
+  (let [reported (:totalCount connection)
+        nodes (:nodes connection)
+        fetched (when (sequential? nodes) (count nodes))]
+    (when-not (and (map? connection)
+                   (integer? reported)
+                   (some? fetched)
+                   (= reported fetched))
+      (throw (ex-info (str "GitHub " label " list was missing or truncated")
+                      (merge {:type ::incomplete-connection,
+                              :connection label,
+                              :reported reported,
+                              :fetched fetched}
+                             context))))
+    nodes))
+
 (defn- fetch-commit-closure
   "Complete every parent chain rooted at ROOT-OIDS, stopping at KNOWN commits."
   [runner owner name known root-oids]
@@ -300,7 +317,9 @@
              page-info (:pageInfo connection)]
          (when-not (and (map? connection)
                         (integer? (:totalCount connection))
-                        (map? page-info))
+                        (map? page-info)
+                        (boolean? (:hasNextPage page-info))
+                        (sequential? (:nodes connection)))
            (throw
              (ex-info
                "GitHub organization response was missing repository pagination data"
@@ -308,7 +327,7 @@
          (let
            [page-org-meta (select-keys org [:login :name :url])
             page-total (:totalCount connection)
-            nodes (or (:nodes connection) [])
+            nodes (:nodes connection)
             repos
               (reduce
                 (fn [acc repo]
@@ -503,12 +522,31 @@
                                   :repository repository})))
              _ (when-not (and (map? page)
                               (map? page-info)
+                              (boolean? (:hasNextPage page-info))
                               (sequential? nodes))
                  (throw
                    (ex-info
                      "GitHub history response was missing commit pagination data"
                      {:type ::invalid-response,
                       :repository repository})))
+             page-refs (complete-connection-nodes
+                         (:refs repo)
+                         "branch"
+                         {:repository repository})
+             page-tags (complete-connection-nodes
+                         (:tags repo)
+                         "tag"
+                         {:repository repository})
+             page-pull-requests (complete-connection-nodes
+                                  (:pullRequests repo)
+                                  "pull request"
+                                  {:repository repository})
+             _ (doseq [pull-request page-pull-requests]
+                 (complete-connection-nodes
+                   (:commits pull-request)
+                   "pull request commit"
+                   {:repository repository,
+                    :pull-request (:number pull-request)}))
              [by-oid order] (reduce (fn [[m o] commit]
                                       (let [oid (:oid commit)
                                             commit
@@ -537,9 +575,9 @@
                   (or repo-meta
                       (select-keys repo
                                    [:nameWithOwner :url :defaultBranchRef]))
-                  (or refs (get-in repo [:refs :nodes]))
-                  (or tags (get-in repo [:tags :nodes]))
-                  (or pull-requests (get-in repo [:pullRequests :nodes]))
+                  (or refs page-refs)
+                  (or tags page-tags)
+                  (or pull-requests page-pull-requests)
                   (conj rates (get-in response [:data :rateLimit])))
            (let [newest-first (mapv by-oid order)
                  repo (merge repo-meta repo)
