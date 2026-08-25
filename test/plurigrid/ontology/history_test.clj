@@ -39,7 +39,7 @@
              (commit "d" ["b"]) (commit "e" ["c" "d"] "merge side")]})
 
 (defn response
-  [{:keys [nodes has-next? cursor refs tags pull-requests],
+  [{:keys [nodes has-next? cursor refs tags pull-requests total],
     :or {nodes [], has-next? false}}]
   (let [refs (or refs [])
         tags (or tags [])
@@ -51,7 +51,8 @@
                          :tags {:totalCount (count tags), :nodes tags},
                          :pullRequests {:totalCount (count pull-requests),
                                         :nodes pull-requests},
-                         :object {:history {:pageInfo {:hasNextPage has-next?,
+                         :object {:history {:totalCount (or total (count nodes)),
+                                            :pageInfo {:hasNextPage has-next?,
                                                        :endCursor cursor},
                                             :nodes nodes}}},
             :rateLimit {:cost 1, :remaining 4999}}}))
@@ -265,12 +266,18 @@
                                         (commit "d" ["b"])],
                                 :has-next? true,
                                 :cursor "next",
+                                :total 5,
                                 :refs [{:name "main", :target {:oid "e"}}],
                                 :tags [{:name "v1",
                                         :target {:__typename "Tag",
                                                  :target {:oid "a"}}}]})
                      (response {:nodes [(commit "d" ["b"]) (commit "c" ["b"])
-                                        (commit "b" ["a"]) (commit "a" [])]})])
+                                        (commit "b" ["a"]) (commit "a" [])],
+                                :total 5,
+                                :refs [{:name "main", :target {:oid "e"}}],
+                                :tags [{:name "v1",
+                                        :target {:__typename "Tag",
+                                                 :target {:oid "a"}}}]})])
         result (history/fetch-history {:gh-runner (fake-runner pages calls)})]
     (is (= ["a" "b" "c" "d" "e"] (mapv :oid (:commits result))))
     (is (= 0 (:closure-fetches result)))
@@ -334,6 +341,63 @@
               {:gh-runner (constantly {:exit 0,
                                        :out (json/write-str page),
                                        :err ""})})))))
+  (testing "missing history total"
+    (let [page (update-in (response {})
+                          [:data :repository :object :history]
+                          dissoc
+                          :totalCount)]
+      (is (thrown-with-msg?
+            clojure.lang.ExceptionInfo
+            #"missing commit pagination"
+            (history/fetch-history
+              {:gh-runner (constantly {:exit 0,
+                                       :out (json/write-str page),
+                                       :err ""})})))))
+  (testing "history total changes between pages"
+    (let [pages (atom [(response {:nodes [(commit "b" ["a"])],
+                                  :has-next? true,
+                                  :cursor "next",
+                                  :total 2})
+                       (response {:nodes [(commit "a" [])], :total 3})])]
+      (is (thrown-with-msg?
+            clojure.lang.ExceptionInfo
+            #"history count changed"
+            (history/fetch-history
+              {:gh-runner (fake-runner pages (atom []))})))))
+  (testing "history total does not match fetched commits"
+    (is (thrown-with-msg?
+          clojure.lang.ExceptionInfo
+          #"history count changed"
+          (history/fetch-history
+            {:gh-runner
+               (fake-runner
+                 (atom [(response {:nodes [(commit "head" [])], :total 2})])
+                 (atom []))}))))
+  (testing "repository roots change between pages"
+    (let [pages (atom [(response {:nodes [(commit "b" ["a"])],
+                                  :has-next? true,
+                                  :cursor "next",
+                                  :total 2,
+                                  :refs [{:name "main", :target {:oid "b"}}]})
+                       (response {:nodes [(commit "a" [])],
+                                  :total 2,
+                                  :refs [{:name "main", :target {:oid "a"}}]})])]
+      (is (thrown-with-msg?
+            clojure.lang.ExceptionInfo
+            #"branch list changed"
+            (history/fetch-history
+              {:gh-runner (fake-runner pages (atom []))})))))
+  (testing "commit changes at an overlapping page boundary"
+    (let [pages (atom [(response {:nodes [(commit "b" ["a"])],
+                                  :has-next? true,
+                                  :cursor "next",
+                                  :total 1})
+                       (response {:nodes [(commit "b" [])], :total 1})])]
+      (is (thrown-with-msg?
+            clojure.lang.ExceptionInfo
+            #"Commit changed"
+            (history/fetch-history
+              {:gh-runner (fake-runner pages (atom []))})))))
   (testing "stalled cursor"
     (is (thrown-with-msg? clojure.lang.ExceptionInfo
                           #"did not advance"

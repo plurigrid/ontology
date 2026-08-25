@@ -61,7 +61,7 @@
                                     commits(first:100){totalCount nodes{commit{oid}}}}}
        object(expression:\"HEAD\"){... on Commit{
          history(first:100,after:$cursor){
-           pageInfo{hasNextPage endCursor}
+           totalCount pageInfo{hasNextPage endCursor}
            nodes{oid abbreviatedOid committedDate messageHeadline additions deletions changedFilesIfAvailable
                  author{name email user{login}} committer{name email user{login}}
                  parents(first:100){totalCount nodes{oid}} tree{oid}}
@@ -502,6 +502,7 @@
             by-oid {}
             order []
             repo-meta nil
+            reported-history-total nil
             refs nil
             tags nil
             pull-requests nil
@@ -522,6 +523,7 @@
                                   :repository repository})))
              _ (when-not (and (map? page)
                               (map? page-info)
+                              (integer? (:totalCount page))
                               (boolean? (:hasNextPage page-info))
                               (sequential? nodes))
                  (throw
@@ -547,16 +549,65 @@
                    "pull request commit"
                    {:repository repository,
                     :pull-request (:number pull-request)}))
+             page-repo-meta (select-keys repo
+                                         [:nameWithOwner :url
+                                          :defaultBranchRef])
+             _ (when (and repo-meta
+                          (not (same-canonical-data? repo-meta page-repo-meta)))
+                 (throw
+                   (ex-info
+                     "Repository metadata changed during history pagination"
+                     {:type ::repository-changed,
+                      :repository repository,
+                      :previous repo-meta,
+                      :current page-repo-meta})))
+             _ (doseq [[label previous current]
+                       [["branch" refs page-refs]
+                        ["tag" tags page-tags]
+                        ["pull request" pull-requests page-pull-requests]]]
+                 (when (and (some? previous)
+                            (not (same-canonical-data? previous current)))
+                   (throw
+                     (ex-info
+                       (str "Repository " label
+                            " list changed during history pagination")
+                       {:type ::repository-roots-changed,
+                        :repository repository,
+                        :connection label,
+                        :previous previous,
+                        :current current}))))
+             page-history-total (:totalCount page)
+             _ (when (and reported-history-total
+                          (not= reported-history-total page-history-total))
+                 (throw
+                   (ex-info
+                     "Default-branch history count changed during pagination"
+                     {:type ::history-count-mismatch,
+                      :repository repository,
+                      :previous reported-history-total,
+                      :reported page-history-total,
+                      :fetched (count by-oid)})))
              [by-oid order] (reduce (fn [[m o] commit]
                                       (let [oid (:oid commit)
                                             commit
                                               (validate-complete-parents
                                                 commit
                                                 {:repository repository})]
-                                        (if (or (str/blank? oid)
-                                                (contains? m oid))
-                                          [m o]
-                                          [(assoc m oid commit) (conj o oid)])))
+                                        (cond
+                                          (str/blank? oid) [m o]
+                                          (not (contains? m oid))
+                                            [(assoc m oid commit) (conj o oid)]
+                                          (same-canonical-data? (get m oid) commit)
+                                            [m o]
+                                          :else
+                                            (throw
+                                              (ex-info
+                                                "Commit changed during history pagination"
+                                                {:type ::commit-changed,
+                                                 :repository repository,
+                                                 :oid oid,
+                                                 :previous (get m oid),
+                                                 :current commit})))))
                               [by-oid order]
                               nodes)
              has-next? (true? (:hasNextPage page-info))
@@ -572,9 +623,8 @@
                   (inc pages)
                   by-oid
                   order
-                  (or repo-meta
-                      (select-keys repo
-                                   [:nameWithOwner :url :defaultBranchRef]))
+                  (or repo-meta page-repo-meta)
+                  (or reported-history-total page-history-total)
                   (or refs page-refs)
                   (or tags page-tags)
                   (or pull-requests page-pull-requests)
@@ -582,6 +632,15 @@
            (let [newest-first (mapv by-oid order)
                  repo (merge repo-meta repo)
                  default-commits (vec (reverse newest-first))
+                 reported (or reported-history-total page-history-total)
+                 _ (when-not (= reported (count default-commits))
+                     (throw
+                       (ex-info
+                         "Default-branch history count changed during pagination"
+                         {:type ::history-count-mismatch,
+                          :repository repository,
+                          :reported reported,
+                          :fetched (count default-commits)})))
                  pull-requests (or pull-requests
                                    (get-in repo [:pullRequests :nodes]))
                  pr-oids (->> pull-requests
