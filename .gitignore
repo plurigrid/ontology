@@ -5,3 +5,7 @@
 
 # Ignore Smart Connections folder because embeddings file is large and updated frequently
 .smart-connections
+
+# Live history and Clojure CLI caches (both reproducible).
+.cache/
+.cpcache/

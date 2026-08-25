@@ -1,0 +1,37 @@
+{:tasks
+ {refresh {:doc "Fetch every GitHub-visible ontology history root via GraphQL"
+            :task (shell "clojure -M:run refresh")}
+  org-refresh {:doc "Fetch the complete plurigrid organization catalog"
+               :task (apply shell "clojure" "-M:run" "org-refresh" *command-line-args*)}
+  walk {:doc "Walk cached commit history; pass CLI options after --"
+         :task (apply shell "clojure" "-M:run" "walk" *command-line-args*)}
+  org-walk {:doc "Lazily walk commits across the organization catalog"
+            :task (apply shell "clojure" "-M:run" "org-walk" *command-line-args*)}
+  org-live-check {:doc "Refresh plurigrid and run a two-transition live GraphQL walk"
+                  :task (do
+                          (shell "clojure -M:run org-refresh --org plurigrid")
+                          (shell "clojure -M:run org-walk --repo plurigrid/ontology --steps 2"))}
+  summary {:doc "Summarize cached history"
+            :task (shell "clojure -M:run summary")}
+  org-summary {:doc "Summarize the cached organization catalog"
+               :task (apply shell "clojure" "-M:run" "org-summary" *command-line-args*)}
+  org-select {:doc "Print organization repositories selected through Specter"
+              :task (apply shell "clojure" "-M:run" "org-select" *command-line-args*)}
+  test {:doc "Run Clojure tests"
+         :task (shell "clojure -M:test")}
+  check {:doc "Run the complete local test and lint suite"
+         :depends [test lint]}
+  lint {:doc "Lint Clojure and Emacs Lisp entry points"
+         :task (do
+                 (doseq [file ["src/plurigrid/ontology/history.clj"
+                               "test/plurigrid/ontology/history_test.clj"
+                               "test/plurigrid/ontology/test_runner.clj"]]
+                   (shell "joker" "--lint" file))
+                 (let [source (.getAbsolutePath (java.io.File. "ontology-history.el"))]
+                   (shell "emacsclient" "-s" "godel-machine-gate" "--eval"
+                          (str "(let* ((source " (pr-str source) ") "
+                               "(target (make-temp-file \"ontology-history-\" nil \".elc\")) "
+                               "(byte-compile-dest-file-function (lambda (_) target))) "
+                               "(unwind-protect (with-temp-buffer (insert-file-contents source) "
+                               "(emacs-lisp-mode) (check-parens) (byte-compile-file source)) "
+                               "(delete-file target))))"))))}}}
