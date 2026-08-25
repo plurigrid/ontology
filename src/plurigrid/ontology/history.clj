@@ -496,7 +496,19 @@
              repo (get-in response [:data :repository])
              page (history-page response)
              page-info (:pageInfo page)
-             nodes (or (:nodes page) [])
+             nodes (:nodes page)
+             _ (when (nil? repo)
+                 (throw (ex-info "GitHub repository was not found or inaccessible"
+                                 {:type ::repository-not-found,
+                                  :repository repository})))
+             _ (when-not (and (map? page)
+                              (map? page-info)
+                              (sequential? nodes))
+                 (throw
+                   (ex-info
+                     "GitHub history response was missing commit pagination data"
+                     {:type ::invalid-response,
+                      :repository repository})))
              [by-oid order] (reduce (fn [[m o] commit]
                                       (let [oid (:oid commit)
                                             commit
@@ -511,10 +523,6 @@
                               nodes)
              has-next? (true? (:hasNextPage page-info))
              next-cursor (:endCursor page-info)]
-         (when (nil? repo)
-           (throw (ex-info "GitHub repository was not found or is inaccessible"
-                           {:type ::repository-not-found,
-                            :repository repository})))
          (when (and has-next?
                     (or (str/blank? next-cursor) (= cursor next-cursor)))
            (throw (ex-info "GraphQL pagination did not advance"

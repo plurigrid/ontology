@@ -282,6 +282,17 @@
                                                             {:data {:repository
                                                                       nil}}),
                                                      :err ""})}))))
+  (testing "missing history pagination"
+    (is (thrown-with-msg?
+          clojure.lang.ExceptionInfo
+          #"missing commit pagination"
+          (history/fetch-history
+            {:gh-runner (constantly
+                          {:exit 0,
+                           :out (json/write-str
+                                  {:data {:repository
+                                          {:nameWithOwner "plurigrid/ontology"}}}),
+                           :err ""})}))))
   (testing "stalled cursor"
     (is (thrown-with-msg? clojure.lang.ExceptionInfo
                           #"did not advance"
